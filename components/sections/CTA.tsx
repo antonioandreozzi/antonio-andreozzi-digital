@@ -55,10 +55,9 @@ export default function CTA() {
               marginBottom: '1.5rem',
             }}
           >
-            Prenota{' '}
-            <em style={{ color: 'var(--accent)', fontStyle: 'italic' }}>20 minuti</em>
+            Inizia dalla
             <br />
-            gratuiti.
+            <em style={{ color: 'var(--accent)', fontStyle: 'italic' }}>Diagnosi.</em>
           </h2>
 
           {/* Subtext */}
@@ -73,8 +72,8 @@ export default function CTA() {
               margin: '0 auto 3rem',
             }}
           >
-            Nessun impegno. Nessuna vendita. Solo una conversazione per capire
-            dove sei, dove vuoi arrivare, e cosa ti blocca.
+            Il punto di ingresso naturale. 3 ore insieme, un report scritto,
+            le priorità chiare. Da lì decidi tu cosa fare.
           </p>
 
           {/* CTA buttons */}

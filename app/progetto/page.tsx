@@ -146,7 +146,7 @@ export default function Progetto() {
                     </p>
                   </div>
                   <a href="mailto:antonioandreozzidigital@gmail.com?subject=Informazioni%20Progetto" className="cta-primary" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-                    Prenota una call conoscitiva
+                    Scrivimi per il Progetto
                   </a>
                   <p style={{ textAlign: 'center', marginTop: '1rem', fontSize: '0.7rem', color: 'var(--text-muted)', fontFamily: 'var(--font-inter)', fontWeight: 300 }}>
                     antonioandreozzidigital@gmail.com

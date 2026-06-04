@@ -56,7 +56,7 @@ const faqs = [
   },
   {
     q: 'Come si accede?',
-    a: 'Con una call conoscitiva di 30 minuti obbligatoria. Serve a entrambi per capire se c\'è affinità e se il Sistema è la soluzione giusta per te.',
+    a: 'Scrivimi a antonioandreozzidigital@gmail.com. Valutiamo insieme se il Sistema è la soluzione giusta per la tua situazione. Se hai già fatto la Diagnosi, partiamo da lì.',
   },
 ]
 
@@ -155,7 +155,7 @@ export default function Sistema() {
                     </p>
                   </div>
                   <a href="mailto:antonioandreozzidigital@gmail.com?subject=Informazioni%20Sistema" className="cta-primary" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-                    Prenota la call conoscitiva
+                    Scrivimi per il Sistema
                   </a>
                   <p style={{ textAlign: 'center', marginTop: '1rem', fontSize: '0.7rem', color: 'var(--text-muted)', fontFamily: 'var(--font-inter)', fontWeight: 300 }}>
                     antonioandreozzidigital@gmail.com

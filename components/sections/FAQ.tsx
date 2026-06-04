@@ -6,7 +6,7 @@ import { Plus, Minus } from 'lucide-react'
 const faqs = [
   {
     q: 'Quanto costa lavorare con te?',
-    a: "Dipende dal progetto. Non ho un listino fisso perché ogni lavoro è diverso. Quello che posso dirti è che prima di parlare di budget parliamo sempre di obiettivi — poi capiremo insieme cosa ha senso. Il primo incontro di 20 minuti è gratuito e senza impegno.",
+    a: "Dipende dal progetto. Non ho un listino fisso perché ogni lavoro è diverso. Il punto di partenza è la Diagnosi: 3 ore di lavoro insieme per capire dove sei e cosa fare. Da lì costruiamo una proposta su misura.",
   },
   {
     q: 'Lavori anche con piccole imprese e freelancer?',
@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     q: 'Come iniziamo a lavorare insieme?',
-    a: "Semplice: prenoti 20 minuti gratuiti usando il pulsante qui sotto. Parliamo del tuo progetto, capiamo se c'è fit, e ti dico cosa farei al posto tuo. Nessuna vendita, nessun impegno. Solo chiarezza.",
+    a: "Parti dalla Diagnosi — il punto di ingresso naturale. 3 ore di lavoro insieme, un report scritto con le priorità chiare. Se vuoi continuare, costruiamo un percorso su misura. Scrivimi a antonioandreozzidigital@gmail.com.",
   },
 ]
 

@@ -375,7 +375,7 @@ export default function LavoraConMe() {
               <em style={{ color: 'var(--accent)', fontStyle: 'italic' }}>partire?</em>
             </h2>
             <p style={{ fontSize: '0.95rem', lineHeight: 1.75, color: 'var(--text-muted)', fontFamily: 'var(--font-inter)', fontWeight: 300, marginBottom: '2.5rem' }}>
-              Scrivimi. Parliamo 20 minuti — capisco dove sei e ti dico cosa farei al posto tuo. Senza impegno, solo chiarezza.
+              Scrivi e dimmi dove sei. Il punto di ingresso è la Diagnosi — 3 ore di lavoro insieme per capire esattamente cosa non funziona e da dove partire.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a href="mailto:antonioandreozzidigital@gmail.com" className="cta-primary">

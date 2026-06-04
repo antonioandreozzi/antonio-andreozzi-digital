@@ -166,7 +166,7 @@ export default function ChiSono() {
                     <em style={{ color: 'var(--accent)', fontStyle: 'italic' }}>forse possiamo lavorare insieme.</em>
                   </p>
                   <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', fontFamily: 'var(--font-inter)', fontWeight: 300, lineHeight: 1.75, marginBottom: '2rem', maxWidth: '480px' }}>
-                    Non offro corsi preregistrati, gruppi o pacchetti standard. Lavoro 1:1 con un numero limitato di persone alla volta. Inizia da una chiamata gratuita di 20 minuti.
+                    Non offro corsi preregistrati, gruppi o pacchetti standard. Lavoro 1:1 con un numero limitato di persone alla volta. Il punto di ingresso è la Diagnosi.
                   </p>
                   <div className="flex flex-wrap gap-4">
                     <a href="/lavora-con-me" className="cta-primary">Lavora con me</a>

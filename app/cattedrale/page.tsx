@@ -150,7 +150,7 @@ export default function Cattedrale() {
                       → Max 2 clienti/anno
                     </p>
                     <p style={{ fontSize: '0.82rem', lineHeight: 1.7, color: 'var(--text-muted)', fontFamily: 'var(--font-inter)', fontWeight: 300 }}>
-                      Questo è il progetto più impegnativo che offro. È su misura. Prima di ogni proposta economica c'è sempre una call conoscitiva.
+                      Questo è il progetto più impegnativo che offro. È su misura. Scrivimi e valutiamo insieme se è la scelta giusta per la tua situazione.
                     </p>
                   </div>
                   <a href="/lavora-con-me" className="cta-primary" style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
