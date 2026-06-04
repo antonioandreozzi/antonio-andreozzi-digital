@@ -1,26 +1,238 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-void:      #09090B;
+  --bg-surface:   #111115;
+  --bg-card:      #17171C;
+  --text-primary: #EDE8DF;
+  --text-muted:   #726E69;
+  --accent:       #C8913A;
+  --accent-light: #E5B86A;
+  --accent-dark:  #8A6320;
+  --border:       rgba(255, 255, 255, 0.07);
+  --glow:         rgba(200, 145, 58, 0.25);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--bg-void);
+  color: var(--text-primary);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.font-display {
+  font-family: var(--font-cormorant), Georgia, serif;
+}
+
+::-webkit-scrollbar { width: 2px; }
+::-webkit-scrollbar-track { background: var(--bg-void); }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
+
+::selection { background: var(--accent); color: var(--bg-void); }
+
+*:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  background: var(--accent);
+  color: var(--bg-void);
+  padding: 0.5rem 1.25rem;
+  z-index: 99999;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: top 0.2s;
+}
+.skip-link:focus { top: 1rem; }
+
+.section-padding {
+  padding-top: clamp(80px, 10vw, 140px);
+  padding-bottom: clamp(80px, 10vw, 140px);
+}
+
+.container-site {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(20px, 5vw, 80px);
+  padding-right: clamp(20px, 5vw, 80px);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--accent-light) 0%, var(--accent) 60%, var(--accent-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.border-glow {
+  border: 1px solid var(--border);
+  box-shadow: 0 0 30px rgba(200, 145, 58, 0.05), inset 0 1px 0 rgba(255,255,255,0.04);
+}
+
+.cta-primary {
+  background: var(--accent);
+  color: var(--bg-void);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.9rem 2.2rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px var(--glow);
+  font-family: var(--font-inter), sans-serif;
+  text-decoration: none;
+}
+.cta-primary:hover {
+  background: var(--accent-light);
+  box-shadow: 0 0 40px var(--glow), 0 0 70px rgba(200, 145, 58, 0.12);
+  transform: translateY(-2px);
+}
+
+.cta-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.9rem 2.2rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+  font-family: var(--font-inter), sans-serif;
+  text-decoration: none;
+}
+.cta-ghost:hover {
+  color: var(--text-primary);
+  border-color: rgba(200, 145, 58, 0.4);
+}
+
+.animated-line {
+  position: relative;
+  display: inline-block;
+}
+.animated-line::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--accent);
+  transition: width 0.4s ease;
+}
+.animated-line:hover::after { width: 100%; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+@keyframes pulse-soft {
+  0%, 100% { opacity: 0.35; }
+  50%       { opacity: 0.8; }
+}
+@keyframes scroll-bounce {
+  0%, 100% { transform: translateY(0); opacity: 1; }
+  50%       { transform: translateY(6px); opacity: 0.4; }
+}
+
+.float       { animation: float 7s ease-in-out infinite; }
+.pulse-soft  { animation: pulse-soft 3.5s ease-in-out infinite; }
+.scroll-bounce { animation: scroll-bounce 1.8s ease-in-out infinite; }
+
+/* ── Scena 3D globale ────────────────────────────── */
+/*
+ * Tutto il sito vive in uno spazio 3D.
+ * La prospettiva fa sembrare che le sezioni vengano VERSO l'utente
+ * mentre scorre — effetto "camera che vola nello spazio".
+ */
+.scene-3d {
+  perspective:        1400px;
+  perspective-origin: 50% 30%;
+}
+
+.scene-3d main {
+  transform-style: preserve-3d;
+}
+
+.scene-3d section {
+  transform-style:  preserve-3d;
+  will-change:      transform, opacity;
+  /* z-index stacking nell'asse Z */
+  position:         relative;
+}
+
+/* Assicura che il contenuto sopra il canvas noise sia visibile */
+.scene-3d > *:not(canvas) {
+  position: relative;
+  z-index:  1;
+}
+
+/* ── Ticker ───────────────────────────────────────── */
+@keyframes ticker-forward {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes ticker-reverse {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
+
+/* Cursore — nascosto su desktop, visibile su touch */
+@media (hover: hover) and (pointer: fine) {
+  * { cursor: none !important; }
+}
+
+/* Rispetta prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.card-hover {
+  background: var(--bg-surface);
+  transition: background 0.3s ease;
+}
+.card-hover:hover {
+  background: var(--bg-card);
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.3;
+  mix-blend-mode: overlay;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,0.55) 100%);
+  pointer-events: none;
+  z-index: 9998;
 }

@@ -1,0 +1,138 @@
+'use client'
+import { useEffect, useState } from 'react'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { Menu, X } from 'lucide-react'
+
+const links = [
+  { label: 'Chi Sono',         href: '/chi-sono' },
+  { label: 'Blog',             href: '/blog' },
+  { label: 'Video',            href: '/video' },
+  { label: 'Risorse Gratuite', href: '/risorse' },
+]
+
+export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false)
+  const [open, setOpen]         = useState(false)
+  const pathname                = usePathname()
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40)
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
+  const isActive = (href: string) => pathname === href
+
+  return (
+    <header
+      className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
+      style={{
+        background: scrolled ? 'rgba(9, 9, 11, 0.88)' : 'transparent',
+        backdropFilter: scrolled ? 'blur(14px)' : 'none',
+        borderBottom: scrolled ? '1px solid var(--border)' : '1px solid transparent',
+      }}
+    >
+      <div className="container-site">
+        <nav className="flex items-center justify-between h-16 md:h-20">
+          {/* Logo */}
+          <Link
+            href="/"
+            style={{
+              textDecoration: 'none',
+              color: 'var(--text-primary)',
+              fontFamily: 'var(--font-cormorant)',
+              fontSize: 'clamp(1rem, 1.6vw, 1.2rem)',
+              fontWeight: 300,
+              letterSpacing: '0.04em',
+            }}
+          >
+            Antonio Andreozzi
+            <span style={{ color: 'var(--accent)' }}> Digital</span>
+          </Link>
+
+          {/* Desktop nav */}
+          <ul className="hidden md:flex items-center gap-8 list-none m-0 p-0">
+            {links.map((l) => (
+              <li key={l.href}>
+                <Link
+                  href={l.href}
+                  style={{
+                    textDecoration: 'none',
+                    fontSize: '0.65rem',
+                    letterSpacing: '0.16em',
+                    textTransform: 'uppercase',
+                    fontFamily: 'var(--font-inter)',
+                    fontWeight: 500,
+                    color: isActive(l.href) ? 'var(--accent)' : 'var(--text-muted)',
+                    transition: 'color 0.2s ease',
+                    borderBottom: isActive(l.href) ? '1px solid var(--accent)' : '1px solid transparent',
+                    paddingBottom: '2px',
+                  }}
+                >
+                  {l.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          {/* CTA + hamburger */}
+          <div className="flex items-center gap-4">
+            <Link href="/lavora-con-me" className="cta-primary hidden md:inline-flex">
+              Lavora con me
+            </Link>
+            <button
+              className="md:hidden flex items-center justify-center w-10 h-10"
+              style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--text-muted)' }}
+              onClick={() => setOpen(!open)}
+              aria-label={open ? 'Chiudi menu' : 'Apri menu'}
+            >
+              {open ? <X size={20} /> : <Menu size={20} />}
+            </button>
+          </div>
+        </nav>
+
+        {/* Mobile menu */}
+        <div
+          className="md:hidden overflow-hidden transition-all duration-300"
+          style={{
+            maxHeight: open ? '500px' : '0',
+            borderTop: open ? '1px solid var(--border)' : 'none',
+          }}
+        >
+          <ul className="list-none m-0 p-0 py-6 flex flex-col gap-5">
+            {links.map((l) => (
+              <li key={l.href}>
+                <Link
+                  href={l.href}
+                  onClick={() => setOpen(false)}
+                  style={{
+                    textDecoration: 'none',
+                    fontSize: '0.75rem',
+                    letterSpacing: '0.14em',
+                    textTransform: 'uppercase',
+                    fontFamily: 'var(--font-inter)',
+                    fontWeight: 500,
+                    color: isActive(l.href) ? 'var(--accent)' : 'var(--text-muted)',
+                    display: 'block',
+                  }}
+                >
+                  {l.label}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <Link
+                href="/lavora-con-me"
+                onClick={() => setOpen(false)}
+                className="cta-primary"
+              >
+                Lavora con me
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  )
+}
