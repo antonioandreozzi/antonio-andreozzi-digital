@@ -80,30 +80,30 @@ export default function CustomCursor() {
 
   return (
     <>
-      {/* Small dot — instant, mix-blend-mode: difference = sempre visibile */}
+      {/* Dot — bianco con outline scuro, visibile su qualsiasi sfondo */}
       <div
         ref={dotRef}
         aria-hidden="true"
         style={{
-          position:        'fixed',
-          top:             0,
-          left:            0,
-          width:           '8px',
-          height:          '8px',
-          borderRadius:    '50%',
-          background:      '#ffffff',
-          pointerEvents:   'none',
-          zIndex:          99999,
-          transform:       'translate(-100px, -100px)',
-          marginLeft:      '-4px',
-          marginTop:       '-4px',
-          transition:      'opacity 0.3s ease',
-          willChange:      'transform',
-          mixBlendMode:    'difference',
+          position:     'fixed',
+          top:          0,
+          left:         0,
+          width:        '8px',
+          height:       '8px',
+          borderRadius: '50%',
+          background:   'var(--accent)',
+          pointerEvents:'none',
+          zIndex:       99999,
+          transform:    'translate(-100px, -100px)',
+          marginLeft:   '-4px',
+          marginTop:    '-4px',
+          transition:   'opacity 0.3s ease',
+          willChange:   'transform',
+          boxShadow:    '0 0 0 1.5px rgba(0,0,0,0.6), 0 0 8px rgba(200,145,58,0.8)',
         }}
       />
 
-      {/* Ring — lags behind, mix-blend-mode: difference */}
+      {/* Ring — ambra con outline bianco esterno */}
       <div
         ref={ringRef}
         className="cursor-ring"
@@ -115,10 +115,10 @@ export default function CustomCursor() {
           width:           '36px',
           height:          '36px',
           borderRadius:    '50%',
-          border:          '1.5px solid #ffffff',
+          border:          '1.5px solid var(--accent)',
           pointerEvents:   'none',
           zIndex:          99998,
-          mixBlendMode:    'difference',
+          boxShadow:       '0 0 0 1px rgba(0,0,0,0.4), 0 0 12px rgba(200,145,58,0.3)',
           transform:       'translate(-100px, -100px)',
           marginLeft:      '-18px',
           marginTop:       '-18px',
@@ -129,11 +129,13 @@ export default function CustomCursor() {
 
       <style>{`
         .cursor-ring.is-hovering {
-          width:       58px !important;
-          height:      58px !important;
-          margin-left: -29px !important;
-          margin-top:  -29px !important;
-          background:  rgba(255,255,255,0.08) !important;
+          width:       56px !important;
+          height:      56px !important;
+          margin-left: -28px !important;
+          margin-top:  -28px !important;
+          background:  rgba(200,145,58,0.12) !important;
+          border-color: var(--accent) !important;
+          box-shadow: 0 0 0 1px rgba(0,0,0,0.4), 0 0 20px rgba(200,145,58,0.4) !important;
         }
         @media (prefers-reduced-motion: reduce) {
           .cursor-ring { display: none; }
