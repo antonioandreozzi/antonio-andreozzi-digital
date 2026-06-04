@@ -82,34 +82,31 @@ export default function Navbar() {
               Lavora con me
             </Link>
             <button
-              className="md:hidden flex items-center justify-center w-10 h-10"
-              style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--text-muted)' }}
+              className="md:hidden flex items-center justify-center w-12 h-12"
+              style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#EDE8DF', padding: '8px' }}
               onClick={() => setOpen(!open)}
               aria-label={open ? 'Chiudi menu' : 'Apri menu'}
             >
-              {open ? <X size={20} /> : <Menu size={20} />}
+              {open ? <X size={24} color="#EDE8DF" /> : <Menu size={24} color="#EDE8DF" />}
             </button>
           </div>
         </nav>
 
         {/* Mobile menu — full screen overlay */}
+        {open && (
         <div
-          className="md:hidden"
           style={{
-            position:   'fixed',
-            top:        0,
-            left:       0,
-            right:      0,
-            bottom:     0,
-            background: '#09090B',
-            zIndex:     9000,
-            display:    'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
-            opacity:    open ? 1 : 0,
-            pointerEvents: open ? 'all' : 'none',
-            transition: 'opacity 0.3s ease',
+            position:        'fixed',
+            top:             0,
+            left:            0,
+            right:           0,
+            bottom:          0,
+            background:      '#09090B',
+            zIndex:          9000,
+            display:         'flex',
+            flexDirection:   'column',
+            justifyContent:  'center',
+            alignItems:      'center',
           }}
         >
           <ul className="list-none m-0 p-0 flex flex-col gap-8 text-center">
@@ -162,9 +159,10 @@ export default function Navbar() {
             }}
             aria-label="Chiudi menu"
           >
-            <X size={24} />
+            <X size={24} color="#EDE8DF" />
           </button>
         </div>
+        )}
       </div>
     </header>
   )
