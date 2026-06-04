@@ -163,26 +163,8 @@ body {
  * La prospettiva fa sembrare che le sezioni vengano VERSO l'utente
  * mentre scorre — effetto "camera che vola nello spazio".
  */
-.scene-3d {
-  perspective:        1400px;
-  perspective-origin: 50% 30%;
-}
-
-.scene-3d main {
-  transform-style: preserve-3d;
-}
-
 .scene-3d section {
-  transform-style:  preserve-3d;
-  will-change:      transform, opacity;
-  /* z-index stacking nell'asse Z */
-  position:         relative;
-}
-
-/* Assicura che il contenuto sopra il canvas noise sia visibile */
-.scene-3d > *:not(canvas) {
   position: relative;
-  z-index:  1;
 }
 
 /* ── Ticker ───────────────────────────────────────── */

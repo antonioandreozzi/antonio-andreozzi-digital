@@ -115,9 +115,9 @@ export default function RootLayout({
         <a href="#main-content" className="skip-link">
           Vai al contenuto principale
         </a>
-        {/* Tutti i provider client: noise shader, intro, cursore, scroll 3D */}
-        <ClientProviders />
         {children}
+        {/* Provider DOPO i contenuti — il cursore viene dipinto per ultimo = sempre visibile */}
+        <ClientProviders />
       </body>
     </html>
   );

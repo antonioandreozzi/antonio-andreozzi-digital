@@ -1,146 +1,99 @@
 'use client'
-import { useEffect, useRef } from 'react'
+import { useEffect } from 'react'
 
 export default function CustomCursor() {
-  const dotRef  = useRef<HTMLDivElement>(null)
-  const ringRef = useRef<HTMLDivElement>(null)
-  const rafRef  = useRef<number>(0)
-  const pos     = useRef({ x: -100, y: -100 })
-  const ring    = useRef({ x: -100, y: -100 })
-
   useEffect(() => {
-    // Hide on touch devices
     if ('ontouchstart' in window) return
+    if (window.innerWidth < 768) return
 
-    const dot  = dotRef.current
-    const r    = ringRef.current
-    if (!dot || !r) return
+    // Crea elementi direttamente nel DOM — fuori da React
+    const dot  = document.createElement('div')
+    const ring = document.createElement('div')
 
-    // Show custom cursor, hide native
+    const BASE = `
+      position: fixed;
+      top: 0; left: 0;
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-200px, -200px);
+    `
+
+    dot.style.cssText = BASE + `
+      width: 10px; height: 10px;
+      margin-left: -5px; margin-top: -5px;
+      background: #ffffff;
+      box-shadow: 0 0 0 2px #000, 0 0 10px rgba(200,145,58,0.8);
+      z-index: 2147483647;
+    `
+
+    ring.style.cssText = BASE + `
+      width: 38px; height: 38px;
+      margin-left: -19px; margin-top: -19px;
+      border: 2px solid #ffffff;
+      box-shadow: 0 0 0 1px #000;
+      z-index: 2147483646;
+      transition: width 0.2s, height 0.2s, margin 0.2s;
+    `
+
+    document.body.appendChild(dot)
+    document.body.appendChild(ring)
+
+    // Nascondi cursore nativo
     document.documentElement.style.cursor = 'none'
 
+    let mx = -200, my = -200
+    let rx = -200, ry = -200
+    let raf: number
+
     const onMove = (e: MouseEvent) => {
-      pos.current = { x: e.clientX, y: e.clientY }
+      mx = e.clientX
+      my = e.clientY
     }
 
     const animate = () => {
-      // Dot: snaps instantly
-      dot.style.transform = `translate(${pos.current.x}px, ${pos.current.y}px)`
-
-      // Ring: follows with lerp (smooth lag)
-      ring.current.x += (pos.current.x - ring.current.x) * 0.1
-      ring.current.y += (pos.current.y - ring.current.y) * 0.1
-      r.style.transform = `translate(${ring.current.x}px, ${ring.current.y}px)`
-
-      rafRef.current = requestAnimationFrame(animate)
+      dot.style.transform  = `translate(${mx}px, ${my}px)`
+      rx += (mx - rx) * 0.12
+      ry += (my - ry) * 0.12
+      ring.style.transform = `translate(${rx}px, ${ry}px)`
+      raf = requestAnimationFrame(animate)
     }
 
-    rafRef.current = requestAnimationFrame(animate)
+    raf = requestAnimationFrame(animate)
     window.addEventListener('mousemove', onMove, { passive: true })
 
-    // Expand ring on interactive elements
-    const onEnter = () => r.classList.add('is-hovering')
-    const onLeave = () => r.classList.remove('is-hovering')
+    // Hover su link/bottoni
+    const expand = () => {
+      ring.style.width  = '56px'
+      ring.style.height = '56px'
+      ring.style.marginLeft = '-28px'
+      ring.style.marginTop  = '-28px'
+    }
+    const shrink = () => {
+      ring.style.width  = '38px'
+      ring.style.height = '38px'
+      ring.style.marginLeft = '-19px'
+      ring.style.marginTop  = '-19px'
+    }
 
     const attach = () => {
-      document.querySelectorAll('a, button, [role="button"], input, textarea, select, label')
-        .forEach(el => {
-          el.addEventListener('mouseenter', onEnter)
-          el.addEventListener('mouseleave', onLeave)
-        })
+      document.querySelectorAll('a, button').forEach(el => {
+        el.addEventListener('mouseenter', expand)
+        el.addEventListener('mouseleave', shrink)
+      })
     }
-
     attach()
-
-    // Re-attach on DOM changes (Sanity, dynamic content)
-    const observer = new MutationObserver(attach)
-    observer.observe(document.body, { childList: true, subtree: true })
-
-    // Hide when leaving window
-    const onLeaveDoc = () => {
-      dot.style.opacity = '0'
-      r.style.opacity   = '0'
-    }
-    const onEnterDoc = () => {
-      dot.style.opacity = '1'
-      r.style.opacity   = '1'
-    }
-    document.addEventListener('mouseleave', onLeaveDoc)
-    document.addEventListener('mouseenter', onEnterDoc)
+    const obs = new MutationObserver(attach)
+    obs.observe(document.body, { childList: true, subtree: true })
 
     return () => {
-      cancelAnimationFrame(rafRef.current)
+      cancelAnimationFrame(raf)
       window.removeEventListener('mousemove', onMove)
-      document.removeEventListener('mouseleave', onLeaveDoc)
-      document.removeEventListener('mouseenter', onEnterDoc)
-      observer.disconnect()
       document.documentElement.style.cursor = ''
+      obs.disconnect()
+      dot.remove()
+      ring.remove()
     }
   }, [])
 
-  return (
-    <>
-      {/* Dot — bianco con outline scuro, visibile su qualsiasi sfondo */}
-      <div
-        ref={dotRef}
-        aria-hidden="true"
-        style={{
-          position:     'fixed',
-          top:          0,
-          left:         0,
-          width:        '8px',
-          height:       '8px',
-          borderRadius: '50%',
-          background:   'var(--accent)',
-          pointerEvents:'none',
-          zIndex:       99999,
-          transform:    'translate(-100px, -100px)',
-          marginLeft:   '-4px',
-          marginTop:    '-4px',
-          transition:   'opacity 0.3s ease',
-          willChange:   'transform',
-          boxShadow:    '0 0 0 1.5px rgba(0,0,0,0.6), 0 0 8px rgba(200,145,58,0.8)',
-        }}
-      />
-
-      {/* Ring — ambra con outline bianco esterno */}
-      <div
-        ref={ringRef}
-        className="cursor-ring"
-        aria-hidden="true"
-        style={{
-          position:        'fixed',
-          top:             0,
-          left:            0,
-          width:           '36px',
-          height:          '36px',
-          borderRadius:    '50%',
-          border:          '1.5px solid var(--accent)',
-          pointerEvents:   'none',
-          zIndex:          99998,
-          boxShadow:       '0 0 0 1px rgba(0,0,0,0.4), 0 0 12px rgba(200,145,58,0.3)',
-          transform:       'translate(-100px, -100px)',
-          marginLeft:      '-18px',
-          marginTop:       '-18px',
-          transition:      'opacity 0.3s ease, width 0.25s ease, height 0.25s ease, margin 0.25s ease, background 0.25s ease',
-          willChange:      'transform',
-        }}
-      />
-
-      <style>{`
-        .cursor-ring.is-hovering {
-          width:       56px !important;
-          height:      56px !important;
-          margin-left: -28px !important;
-          margin-top:  -28px !important;
-          background:  rgba(200,145,58,0.12) !important;
-          border-color: var(--accent) !important;
-          box-shadow: 0 0 0 1px rgba(0,0,0,0.4), 0 0 20px rgba(200,145,58,0.4) !important;
-        }
-        @media (prefers-reduced-motion: reduce) {
-          .cursor-ring { display: none; }
-        }
-      `}</style>
-    </>
-  )
+  return null
 }

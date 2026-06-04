@@ -34,8 +34,8 @@ export default function Footer() {
                 marginBottom: '1rem',
               }}
             >
-              Antonio Andreozzi
-              <span style={{ color: 'var(--accent)' }}> Digital</span>
+              We Move
+              <span style={{ color: 'var(--accent)' }}> Markets</span>
             </p>
             <p
               style={{

@@ -172,8 +172,7 @@ export default function NoiseBackground() {
         pointerEvents: 'none',
         width:         '100vw',
         height:        '100vh',
-        mixBlendMode:  'screen',
-        opacity:       0.85,
+        opacity:       0.6,
       }}
     />
   )
