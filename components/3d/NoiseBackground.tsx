@@ -164,7 +164,7 @@ export default function NoiseBackground() {
         pointerEvents: 'none',
         width:         '100vw',
         height:        '100vh',
-        opacity:       0.75,
+        opacity:       0.5,
       }}
     />
   )
