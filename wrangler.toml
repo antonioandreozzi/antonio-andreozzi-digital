@@ -1,3 +1,8 @@
 name = "antonio-andreozzi-digital"
 compatibility_date = "2024-09-23"
 assets = { directory = "./out" }
+
+routes = [
+  { pattern = "antonioandreozzidigital.com/*", zone_name = "antonioandreozzidigital.com" },
+  { pattern = "www.antonioandreozzidigital.com/*", zone_name = "antonioandreozzidigital.com" }
+]
