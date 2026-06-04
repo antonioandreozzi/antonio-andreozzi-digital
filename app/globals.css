@@ -4,8 +4,8 @@
   --bg-void:      #09090B;
   --bg-surface:   #111115;
   --bg-card:      #17171C;
-  --text-primary: #F5F2EC;
-  --text-muted:   #A89F96;
+  --text-primary: #FFFFFF;
+  --text-muted:   #C8C0B8;
   --accent:       #C8913A;
   --accent-light: #E5B86A;
   --accent-dark:  #8A6320;
@@ -173,7 +173,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(9, 9, 11, 0.55);
+  background: rgba(9, 9, 11, 0.82);
   pointer-events: none;
   z-index: -1;
 }
