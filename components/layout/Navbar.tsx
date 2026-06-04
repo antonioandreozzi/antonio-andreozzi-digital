@@ -101,14 +101,12 @@ export default function Navbar() {
             left:       0,
             right:      0,
             bottom:     0,
-            background: 'rgba(9, 9, 11, 0.97)',
-            backdropFilter: 'blur(20px)',
-            zIndex:     40,
+            background: '#09090B',
+            zIndex:     9000,
             display:    'flex',
             flexDirection: 'column',
             justifyContent: 'center',
             alignItems: 'center',
-            gap:        '0',
             opacity:    open ? 1 : 0,
             pointerEvents: open ? 'all' : 'none',
             transition: 'opacity 0.3s ease',
@@ -123,13 +121,13 @@ export default function Navbar() {
                   className="font-display"
                   style={{
                     textDecoration: 'none',
-                    fontSize:       'clamp(1.8rem, 6vw, 2.5rem)',
+                    fontSize:       'clamp(2rem, 7vw, 3rem)',
                     fontWeight:     300,
                     fontStyle:      isActive(l.href) ? 'italic' : 'normal',
-                    color:          isActive(l.href) ? 'var(--accent)' : 'var(--text-primary)',
+                    color:          isActive(l.href) ? '#C8913A' : '#EDE8DF',
                     display:        'block',
                     letterSpacing:  '0.02em',
-                    transition:     'color 0.2s ease',
+                    fontFamily:     'var(--font-cormorant), Georgia, serif',
                   }}
                 >
                   {l.label}
@@ -157,9 +155,10 @@ export default function Navbar() {
               right:      '1.5rem',
               background: 'none',
               border:     'none',
-              color:      'var(--text-muted)',
+              color:      '#EDE8DF',
               cursor:     'pointer',
               padding:    '0.5rem',
+              zIndex:     9001,
             }}
             aria-label="Chiudi menu"
           >
