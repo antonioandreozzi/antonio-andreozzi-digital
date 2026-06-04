@@ -99,49 +99,49 @@ export default function Navbar() {
             position:        'fixed',
             top:             0,
             left:            0,
-            right:           0,
-            bottom:          0,
-            background:      '#09090B',
-            zIndex:          99999,
+            width:           '100vw',
+            height:          '100vh',
+            backgroundColor: '#000000',
+            zIndex:          2147483000,
             display:         'flex',
             flexDirection:   'column',
             justifyContent:  'center',
             alignItems:      'center',
+            gap:             '2rem',
           }}
         >
-          <ul className="list-none m-0 p-0 flex flex-col gap-8 text-center">
-            {links.map((l) => (
-              <li key={l.href}>
-                <Link
-                  href={l.href}
-                  onClick={() => setOpen(false)}
-                  className="font-display"
-                  style={{
-                    textDecoration: 'none',
-                    fontSize:       'clamp(2rem, 7vw, 3rem)',
-                    fontWeight:     300,
-                    fontStyle:      isActive(l.href) ? 'italic' : 'normal',
-                    color:          isActive(l.href) ? '#C8913A' : '#EDE8DF',
-                    display:        'block',
-                    letterSpacing:  '0.02em',
-                    fontFamily:     'var(--font-cormorant), Georgia, serif',
-                  }}
-                >
-                  {l.label}
-                </Link>
-              </li>
-            ))}
-            <li style={{ marginTop: '1rem' }}>
-              <Link
-                href="/lavora-con-me"
-                onClick={() => setOpen(false)}
-                className="cta-primary"
-                style={{ fontSize: '0.75rem' }}
-              >
-                Lavora con me
-              </Link>
-            </li>
-          </ul>
+          {links.map((l) => (
+            <a
+              key={l.href}
+              href={l.href}
+              onClick={() => setOpen(false)}
+              style={{
+                color:          '#ffffff',
+                fontSize:       '2rem',
+                fontWeight:     400,
+                textDecoration: 'none',
+                display:        'block',
+                padding:        '0.5rem 2rem',
+              }}
+            >
+              {l.label}
+            </a>
+          ))}
+          <a
+            href="/lavora-con-me"
+            onClick={() => setOpen(false)}
+            style={{
+              color:           '#C8913A',
+              fontSize:        '1rem',
+              fontWeight:      600,
+              textDecoration:  'none',
+              border:          '1px solid #C8913A',
+              padding:         '0.8rem 2rem',
+              marginTop:       '1rem',
+            }}
+          >
+            Lavora con me
+          </a>
 
           {/* Chiudi con X */}
           <button
