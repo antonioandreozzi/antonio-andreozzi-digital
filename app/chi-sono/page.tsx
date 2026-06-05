@@ -208,28 +208,25 @@ export default function ChiSono() {
                 </p>
               </div>
 
-              {/* Video placeholder — in attesa di YouTube */}
+              {/* Video YouTube */}
               <div className="lg:col-span-7 flex justify-center">
                 <div
                   style={{
-                    width:           '100%',
-                    maxWidth:        '560px',
-                    aspectRatio:     '16/9',
-                    background:      'var(--bg-card)',
-                    border:          '1px solid var(--border)',
-                    display:         'flex',
-                    flexDirection:   'column',
-                    alignItems:      'center',
-                    justifyContent:  'center',
-                    gap:             '1rem',
+                    width:      '100%',
+                    maxWidth:   '340px',
+                    aspectRatio:'9/16',
+                    border:     '1px solid var(--border)',
+                    overflow:   'hidden',
+                    flexShrink: 0,
                   }}
                 >
-                  <p style={{ fontSize: '0.65rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--accent)', fontFamily: 'var(--font-inter)' }}>
-                    Video in arrivo
-                  </p>
-                  <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', fontFamily: 'var(--font-inter)', fontWeight: 300, textAlign: 'center', padding: '0 2rem' }}>
-                    Carica il video su YouTube e mandami il link — lo incorporo in 2 minuti.
-                  </p>
+                  <iframe
+                    src="https://www.youtube.com/embed/YYB6Vbn1HLQ?rel=0&modestbranding=1"
+                    title="Antonio Andreozzi — Presentazione"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    style={{ width: '100%', height: '100%', border: 'none', display: 'block' }}
+                  />
                 </div>
               </div>
             </div>
