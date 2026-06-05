@@ -6,9 +6,9 @@ import PageHeader from '@/components/shared/PageHeader'
 import { Check, X } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Sistema — €9.000',
+  title: 'Sistema Brand €9.000 — 6 Mesi di Accompagnamento 1:1 | Antonio Andreozzi',
   description:
-    'Sei mesi di lavoro continuativo. Brand Architecture completa: identità, posizionamento, voce, contenuti e sistema commerciale. 12 sessioni 1:1.',
+    'Brand Architecture completa in 6 mesi: 12 sessioni 1:1, identità, posizionamento, voce, contenuti e sistema commerciale. Per PMI e professionisti italiani.',
 }
 
 const includes = [

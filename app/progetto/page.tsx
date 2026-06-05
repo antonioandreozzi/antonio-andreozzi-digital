@@ -6,9 +6,9 @@ import PageHeader from '@/components/shared/PageHeader'
 import { Check, X } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Progetto — €3.500',
+  title: 'Progetto Brand €3.500 — 8 Settimane 1:1 | Antonio Andreozzi',
   description:
-    'Otto settimane di lavoro insieme. 6 sessioni 1:1 per costruire il tuo brand: posizionamento, voce, sistema editoriale. Tutto consegnato in un manuale operativo.',
+    '6 sessioni 1:1 in 8 settimane per costruire posizionamento, tono di voce e sistema editoriale. Consegnato in un manuale operativo completo. Per freelancer e professionisti italiani.',
 }
 
 const includes = [

@@ -6,9 +6,20 @@ import PageHeader from '@/components/shared/PageHeader'
 import { Check, X } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Diagnosi — €497',
+  title: 'Diagnosi del Brand €497 — Sessione Intensiva 1:1 | Antonio Andreozzi',
   description:
-    'Una sessione di lavoro intensiva, solo tu e Antonio. 3 ore per capire dove sei, cosa non funziona nel tuo posizionamento e cosa fare subito.',
+    '3 ore di lavoro 1:1 per capire cosa non funziona nel tuo posizionamento e ricevere un piano scritto di priorità. Il punto di ingresso naturale per lavorare con Antonio Andreozzi.',
+}
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Diagnosi del Brand',
+  description: 'Sessione intensiva 1:1 di 3 ore per analizzare il posizionamento del brand e ricevere un piano scritto di priorità.',
+  provider: { '@type': 'Person', name: 'Antonio Andreozzi', url: 'https://www.antonioandreozzidigital.com' },
+  offers: { '@type': 'Offer', price: '497', priceCurrency: 'EUR', availability: 'https://schema.org/LimitedAvailability' },
+  areaServed: 'IT',
+  serviceType: 'Brand Strategy Consulting',
 }
 
 const includes = [
@@ -50,6 +61,7 @@ const faqs = [
 export default function Diagnosi() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <Navbar />
       <main id="main-content">
         <PageHeader

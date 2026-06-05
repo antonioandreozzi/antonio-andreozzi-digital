@@ -5,9 +5,9 @@ import Footer from '@/components/layout/Footer'
 import PageHeader from '@/components/shared/PageHeader'
 
 export const metadata: Metadata = {
-  title: 'Chi Sono',
+  title: 'Chi Sono — Antonio Andreozzi, Brand Strategist e Consulente Marketing',
   description:
-    'Tutto è iniziato con una videocamera e tanta immaginazione. La storia di Antonio Andreozzi: creatività, due fallimenti, un conservatorio e il marketing che costruisce identità.',
+    'La storia di Antonio Andreozzi: da due fallimenti a brand strategist. Aiuta imprenditori italiani a costruire identità di brand che durano. Basato a Caserta, lavora in tutta Italia.',
 }
 
 const chapters = [
@@ -67,7 +67,7 @@ export default function ChiSono() {
                 >
                   <Image
                     src="/antonio.jpg"
-                    alt="Antonio Andreozzi — Marketing Strategist"
+                    alt="Antonio Andreozzi, consulente brand strategy e marketing digitale a Caserta"
                     fill
                     style={{ objectFit: 'cover', objectPosition: 'center top' }}
                     sizes="(max-width: 1024px) 100vw, 33vw"

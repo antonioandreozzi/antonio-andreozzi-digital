@@ -6,9 +6,9 @@ import PageHeader from '@/components/shared/PageHeader'
 import { Check, X } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Cattedrale — Progetto Annuale',
+  title: 'Cattedrale — Trasformazione Brand Annuale | Antonio Andreozzi',
   description:
-    'Dodici mesi di lavoro insieme. La trasformazione completa del tuo brand: identità, strategia, cultura, comunicazione, sistema commerciale. Max 2 clienti/anno.',
+    '12 mesi di accompagnamento continuativo per trasformare identità, strategia, cultura e sistema commerciale della tua azienda. Max 2 clienti/anno. Per imprenditori PMI italiani.',
 }
 
 const includes = [

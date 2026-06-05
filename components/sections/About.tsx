@@ -28,7 +28,7 @@ export default function About() {
             >
               <Image
                 src="/antonio.jpg"
-                alt="Antonio Andreozzi — Marketing Strategist"
+                alt="Antonio Andreozzi, consulente brand strategy e marketing digitale a Caserta"
                 fill
                 style={{ objectFit: 'cover', objectPosition: 'center top' }}
                 sizes="(max-width: 1024px) 100vw, 50vw"

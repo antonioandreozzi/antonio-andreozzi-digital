@@ -6,9 +6,9 @@ import Footer from '@/components/layout/Footer'
 import { ArrowUpRight, Mail } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Lavora con Me',
+  title: 'Consulenza Brand e Marketing — Lavora con Antonio Andreozzi',
   description:
-    'Le aziende italiane non hanno un problema di marketing. Hanno un problema di brand. Aiuto imprenditori di PMI e liberi professionisti a costruire un brand che vale quanto vale la loro attività.',
+    'Consulenza brand strategy 1:1 per imprenditori italiani, PMI e professionisti. Diagnosi, Progetto, Sistema e Cattedrale: quattro percorsi per costruire un brand che comunica quanto vali.',
 }
 
 const services = [
@@ -167,7 +167,7 @@ export default function LavoraConMe() {
                 >
                   <Image
                     src="/antonio.jpg"
-                    alt="Antonio Andreozzi — Marketing Strategist"
+                    alt="Antonio Andreozzi, consulente brand strategy e marketing digitale a Caserta"
                     fill
                     style={{ objectFit: 'cover', objectPosition: 'center top' }}
                     sizes="(max-width: 1024px) 100vw, 40vw"
