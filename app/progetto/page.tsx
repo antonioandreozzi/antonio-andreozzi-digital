@@ -11,6 +11,17 @@ export const metadata: Metadata = {
     '6 sessioni 1:1 in 8 settimane per costruire posizionamento, tono di voce e sistema editoriale. Consegnato in un manuale operativo completo. Per freelancer e professionisti italiani.',
 }
 
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Progetto Brand',
+  description: '6 sessioni 1:1 in 8 settimane per costruire posizionamento, tono di voce e sistema editoriale. Consegnato in un manuale operativo completo.',
+  provider: { '@type': 'Person', name: 'Antonio Andreozzi', url: 'https://www.antonioandreozzidigital.com' },
+  offers: { '@type': 'Offer', price: '3500', priceCurrency: 'EUR', availability: 'https://schema.org/LimitedAvailability' },
+  areaServed: 'IT',
+  serviceType: 'Brand Strategy Consulting',
+}
+
 const includes = [
   '6 sessioni live 1:1 (90 min, ogni ~10 giorni)',
   'Analisi iniziale del tuo brand',
@@ -54,6 +65,7 @@ const faqs = [
 export default function Progetto() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <Navbar />
       <main id="main-content">
         <PageHeader

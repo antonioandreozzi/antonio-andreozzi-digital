@@ -11,6 +11,17 @@ export const metadata: Metadata = {
     'Brand Architecture completa in 6 mesi: 12 sessioni 1:1, identità, posizionamento, voce, contenuti e sistema commerciale. Per PMI e professionisti italiani.',
 }
 
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Sistema Brand',
+  description: 'Brand Architecture completa in 6 mesi: 12 sessioni 1:1, identità, posizionamento, voce, contenuti e sistema commerciale.',
+  provider: { '@type': 'Person', name: 'Antonio Andreozzi', url: 'https://www.antonioandreozzidigital.com' },
+  offers: { '@type': 'Offer', price: '9000', priceCurrency: 'EUR', availability: 'https://schema.org/LimitedAvailability' },
+  areaServed: 'IT',
+  serviceType: 'Brand Strategy Consulting',
+}
+
 const includes = [
   '12 sessioni live 1:1 (90 min, ogni 2 settimane)',
   'Brand audit completo iniziale',
@@ -63,6 +74,7 @@ const faqs = [
 export default function Sistema() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <Navbar />
       <main id="main-content">
         <PageHeader

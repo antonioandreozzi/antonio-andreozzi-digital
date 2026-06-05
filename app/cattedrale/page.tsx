@@ -11,6 +11,17 @@ export const metadata: Metadata = {
     '12 mesi di accompagnamento continuativo per trasformare identità, strategia, cultura e sistema commerciale della tua azienda. Max 2 clienti/anno. Per imprenditori PMI italiani.',
 }
 
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Cattedrale — Progetto Brand Annuale',
+  description: '12 mesi di accompagnamento continuativo per trasformare identità, strategia, cultura, comunicazione e sistema commerciale. Max 2 clienti/anno.',
+  provider: { '@type': 'Person', name: 'Antonio Andreozzi', url: 'https://www.antonioandreozzidigital.com' },
+  offers: { '@type': 'Offer', price: '22000', priceCurrency: 'EUR', availability: 'https://schema.org/LimitedAvailability' },
+  areaServed: 'IT',
+  serviceType: 'Brand Strategy Consulting',
+}
+
 const includes = [
   'Sessioni mensili 1:1 (90 min) + sessioni bimestrali (3 ore)',
   'Accesso email/messaggio continuo durante i 12 mesi',
@@ -36,6 +47,7 @@ const quarters = [
 export default function Cattedrale() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <Navbar />
       <main id="main-content">
         <PageHeader
