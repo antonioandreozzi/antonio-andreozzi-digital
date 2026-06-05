@@ -1,0 +1,158 @@
+[
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "domanda",
+        "type": "string"
+      },
+      {
+        "rows": 4,
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "risposta",
+        "type": "text"
+      },
+      {
+        "description": "Numero per ordinare le FAQ (1 = prima)",
+        "name": "ordine",
+        "type": "number",
+        "title": "Ordine (numero)"
+      }
+    ],
+    "name": "faq",
+    "type": "document",
+    "title": "FAQ"
+  },
+  {
+    "fields": [
+      {
+        "description": "Es: Il Tuo Brand Vale Quanto Riesci a Farlo Capire.",
+        "name": "heroTitolo",
+        "type": "string",
+        "title": "Hero — Titolo principale"
+      },
+      {
+        "rows": 3,
+        "name": "heroSottotitolo",
+        "type": "text",
+        "title": "Hero — Sottotitolo"
+      },
+      {
+        "description": "Es: Le imprese italiane non hanno un problema di visibilità.",
+        "name": "problemaTitolo1",
+        "type": "string",
+        "title": "Sezione Problema — Prima frase"
+      },
+      {
+        "description": "Es: Hanno un problema di forma.",
+        "name": "problemaTitolo2",
+        "type": "string",
+        "title": "Sezione Problema — Seconda frase (in oro)"
+      },
+      {
+        "name": "ctaTitolo",
+        "type": "string",
+        "title": "CTA finale — Titolo"
+      },
+      {
+        "rows": 2,
+        "name": "ctaSottotitolo",
+        "type": "text",
+        "title": "CTA finale — Sottotitolo"
+      }
+    ],
+    "name": "homepage",
+    "type": "document"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "codice",
+        "type": "string",
+        "title": "Codice (es. DIAGNOSI)"
+      },
+      {
+        "name": "prezzo",
+        "type": "string",
+        "title": "Prezzo (es. €497)"
+      },
+      {
+        "name": "formato",
+        "type": "string",
+        "title": "Formato (es. Sessione unica 1:1 · 3 ore)"
+      },
+      {
+        "name": "tagline",
+        "type": "string",
+        "title": "Tagline breve"
+      },
+      {
+        "rows": 4,
+        "name": "descrizione",
+        "type": "text"
+      },
+      {
+        "name": "postiDisponibili",
+        "type": "string",
+        "title": "Posti disponibili (es. 2 posti disponibili questo mese)"
+      },
+      {
+        "options": {
+          "source": "codice"
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "custom"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "slug",
+        "type": "slug",
+        "title": "URL pagina (es. /diagnosi)"
+      },
+      {
+        "name": "ordine",
+        "type": "number",
+        "title": "Ordine visualizzazione"
+      }
+    ],
+    "name": "servizio",
+    "type": "document",
+    "title": "Servizi"
+  }
+]
