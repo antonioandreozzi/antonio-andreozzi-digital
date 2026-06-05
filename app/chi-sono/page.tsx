@@ -208,32 +208,28 @@ export default function ChiSono() {
                 </p>
               </div>
 
-              {/* Video */}
+              {/* Video placeholder — in attesa di YouTube */}
               <div className="lg:col-span-7 flex justify-center">
                 <div
                   style={{
-                    position:   'relative',
-                    width:      '100%',
-                    maxWidth:   '420px',   /* limita larghezza su desktop */
-                    border:     '1px solid var(--border)',
-                    overflow:   'hidden',
+                    width:           '100%',
+                    maxWidth:        '560px',
+                    aspectRatio:     '16/9',
+                    background:      'var(--bg-card)',
+                    border:          '1px solid var(--border)',
+                    display:         'flex',
+                    flexDirection:   'column',
+                    alignItems:      'center',
+                    justifyContent:  'center',
+                    gap:             '1rem',
                   }}
                 >
-                  <video
-                    controls
-                    playsInline
-                    preload="metadata"
-                    style={{
-                      width:      '100%',
-                      display:    'block',
-                      maxHeight:  '70vh',  /* non occupa tutto lo schermo su mobile */
-                      objectFit:  'contain',
-                      background: '#000',
-                    }}
-                  >
-                    <source src="/video.presentazione.mp4" type="video/mp4" />
-                    Il tuo browser non supporta la riproduzione video.
-                  </video>
+                  <p style={{ fontSize: '0.65rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--accent)', fontFamily: 'var(--font-inter)' }}>
+                    Video in arrivo
+                  </p>
+                  <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', fontFamily: 'var(--font-inter)', fontWeight: 300, textAlign: 'center', padding: '0 2rem' }}>
+                    Carica il video su YouTube e mandami il link — lo incorporo in 2 minuti.
+                  </p>
                 </div>
               </div>
             </div>
