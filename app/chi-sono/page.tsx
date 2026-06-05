@@ -179,6 +179,67 @@ export default function ChiSono() {
           </div>
         </section>
 
+        {/* Video presentazione */}
+        <section
+          className="section-padding"
+          style={{ background: 'var(--bg-surface)', borderTop: '1px solid var(--border)' }}
+        >
+          <div className="container-site">
+            <div className="flex items-center gap-3 mb-10">
+              <span style={{ display: 'block', width: '24px', height: '1px', background: 'var(--accent)' }} />
+              <span style={{ fontSize: '0.65rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--accent)', fontWeight: 500, fontFamily: 'var(--font-inter)' }}>
+                Guardami in faccia
+              </span>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+              {/* Copy */}
+              <div className="lg:col-span-5">
+                <h2
+                  className="font-display"
+                  style={{ fontSize: 'clamp(1.6rem, 3vw, 2.5rem)', fontWeight: 300, lineHeight: 1.15, color: 'var(--text-primary)', marginBottom: '1.2rem' }}
+                >
+                  Prima di lavorare insieme,
+                  <br />
+                  <em style={{ color: 'var(--accent)', fontStyle: 'italic' }}>ascoltami.</em>
+                </h2>
+                <p style={{ fontSize: '0.92rem', lineHeight: 1.8, color: 'var(--text-muted)', fontFamily: 'var(--font-inter)', fontWeight: 300 }}>
+                  Ho girato questo video per raccontarti chi sono, come lavoro e perché faccio quello che faccio. Tre minuti che ti dicono se siamo compatibili prima ancora di scrivermi.
+                </p>
+              </div>
+
+              {/* Video */}
+              <div className="lg:col-span-7 flex justify-center">
+                <div
+                  style={{
+                    position:   'relative',
+                    width:      '100%',
+                    maxWidth:   '420px',   /* limita larghezza su desktop */
+                    border:     '1px solid var(--border)',
+                    overflow:   'hidden',
+                  }}
+                >
+                  <video
+                    controls
+                    playsInline
+                    preload="metadata"
+                    style={{
+                      width:      '100%',
+                      display:    'block',
+                      maxHeight:  '70vh',  /* non occupa tutto lo schermo su mobile */
+                      objectFit:  'contain',
+                      background: '#000',
+                    }}
+                  >
+                    <source src="/video-presentazione.mp4" type="video/mp4" />
+                    Il tuo browser non supporta la riproduzione video.
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* What I work with */}
         <section className="section-padding" style={{ background: 'var(--bg-void)', borderTop: '1px solid var(--border)' }}>
           <div className="container-site">
