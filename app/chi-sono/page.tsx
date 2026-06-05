@@ -231,7 +231,7 @@ export default function ChiSono() {
                       background: '#000',
                     }}
                   >
-                    <source src="/video-presentazione.mp4" type="video/mp4" />
+                    <source src="/video.presentazione.mp4" type="video/mp4" />
                     Il tuo browser non supporta la riproduzione video.
                   </video>
                 </div>
