@@ -60,11 +60,11 @@ export default function LoadingScreen() {
     tl.to(bar, { scaleX: 1, duration: 1.8, ease: 'power2.inOut' }, 0)
 
     // Linea 1 scramble
-    tl.call(() => scramble(line1, 'ANTONIO ANDREOZZI', 1.0), [], 0.2)
+    tl.call(() => scramble(line1, 'WE MOVE MARKETS', 1.0), [], 0.2)
     tl.to(line1, { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' }, 0.2)
 
     // Linea 2 scramble
-    tl.call(() => scramble(line2, 'DIGITAL', 0.7), [], 0.8)
+    tl.call(() => scramble(line2, '', 0.7), [], 0.8)
     tl.to(line2, { opacity: 1, y: 0, duration: 0.5, ease: 'power3.out' }, 0.8)
 
     // Pausa
@@ -122,7 +122,7 @@ export default function LoadingScreen() {
             marginBottom:  '0.4rem',
           }}
         >
-          ANTONIO ANDREOZZI
+          WE MOVE MARKETS
         </div>
 
         <div
@@ -138,7 +138,6 @@ export default function LoadingScreen() {
             fontStyle:     'italic',
           }}
         >
-          DIGITAL
         </div>
 
         <div style={{ margin:'2rem auto', width:'40px', height:'1px', background:'var(--border)' }} />
