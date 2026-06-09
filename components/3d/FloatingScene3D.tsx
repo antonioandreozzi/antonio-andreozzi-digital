@@ -225,6 +225,7 @@ function Scene({ isMobile }: { isMobile: boolean }) {
 export default function FloatingScene3D() {
   const [isMobile, setIsMobile] = useState(false)
   const [reduced, setReduced]   = useState(false)
+  const canvasRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -237,14 +238,39 @@ export default function FloatingScene3D() {
     return () => window.removeEventListener('resize', check)
   }, [])
 
+  // Fade out quando l'utente smette di scrollare, fade in quando riprende
+  useEffect(() => {
+    if (reduced) return
+    const el = canvasRef.current
+    if (!el) return
+
+    let timeout: ReturnType<typeof setTimeout>
+
+    const onScroll = () => {
+      // Appena arriva uno scroll event → fade in
+      el.style.transition = 'opacity 0.3s ease'
+      el.style.opacity = '1'
+
+      // Reset timeout: se non arriva un altro evento per 600ms → fade out
+      clearTimeout(timeout)
+      timeout = setTimeout(() => {
+        el.style.transition = 'opacity 0.8s ease'
+        el.style.opacity = '0'
+      }, 600)
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => {
+      window.removeEventListener('scroll', onScroll)
+      clearTimeout(timeout)
+    }
+  }, [reduced])
+
   if (reduced) return null
 
   return (
-    <Canvas
-      camera={{ position: [0, 0, 5], fov: 60 }}
-      gl={{ alpha: true, antialias: false, powerPreference: 'low-power' }}
-      dpr={[1, isMobile ? 1 : 1.5]}
-      aria-hidden="true"
+    <div
+      ref={canvasRef}
       style={{
         position:      'fixed',
         inset:         0,
@@ -252,9 +278,18 @@ export default function FloatingScene3D() {
         pointerEvents: 'none',
         width:         '100vw',
         height:        '100vh',
+        opacity:       0, // parte invisibile, appare solo quando si scrolla
       }}
+      aria-hidden="true"
     >
-      <Scene isMobile={isMobile} />
-    </Canvas>
+      <Canvas
+        camera={{ position: [0, 0, 5], fov: 60 }}
+        gl={{ alpha: true, antialias: false, powerPreference: 'low-power' }}
+        dpr={[1, isMobile ? 1 : 1.5]}
+        style={{ width: '100%', height: '100%' }}
+      >
+        <Scene isMobile={isMobile} />
+      </Canvas>
+    </div>
   )
 }
