@@ -1,6 +1,5 @@
 'use client'
 import { useEffect, useState } from 'react'
-import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
 
@@ -37,7 +36,7 @@ export default function Navbar() {
       <div className="container-site">
         <nav className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link
+          <a
             href="/"
             style={{
               textDecoration: 'none',
@@ -50,13 +49,13 @@ export default function Navbar() {
           >
             We Move
             <span style={{ color: 'var(--accent)' }}> Markets</span>
-          </Link>
+          </a>
 
           {/* Desktop nav */}
           <ul className="hidden md:flex items-center gap-8 list-none m-0 p-0">
             {links.map((l) => (
               <li key={l.href}>
-                <Link
+                <a
                   href={l.href}
                   style={{
                     textDecoration: 'none',
@@ -72,16 +71,16 @@ export default function Navbar() {
                   }}
                 >
                   {l.label}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
 
           {/* CTA + hamburger */}
           <div className="flex items-center gap-4">
-            <Link href="/lavora-con-me" className="cta-primary hidden md:inline-flex">
+            <a href="/lavora-con-me" className="cta-primary hidden md:inline-flex">
               Lavora con me
-            </Link>
+            </a>
             <button
               className="md:hidden flex items-center justify-center w-12 h-12"
               style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#EDE8DF', padding: '8px' }}
