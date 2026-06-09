@@ -286,7 +286,7 @@ export default function FloatingScene3D() {
         camera={{ position: [0, 0, 5], fov: 60 }}
         gl={{ alpha: true, antialias: false, powerPreference: 'low-power' }}
         dpr={[1, isMobile ? 1 : 1.5]}
-        style={{ width: '100%', height: '100%' }}
+        style={{ width: '100%', height: '100%', pointerEvents: 'none' }}
       >
         <Scene isMobile={isMobile} />
       </Canvas>
