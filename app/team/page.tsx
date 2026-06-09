@@ -38,7 +38,7 @@ const team = [
     facts: [
       { label: 'Specializzazione', value: 'Strategia & Crescita Digitale' },
       { label: 'Focus', value: 'Sistemi, metriche, esecuzione' },
-      { label: 'Approccio', value: 'Prima la chiarezza, poi l\'azione' },
+      { label: 'Sede', value: 'Caserta · Remote Italia' },
     ],
   },
 ]
