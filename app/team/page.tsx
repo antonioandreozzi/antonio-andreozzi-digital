@@ -27,6 +27,21 @@ const team = [
     ],
   },
   {
+    img: '/giulio-ranieri.png',
+    name: 'Giulio Ranieri',
+    role: 'Content & Brand Specialist',
+    bio: [
+      'Ha costruito la sua carriera attorno a una convinzione: che ogni brand abbia una voce precisa, e che il contenuto sia lo strumento più potente per farla sentire. Lavora sulla narrazione, sul copy e sull\'identità visiva dei progetti più ambiziosi dell\'agenzia.',
+      'Il suo approccio unisce sensibilità creativa e visione strategica. Trasforma brief complessi in contenuti che parlano alle persone giuste, nel momento giusto, con le parole giuste.',
+      'In agenzia è il punto di contatto tra la strategia e ciò che il pubblico vede, legge e ricorda.',
+    ],
+    facts: [
+      { label: 'Specializzazione', value: 'Content Strategy & Brand Voice' },
+      { label: 'Focus', value: 'Storytelling, copy, identità visiva' },
+      { label: 'Sede', value: 'Caserta · Remote Italia' },
+    ],
+  },
+  {
     img: '/luca-damiani.png',
     name: 'Luca Damiani',
     role: 'Head of Strategy',
