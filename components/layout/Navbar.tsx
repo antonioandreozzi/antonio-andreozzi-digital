@@ -9,6 +9,7 @@ const links = [
   { label: 'Blog',             href: '/blog' },
   { label: 'Video',            href: '/video' },
   { label: 'Risorse Gratuite', href: '/risorse' },
+  { label: 'Team',             href: '/team' },
 ]
 
 export default function Navbar() {
