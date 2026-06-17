@@ -1,4 +1,5 @@
-import Link from 'next/link'
+'use client'
+import Script from 'next/script'
 
 const social = [
   { label: 'Instagram',  href: 'https://www.instagram.com/antonioandreozzidigital' },
@@ -148,24 +149,38 @@ export default function Footer() {
             © {year} Antonio Andreozzi Digital · Via G. Corrado, 15 – 81030 Parete (CE)
           </p>
           <div className="flex gap-6">
-            {['Privacy Policy', 'Cookie Policy'].map((l) => (
-              <a
-                key={l}
-                href="#"
-                style={{
-                  fontSize: '0.7rem',
-                  color: 'var(--text-muted)',
-                  fontFamily: 'var(--font-inter)',
-                  textDecoration: 'none',
-                  transition: 'color 0.2s',
-                }}
-              >
-                {l}
-              </a>
-            ))}
+            <a
+              href="https://www.iubenda.com/privacy-policy/35973540"
+              className="iubenda-white iubenda-noiframe iubenda-embed"
+              title="Privacy Policy"
+              style={{
+                fontSize: '0.7rem',
+                color: 'var(--text-muted)',
+                fontFamily: 'var(--font-inter)',
+                textDecoration: 'none',
+                transition: 'color 0.2s',
+              }}
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="https://www.iubenda.com/privacy-policy/35973540/cookie-policy"
+              className="iubenda-white iubenda-noiframe iubenda-embed"
+              title="Cookie Policy"
+              style={{
+                fontSize: '0.7rem',
+                color: 'var(--text-muted)',
+                fontFamily: 'var(--font-inter)',
+                textDecoration: 'none',
+                transition: 'color 0.2s',
+              }}
+            >
+              Cookie Policy
+            </a>
           </div>
         </div>
       </div>
     </footer>
+    <Script src="https://cdn.iubenda.com/iubenda.js" strategy="lazyOnload" />
   )
 }

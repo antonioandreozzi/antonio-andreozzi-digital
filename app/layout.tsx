@@ -110,6 +110,17 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
         />
+        {/* iubenda Cookie Solution */}
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `var _iub = _iub || [];
+_iub.csConfiguration = {"siteId":4004204,"cookiePolicyId":35973540,"storage":{"useSiteId":true}};
+_iub.csLangConfiguration = {"it":{"cookiePolicyId":35973540}};`,
+          }}
+        />
+        <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/4004204.js" async />
+        <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charSet="UTF-8" async />
       </head>
       <body className="min-h-screen scene-3d">
         <a href="#main-content" className="skip-link">
