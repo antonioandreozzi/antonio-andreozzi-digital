@@ -122,7 +122,24 @@ export default function RootLayout({
         {/* iubenda — config prima degli script */}
         <Script id="iubenda-config" strategy="beforeInteractive">{`
           var _iub = _iub || [];
-          _iub.csConfiguration = {"siteId":4004204,"cookiePolicyId":35973540,"storage":{"useSiteId":true}};
+          _iub.csConfiguration = {
+            "siteId": 4004204,
+            "cookiePolicyId": 35973540,
+            "storage": {"useSiteId": true},
+            "banner": {
+              "backgroundColor": "#ffffff",
+              "textColor": "#1a1a1a",
+              "btnColorBg": "#C8913A",
+              "btnColorText": "#ffffff",
+              "btnCaptionColor": "#ffffff",
+              "btnBgColor": "#C8913A",
+              "brandTextColor": "#C8913A",
+              "acceptButtonColor": "#C8913A",
+              "acceptButtonCaptionColor": "#ffffff",
+              "customizeButtonColor": "#f5f0e8",
+              "customizeButtonCaptionColor": "#1a1a1a"
+            }
+          };
           _iub.csLangConfiguration = {"it":{"cookiePolicyId":35973540}};
         `}</Script>
         <Script src="https://cs.iubenda.com/autoblocking/4004204.js" strategy="beforeInteractive" />
