@@ -1,5 +1,3 @@
-'use client'
-import Script from 'next/script'
 
 const social = [
   { label: 'Instagram',   href: 'https://www.instagram.com/antonioandreozzidigital' },
@@ -182,7 +180,6 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-      <Script src="https://cdn.iubenda.com/iubenda.js" strategy="lazyOnload" />
     </>
   )
 }
