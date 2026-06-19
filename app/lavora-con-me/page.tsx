@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
-import { ArrowUpRight, Mail } from 'lucide-react'
+import { ArrowUpRight, Mail, MessageCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Consulenza Brand e Marketing — Lavora con Antonio Andreozzi',
@@ -378,7 +378,11 @@ export default function LavoraConMe() {
               Scrivi e dimmi dove sei. Il punto di ingresso è la Diagnosi — 3 ore di lavoro insieme per capire esattamente cosa non funziona e da dove partire.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a href="mailto:antonioandreozzidigital@gmail.com" className="cta-primary">
+              <a href="https://wa.me/393334342510" target="_blank" rel="noopener noreferrer" className="cta-primary">
+                <MessageCircle size={14} />
+                Scrivimi su WhatsApp
+              </a>
+              <a href="mailto:antonioandreozzidigital@gmail.com" className="cta-ghost">
                 <Mail size={14} />
                 Scrivimi
               </a>
