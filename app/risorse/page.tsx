@@ -3,11 +3,17 @@ import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import PageHeader from '@/components/shared/PageHeader'
 import NewsletterForm from '@/components/shared/NewsletterForm'
+import { Download } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Risorse Gratuite — In Costruzione | Antonio Andreozzi',
+  title: 'Risorse Gratuite | Antonio Andreozzi',
   description:
-    'Guide, template e checklist su brand, marketing e AI. Contenuti gratuiti in arrivo per imprenditori e professionisti italiani.',
+    'Guide, template e checklist su brand, marketing e AI. Scarica gratis "I 7 segnali che il tuo brand non comunica quanto vali".',
+}
+
+const risorsaDisponibile = {
+  titolo: 'I 7 segnali che il tuo brand non comunica quanto vali',
+  href: '/guida-7-segnali-brand.pdf',
 }
 
 const risorsePreviste = [
@@ -36,8 +42,56 @@ export default function Risorse() {
           <div className="container-site">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
 
-              {/* Left: cosa sta arrivando */}
+              {/* Left: risorsa disponibile + cosa sta arrivando */}
               <div className="lg:col-span-7">
+                <div className="flex items-center gap-3 mb-6">
+                  <span style={{ display: 'block', width: '24px', height: '1px', background: 'var(--accent)' }} />
+                  <span style={{ fontSize: '0.65rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--accent)', fontWeight: 500, fontFamily: 'var(--font-inter)' }}>
+                    Disponibile ora
+                  </span>
+                </div>
+
+                <a
+                  href={risorsaDisponibile.href}
+                  download
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '1.5rem',
+                    border: '1px solid var(--accent)',
+                    background: 'var(--bg-card)',
+                    padding: 'clamp(1.2rem, 2.5vw, 1.8rem)',
+                    marginBottom: '3rem',
+                    textDecoration: 'none',
+                  }}
+                >
+                  <div
+                    style={{
+                      flexShrink: 0,
+                      width: '48px',
+                      height: '48px',
+                      borderRadius: '50%',
+                      background: 'var(--accent)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                    }}
+                  >
+                    <Download size={20} color="#0a0a0a" />
+                  </div>
+                  <div>
+                    <p
+                      className="font-display"
+                      style={{ fontSize: 'clamp(1rem, 1.8vw, 1.3rem)', fontWeight: 400, color: 'var(--text-primary)', fontStyle: 'italic', marginBottom: '0.3rem' }}
+                    >
+                      {risorsaDisponibile.titolo}
+                    </p>
+                    <p style={{ fontSize: '0.75rem', color: 'var(--accent)', fontFamily: 'var(--font-inter)', letterSpacing: '0.04em' }}>
+                      Scarica il PDF gratuito →
+                    </p>
+                  </div>
+                </a>
+
                 <div className="flex items-center gap-3 mb-10">
                   <span style={{ display: 'block', width: '24px', height: '1px', background: 'var(--accent)' }} />
                   <span style={{ fontSize: '0.65rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--accent)', fontWeight: 500, fontFamily: 'var(--font-inter)' }}>
