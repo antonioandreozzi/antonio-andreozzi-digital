@@ -13,6 +13,13 @@ const posts = [
   {
     date: 'Giu 2025',
     tag: 'Brand',
+    title: 'Perché le PMI italiane hanno un problema di brand, non di marketing',
+    excerpt: 'Aumentare il budget di marketing non basta se il brand non comunica il valore reale della tua attività. Ecco perché — e come si risolve davvero.',
+    slug: '/blog/pmi-italiane-problema-brand-non-marketing',
+  },
+  {
+    date: 'Giu 2025',
+    tag: 'Brand',
     title: 'Perché il tuo brand non viene ricordato (e come cambiarlo)',
     excerpt: 'La memoria non è un problema di budget. È un problema di chiarezza. Se non sai spiegare in 10 secondi cosa fai e per chi, nessuna campagna ti salverà.',
     slug: '#',
