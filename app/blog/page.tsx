@@ -9,57 +9,7 @@ export const metadata: Metadata = {
     'Articoli su brand, marketing, intelligenza artificiale e comunicazione. Niente tattiche del mese — solo riflessioni utili per chi costruisce qualcosa di duraturo.',
 }
 
-const posts = [
-  {
-    date: 'Giu 2025',
-    tag: 'Brand',
-    title: 'Perché le PMI italiane hanno un problema di brand, non di marketing',
-    excerpt: 'Aumentare il budget di marketing non basta se il brand non comunica il valore reale della tua attività. Ecco perché — e come si risolve davvero.',
-    slug: '/blog/pmi-italiane-problema-brand-non-marketing',
-  },
-  {
-    date: 'Giu 2025',
-    tag: 'Brand',
-    title: 'Perché il tuo brand non viene ricordato (e come cambiarlo)',
-    excerpt: 'La memoria non è un problema di budget. È un problema di chiarezza. Se non sai spiegare in 10 secondi cosa fai e per chi, nessuna campagna ti salverà.',
-    slug: '#',
-  },
-  {
-    date: 'Mag 2025',
-    tag: 'AI',
-    title: 'Come uso l\'AI nel mio lavoro quotidiano (senza perdere la voce)',
-    excerpt: "L'intelligenza artificiale non è un sostituto della strategia. È un amplificatore. Ti mostro come l'ho integrata senza che i miei contenuti diventassero generici.",
-    slug: '#',
-  },
-  {
-    date: 'Mag 2025',
-    tag: 'Comunicazione',
-    title: 'Il tone of voice non è un documento. È un comportamento.',
-    excerpt: 'Molte aziende hanno una brand guideline con il tone of voice. Pochissime lo applicano davvero. La differenza sta nel capire che è un modo di essere, non una lista di regole.',
-    slug: '#',
-  },
-  {
-    date: 'Apr 2025',
-    tag: 'Posizionamento',
-    title: 'Smettila di competere sul prezzo. Ecco come posizionarti diversamente.',
-    excerpt: 'Quando non riesci a spiegare il tuo valore, l\'unica leva rimasta è il prezzo. Questo articolo ti aiuta a uscire da quel loop.',
-    slug: '#',
-  },
-  {
-    date: 'Mar 2025',
-    tag: 'Content Strategy',
-    title: 'Il sistema editoriale che uso per i miei clienti (e per me stesso)',
-    excerpt: 'Produrre contenuti senza un sistema è come costruire senza fondamenta. Ti mostro la struttura che uso ogni mese per pianificare, creare e distribuire.',
-    slug: '#',
-  },
-  {
-    date: 'Feb 2025',
-    tag: 'Brand',
-    title: 'Identità vs. immagine: la distinzione che cambia tutto',
-    excerpt: "L'immagine è ciò che mostri. L'identità è ciò che sei. La maggior parte delle imprese lavora sull'immagine e si dimentica dell'identità. Il risultato è fragilità.",
-    slug: '#',
-  },
-]
+const posts: { date: string; tag: string; title: string; excerpt: string; slug: string }[] = []
 
 export default function Blog() {
   return (
