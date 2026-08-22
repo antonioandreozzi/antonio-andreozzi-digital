@@ -359,6 +359,84 @@ export default function LavoraConMe() {
           </div>
         </section>
 
+        {/* Soluzioni Digitali */}
+        <section
+          style={{
+            paddingTop: 'clamp(60px, 8vw, 100px)',
+            paddingBottom: 'clamp(60px, 8vw, 100px)',
+            background: 'var(--bg-void)',
+            borderTop: '1px solid var(--border)',
+          }}
+        >
+          <div className="container-site">
+            <div className="flex items-center gap-3 mb-4">
+              <span style={{ display: 'block', width: '24px', height: '1px', background: 'var(--accent)' }} />
+              <span style={{ fontSize: '0.65rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--accent)', fontWeight: 500, fontFamily: 'var(--font-inter)' }}>
+                Soluzioni Digitali
+              </span>
+            </div>
+            <h2
+              className="font-display"
+              style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 300, lineHeight: 1.1, color: 'var(--text-primary)', marginBottom: '1rem' }}
+            >
+              Non solo consulenza.
+              <br />
+              <em style={{ color: 'var(--accent)', fontStyle: 'italic' }}>Costruiamo anche il digitale.</em>
+            </h2>
+            <p style={{ fontSize: '0.95rem', lineHeight: 1.75, color: 'var(--text-muted)', fontFamily: 'var(--font-inter)', fontWeight: 300, maxWidth: '560px', marginBottom: '3rem' }}>
+              Per chi ha bisogno di passare dalla strategia all&apos;esecuzione: e-commerce pronti a vendere e app su misura per il tuo business.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-px" style={{ border: '1px solid var(--border)', background: 'var(--border)' }}>
+
+              {/* E-commerce */}
+              <div className="card-hover" style={{ padding: 'clamp(2rem, 4vw, 3rem)', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+                <div className="flex items-center justify-between">
+                  <span style={{ fontSize: '0.65rem', letterSpacing: '0.2em', color: 'var(--accent)', fontFamily: 'var(--font-inter)', fontWeight: 500 }}>E-COMMERCE</span>
+                  <span style={{ fontSize: '0.6rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--text-muted)', border: '1px solid var(--border)', padding: '0.3rem 0.7rem', fontFamily: 'var(--font-inter)' }}>Su misura · Chiavi in mano</span>
+                </div>
+                <h3 className="font-display" style={{ fontSize: 'clamp(1.2rem, 2vw, 1.8rem)', fontWeight: 400, lineHeight: 1.2, color: 'var(--text-primary)', fontStyle: 'italic' }}>
+                  Vendere online non è aprire uno shop. È costruire un sistema.
+                </h3>
+                <p style={{ fontSize: '0.88rem', lineHeight: 1.8, color: 'var(--text-muted)', fontFamily: 'var(--font-inter)', fontWeight: 300, flexGrow: 1 }}>
+                  Realizzo e-commerce per PMI, artigiani e liberi professionisti che vogliono vendere online senza dipendere da template generici. Dalla scelta della piattaforma alla messa online: identità visiva, schede prodotto ottimizzate, integrazione pagamenti, SEO locale.
+                </p>
+                <div className="flex flex-wrap gap-2" style={{ marginBottom: '0.5rem' }}>
+                  {['Shopify', 'WooCommerce', 'SEO locale', 'UX & Conversioni', 'Pagamenti integrati'].map((t) => (
+                    <span key={t} style={{ fontSize: '0.6rem', letterSpacing: '0.1em', color: 'var(--text-muted)', background: 'rgba(255,255,255,0.04)', padding: '0.2rem 0.5rem', fontFamily: 'var(--font-inter)' }}>{t}</span>
+                  ))}
+                </div>
+                <a href="mailto:antonioandreozzidigital@gmail.com" className="cta-ghost" style={{ alignSelf: 'flex-start' }}>
+                  Parliamo del tuo progetto →
+                </a>
+              </div>
+
+              {/* App */}
+              <div className="card-hover" style={{ padding: 'clamp(2rem, 4vw, 3rem)', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+                <div className="flex items-center justify-between">
+                  <span style={{ fontSize: '0.65rem', letterSpacing: '0.2em', color: 'var(--accent)', fontFamily: 'var(--font-inter)', fontWeight: 500 }}>APP & WEB APP</span>
+                  <span style={{ fontSize: '0.6rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--text-muted)', border: '1px solid var(--border)', padding: '0.3rem 0.7rem', fontFamily: 'var(--font-inter)' }}>Mobile & Web · Su misura</span>
+                </div>
+                <h3 className="font-display" style={{ fontSize: 'clamp(1.2rem, 2vw, 1.8rem)', fontWeight: 400, lineHeight: 1.2, color: 'var(--text-primary)', fontStyle: 'italic' }}>
+                  Un&apos;app che le persone usano davvero.
+                </h3>
+                <p style={{ fontSize: '0.88rem', lineHeight: 1.8, color: 'var(--text-muted)', fontFamily: 'var(--font-inter)', fontWeight: 300, flexGrow: 1 }}>
+                  Sviluppo applicazioni mobile e web per piccole e medie imprese e professionisti. Non template preconfezionati: soluzioni costruite intorno al tuo processo, al tuo cliente e alla tua identità. Gestionali, prenotazioni, cataloghi, portali clienti.
+                </p>
+                <div className="flex flex-wrap gap-2" style={{ marginBottom: '0.5rem' }}>
+                  {['App Mobile iOS & Android', 'Web App', 'Gestionale su misura', 'Portale clienti', 'Prenotazioni online'].map((t) => (
+                    <span key={t} style={{ fontSize: '0.6rem', letterSpacing: '0.1em', color: 'var(--text-muted)', background: 'rgba(255,255,255,0.04)', padding: '0.2rem 0.5rem', fontFamily: 'var(--font-inter)' }}>{t}</span>
+                  ))}
+                </div>
+                <a href="mailto:antonioandreozzidigital@gmail.com" className="cta-ghost" style={{ alignSelf: 'flex-start' }}>
+                  Parliamo del tuo progetto →
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
         {/* Final CTA */}
         <section
           style={{

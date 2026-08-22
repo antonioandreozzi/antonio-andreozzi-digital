@@ -25,6 +25,20 @@ const pillars = [
     body: "Non basta esserci. Serve che le persone sentano la tua voce e la riconoscano. Lavoriamo sul tono, sulle parole, sul ritmo della tua comunicazione — finché non diventa inequivocabilmente tua.",
     tags: ['Tono di voce', 'Copywriting', 'Content Strategy'],
   },
+  {
+    num: '04',
+    tag: 'E-commerce',
+    title: 'Vendere online non è aprire uno shop. È costruire un sistema.',
+    body: 'Realizzo e-commerce su misura per PMI, artigiani e liberi professionisti. Dalla strategia alla messa online: piattaforma, identità visiva, schede prodotto che convertono, integrazione pagamenti.',
+    tags: ['Shopify', 'WooCommerce', 'UX & Conversioni'],
+  },
+  {
+    num: '05',
+    tag: 'App',
+    title: 'Un\'app che le persone usano davvero',
+    body: 'Sviluppo applicazioni mobile e web per piccole e medie imprese e professionisti. Non template: soluzioni costruite intorno al tuo processo, al tuo cliente, alla tua identità.',
+    tags: ['App Mobile', 'Web App', 'Gestionale su misura'],
+  },
 ]
 
 export default function Pillars() {
@@ -76,7 +90,7 @@ export default function Pillars() {
         {/* Pillars grid */}
         <div
           ref={ref}
-          className="grid grid-cols-1 md:grid-cols-3 gap-px"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px"
           style={{
             opacity: inView ? 1 : 0,
             transform: inView ? 'translateY(0)' : 'translateY(24px)',
