@@ -219,6 +219,78 @@
       "keyword_secondarie": ["audience building Campania", "community brand Napoli", "follower fedeli PMI Caserta"],
       "status": "pending",
       "pubblicato": null
+    },
+    {
+      "id": 25,
+      "keyword_principale": "creare app PMI Caserta Napoli",
+      "titolo_base": "Perché la tua PMI ha bisogno di un'app (e cosa considerare prima di farla)",
+      "categoria": "App & Digital",
+      "keyword_secondarie": ["app piccole imprese Campania", "sviluppo app PMI Napoli", "app personalizzata freelancer Caserta", "app mobile business locale"],
+      "status": "pending",
+      "pubblicato": null
+    },
+    {
+      "id": 26,
+      "keyword_principale": "e-commerce PMI Caserta Napoli",
+      "titolo_base": "Come aprire un e-commerce a Caserta e Napoli che vende davvero (non solo che esiste)",
+      "categoria": "E-commerce",
+      "keyword_secondarie": ["creare e-commerce Campania", "vendere online PMI Napoli", "e-commerce piccole imprese Caserta", "Shopify WooCommerce Campania"],
+      "status": "pending",
+      "pubblicato": null
+    },
+    {
+      "id": 27,
+      "keyword_principale": "brand e-commerce Napoli Caserta",
+      "titolo_base": "Il motivo per cui il tuo e-commerce non vende: non è il sito, è il brand",
+      "categoria": "E-commerce",
+      "keyword_secondarie": ["identità e-commerce Campania", "brand shop online Napoli", "posizionamento e-commerce PMI", "strategia vendita online Caserta"],
+      "status": "pending",
+      "pubblicato": null
+    },
+    {
+      "id": 28,
+      "keyword_principale": "app libero professionista Napoli Caserta",
+      "titolo_base": "App per liberi professionisti: come digitalizzare il tuo lavoro senza perdere il contatto umano",
+      "categoria": "App & Digital",
+      "keyword_secondarie": ["digitalizzazione freelancer Campania", "app professioni Napoli", "strumenti digitali professionisti Caserta", "app gestione clienti PMI"],
+      "status": "pending",
+      "pubblicato": null
+    },
+    {
+      "id": 29,
+      "keyword_principale": "differenza tra sito web e app PMI",
+      "titolo_base": "Sito web o app: cosa serve davvero alla tua impresa a Caserta o Napoli",
+      "categoria": "App & Digital",
+      "keyword_secondarie": ["sito web vs app PMI Campania", "quando fare un'app Napoli", "investimento digitale piccole imprese Caserta"],
+      "status": "pending",
+      "pubblicato": null
+    },
+    {
+      "id": 30,
+      "keyword_principale": "e-commerce artigiani Campania Napoli Caserta",
+      "titolo_base": "Vendere online se sei un artigiano o un piccolo produttore in Campania: la guida concreta",
+      "categoria": "E-commerce",
+      "keyword_secondarie": ["artigiani online Napoli", "prodotti locali e-commerce Caserta", "vendere prodotti campani online", "shop online artigianato Campania"],
+      "status": "pending",
+      "pubblicato": null
+    },
+    {
+      "id": 31,
+      "keyword_principale": "costo sviluppo app PMI Campania",
+      "titolo_base": "Quanto costa davvero fare un'app per la tua impresa (e come non buttare i soldi)",
+      "categoria": "App & Digital",
+      "keyword_secondarie": ["prezzo app PMI Napoli", "budget sviluppo app Caserta", "investimento app piccole imprese", "costo app mobile Campania"],
+      "status": "pending",
+      "pubblicato": null
+    },
+    {
+      "id": 32,
+      "keyword_principale": "identità digitale impresa Caserta Napoli",
+      "titolo_base": "Prima del sito, prima dell'app, prima dell'e-commerce: costruisci l'identità",
+      "categoria": "Brand",
+      "keyword_secondarie": ["identità digitale PMI Campania", "brand prima del sito Napoli", "strategia digitale imprese Caserta", "fondamenta digitali business locale"],
+      "status": "pending",
+      "pubblicato": null
     }
   ]
 }
