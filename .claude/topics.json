@@ -9,16 +9,25 @@
       "keyword_principale": "consulente brand Caserta",
       "titolo_base": "Come costruire un brand riconoscibile a Caserta e Napoli senza budget da multinazionale",
       "categoria": "Brand",
-      "keyword_secondarie": ["brand identity Caserta", "costruire un brand Campania", "brand PMI Caserta", "identità di marca Napoli"],
-      "status": "pending",
-      "pubblicato": null
+      "keyword_secondarie": [
+        "brand identity Caserta",
+        "costruire un brand Campania",
+        "brand PMI Caserta",
+        "identità di marca Napoli"
+      ],
+      "status": "done",
+      "pubblicato": "2026-08-24"
     },
     {
       "id": 2,
       "keyword_principale": "personal brand Napoli",
       "titolo_base": "Personal brand per imprenditori del Sud Italia: da dove partire",
       "categoria": "Brand",
-      "keyword_secondarie": ["personal brand Caserta", "costruire personal brand Campania", "freelancer brand Napoli"],
+      "keyword_secondarie": [
+        "personal brand Caserta",
+        "costruire personal brand Campania",
+        "freelancer brand Napoli"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -27,7 +36,11 @@
       "keyword_principale": "posizionamento di marca Campania",
       "titolo_base": "Posizionamento di marca: come smettere di competere sul prezzo a Caserta e Napoli",
       "categoria": "Brand",
-      "keyword_secondarie": ["posizionamento aziendale Caserta", "differenziazione brand Napoli", "strategia di marca PMI"],
+      "keyword_secondarie": [
+        "posizionamento aziendale Caserta",
+        "differenziazione brand Napoli",
+        "strategia di marca PMI"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -36,7 +49,11 @@
       "keyword_principale": "brand identity Caserta",
       "titolo_base": "Identità vs. immagine: la distinzione che cambia tutto per le PMI campane",
       "categoria": "Brand",
-      "keyword_secondarie": ["identità di marca Napoli", "brand PMI Campania", "costruire identità aziendale"],
+      "keyword_secondarie": [
+        "identità di marca Napoli",
+        "brand PMI Campania",
+        "costruire identità aziendale"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -45,7 +62,11 @@
       "keyword_principale": "come costruire un brand Napoli",
       "titolo_base": "Come costruire un messaggio di brand chiaro in 7 giorni",
       "categoria": "Brand",
-      "keyword_secondarie": ["messaggio di brand Caserta", "comunicazione aziendale Napoli", "brand messaging PMI"],
+      "keyword_secondarie": [
+        "messaggio di brand Caserta",
+        "comunicazione aziendale Napoli",
+        "brand messaging PMI"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -54,7 +75,11 @@
       "keyword_principale": "perché il brand non viene ricordato",
       "titolo_base": "Perché il tuo brand non viene ricordato (e come cambiarlo)",
       "categoria": "Brand",
-      "keyword_secondarie": ["brand riconoscibile Napoli", "memoria di marca Caserta", "brand awareness PMI Campania"],
+      "keyword_secondarie": [
+        "brand riconoscibile Napoli",
+        "memoria di marca Caserta",
+        "brand awareness PMI Campania"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -63,7 +88,11 @@
       "keyword_principale": "AI per PMI Caserta Napoli",
       "titolo_base": "AI per PMI a Caserta e Napoli: gli strumenti che uso davvero",
       "categoria": "AI",
-      "keyword_secondarie": ["intelligenza artificiale PMI Campania", "strumenti AI freelancer Napoli", "AI marketing locale"],
+      "keyword_secondarie": [
+        "intelligenza artificiale PMI Campania",
+        "strumenti AI freelancer Napoli",
+        "AI marketing locale"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -72,7 +101,11 @@
       "keyword_principale": "intelligenza artificiale marketing Napoli",
       "titolo_base": "Come uso l'AI nel mio lavoro quotidiano senza perdere la voce",
       "categoria": "AI",
-      "keyword_secondarie": ["AI content marketing Caserta", "intelligenza artificiale comunicazione", "AI strategia marketing"],
+      "keyword_secondarie": [
+        "AI content marketing Caserta",
+        "intelligenza artificiale comunicazione",
+        "AI strategia marketing"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -81,7 +114,11 @@
       "keyword_principale": "creare contenuti AI senza sembrare robot",
       "titolo_base": "Come creare contenuti con l'AI senza sembrare un robot",
       "categoria": "AI",
-      "keyword_secondarie": ["AI copywriting Napoli", "contenuti autentici AI", "voce umana AI marketing"],
+      "keyword_secondarie": [
+        "AI copywriting Napoli",
+        "contenuti autentici AI",
+        "voce umana AI marketing"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -90,7 +127,11 @@
       "keyword_principale": "automazioni AI freelancer Napoli",
       "titolo_base": "Automazioni per freelancer: cosa delegare all'AI e cosa no",
       "categoria": "AI",
-      "keyword_secondarie": ["automazione marketing Caserta", "AI produttività freelancer", "workflow AI Campania"],
+      "keyword_secondarie": [
+        "automazione marketing Caserta",
+        "AI produttività freelancer",
+        "workflow AI Campania"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -99,7 +140,11 @@
       "keyword_principale": "AI trovare clienti Caserta Napoli",
       "titolo_base": "AI e marketing locale: come usarla per trovare clienti nella tua provincia",
       "categoria": "AI",
-      "keyword_secondarie": ["acquisire clienti AI Campania", "AI lead generation locale", "intelligenza artificiale clienti PMI"],
+      "keyword_secondarie": [
+        "acquisire clienti AI Campania",
+        "AI lead generation locale",
+        "intelligenza artificiale clienti PMI"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -108,7 +153,11 @@
       "keyword_principale": "tone of voice aziendale Napoli",
       "titolo_base": "Il tone of voice non è un documento, è un comportamento",
       "categoria": "Voce",
-      "keyword_secondarie": ["voce aziendale Caserta", "tone of voice PMI Campania", "comunicazione autentica brand"],
+      "keyword_secondarie": [
+        "voce aziendale Caserta",
+        "tone of voice PMI Campania",
+        "comunicazione autentica brand"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -117,7 +166,11 @@
       "keyword_principale": "trovare voce imprenditore Napoli",
       "titolo_base": "Come trovare la tua voce come imprenditore o freelancer",
       "categoria": "Voce",
-      "keyword_secondarie": ["comunicazione personale brand Caserta", "voce autentica imprenditore", "stile comunicativo freelancer Napoli"],
+      "keyword_secondarie": [
+        "comunicazione personale brand Caserta",
+        "voce autentica imprenditore",
+        "stile comunicativo freelancer Napoli"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -126,7 +179,11 @@
       "keyword_principale": "copywriting PMI Caserta Napoli",
       "titolo_base": "Copywriting per PMI: come scrivere testi che vendono senza sembrare venditori",
       "categoria": "Voce",
-      "keyword_secondarie": ["testi persuasivi Napoli", "copywriting aziendale Campania", "scrittura professionale PMI"],
+      "keyword_secondarie": [
+        "testi persuasivi Napoli",
+        "copywriting aziendale Campania",
+        "scrittura professionale PMI"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -135,7 +192,11 @@
       "keyword_principale": "storytelling business Napoli Caserta",
       "titolo_base": "Storytelling per il business: come raccontare la tua storia e attrarre clienti",
       "categoria": "Voce",
-      "keyword_secondarie": ["racconto aziendale Campania", "storia brand PMI Napoli", "narrazione imprenditore Caserta"],
+      "keyword_secondarie": [
+        "racconto aziendale Campania",
+        "storia brand PMI Napoli",
+        "narrazione imprenditore Caserta"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -144,7 +205,11 @@
       "keyword_principale": "professionista distinguersi online Caserta Napoli",
       "titolo_base": "Come un professionista di Caserta o Napoli può distinguersi online",
       "categoria": "Posizionamento",
-      "keyword_secondarie": ["differenziazione freelancer Campania", "visibilità online Caserta", "posizionamento digitale Napoli"],
+      "keyword_secondarie": [
+        "differenziazione freelancer Campania",
+        "visibilità online Caserta",
+        "posizionamento digitale Napoli"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -153,7 +218,11 @@
       "keyword_principale": "smettere competere sul prezzo Campania",
       "titolo_base": "Smettila di competere sul prezzo: il posizionamento che cambia le regole",
       "categoria": "Posizionamento",
-      "keyword_secondarie": ["valore percepito brand Napoli", "pricing strategico PMI", "posizionamento premium Caserta"],
+      "keyword_secondarie": [
+        "valore percepito brand Napoli",
+        "pricing strategico PMI",
+        "posizionamento premium Caserta"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -162,7 +231,11 @@
       "keyword_principale": "sistema marketing PMI Napoli Caserta",
       "titolo_base": "Come costruire un sistema di marketing che lavora anche quando non ci sei",
       "categoria": "Posizionamento",
-      "keyword_secondarie": ["marketing automatizzato PMI Campania", "sistema acquisizione clienti Napoli", "marketing scalabile Caserta"],
+      "keyword_secondarie": [
+        "marketing automatizzato PMI Campania",
+        "sistema acquisizione clienti Napoli",
+        "marketing scalabile Caserta"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -171,7 +244,11 @@
       "keyword_principale": "diagnosi brand PMI Caserta",
       "titolo_base": "Diagnosi di brand: come capire perché il tuo business non cresce come vorresti",
       "categoria": "Posizionamento",
-      "keyword_secondarie": ["audit brand Napoli", "analisi marketing PMI Campania", "problemi crescita business locale"],
+      "keyword_secondarie": [
+        "audit brand Napoli",
+        "analisi marketing PMI Campania",
+        "problemi crescita business locale"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -180,7 +257,11 @@
       "keyword_principale": "da freelancer a brand Napoli",
       "titolo_base": "Da freelancer a brand: il salto mentale che cambia tutto",
       "categoria": "Posizionamento",
-      "keyword_secondarie": ["crescita freelancer Caserta", "brand personale professionista Campania", "freelancer posizionamento Napoli"],
+      "keyword_secondarie": [
+        "crescita freelancer Caserta",
+        "brand personale professionista Campania",
+        "freelancer posizionamento Napoli"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -189,7 +270,11 @@
       "keyword_principale": "sistema editoriale PMI Napoli Caserta",
       "titolo_base": "Il sistema editoriale che uso con i miei clienti e per me stesso",
       "categoria": "Content Strategy",
-      "keyword_secondarie": ["piano editoriale PMI Campania", "content strategy locale", "calendario contenuti Caserta"],
+      "keyword_secondarie": [
+        "piano editoriale PMI Campania",
+        "content strategy locale",
+        "calendario contenuti Caserta"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -198,7 +283,11 @@
       "keyword_principale": "pianificare contenuti mese Napoli",
       "titolo_base": "Come pianificare i contenuti di un mese in 3 ore",
       "categoria": "Content Strategy",
-      "keyword_secondarie": ["piano contenuti mensile Caserta", "organizzare contenuti PMI", "content planning freelancer Campania"],
+      "keyword_secondarie": [
+        "piano contenuti mensile Caserta",
+        "organizzare contenuti PMI",
+        "content planning freelancer Campania"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -207,7 +296,11 @@
       "keyword_principale": "content strategy imprenditori locali Caserta Napoli",
       "titolo_base": "Content strategy per imprenditori locali: cosa pubblicare e quando",
       "categoria": "Content Strategy",
-      "keyword_secondarie": ["strategia contenuti PMI Campania", "pubblicare contenuti Napoli", "content marketing locale Caserta"],
+      "keyword_secondarie": [
+        "strategia contenuti PMI Campania",
+        "pubblicare contenuti Napoli",
+        "content marketing locale Caserta"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -216,7 +309,11 @@
       "keyword_principale": "costruire pubblico fedele Caserta Napoli",
       "titolo_base": "Come costruire un pubblico fedele partendo da zero a Caserta e Napoli",
       "categoria": "Content Strategy",
-      "keyword_secondarie": ["audience building Campania", "community brand Napoli", "follower fedeli PMI Caserta"],
+      "keyword_secondarie": [
+        "audience building Campania",
+        "community brand Napoli",
+        "follower fedeli PMI Caserta"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -225,7 +322,12 @@
       "keyword_principale": "creare app PMI Caserta Napoli",
       "titolo_base": "Perché la tua PMI ha bisogno di un'app (e cosa considerare prima di farla)",
       "categoria": "App & Digital",
-      "keyword_secondarie": ["app piccole imprese Campania", "sviluppo app PMI Napoli", "app personalizzata freelancer Caserta", "app mobile business locale"],
+      "keyword_secondarie": [
+        "app piccole imprese Campania",
+        "sviluppo app PMI Napoli",
+        "app personalizzata freelancer Caserta",
+        "app mobile business locale"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -234,7 +336,12 @@
       "keyword_principale": "e-commerce PMI Caserta Napoli",
       "titolo_base": "Come aprire un e-commerce a Caserta e Napoli che vende davvero (non solo che esiste)",
       "categoria": "E-commerce",
-      "keyword_secondarie": ["creare e-commerce Campania", "vendere online PMI Napoli", "e-commerce piccole imprese Caserta", "Shopify WooCommerce Campania"],
+      "keyword_secondarie": [
+        "creare e-commerce Campania",
+        "vendere online PMI Napoli",
+        "e-commerce piccole imprese Caserta",
+        "Shopify WooCommerce Campania"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -243,7 +350,12 @@
       "keyword_principale": "brand e-commerce Napoli Caserta",
       "titolo_base": "Il motivo per cui il tuo e-commerce non vende: non è il sito, è il brand",
       "categoria": "E-commerce",
-      "keyword_secondarie": ["identità e-commerce Campania", "brand shop online Napoli", "posizionamento e-commerce PMI", "strategia vendita online Caserta"],
+      "keyword_secondarie": [
+        "identità e-commerce Campania",
+        "brand shop online Napoli",
+        "posizionamento e-commerce PMI",
+        "strategia vendita online Caserta"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -252,7 +364,12 @@
       "keyword_principale": "app libero professionista Napoli Caserta",
       "titolo_base": "App per liberi professionisti: come digitalizzare il tuo lavoro senza perdere il contatto umano",
       "categoria": "App & Digital",
-      "keyword_secondarie": ["digitalizzazione freelancer Campania", "app professioni Napoli", "strumenti digitali professionisti Caserta", "app gestione clienti PMI"],
+      "keyword_secondarie": [
+        "digitalizzazione freelancer Campania",
+        "app professioni Napoli",
+        "strumenti digitali professionisti Caserta",
+        "app gestione clienti PMI"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -261,7 +378,11 @@
       "keyword_principale": "differenza tra sito web e app PMI",
       "titolo_base": "Sito web o app: cosa serve davvero alla tua impresa a Caserta o Napoli",
       "categoria": "App & Digital",
-      "keyword_secondarie": ["sito web vs app PMI Campania", "quando fare un'app Napoli", "investimento digitale piccole imprese Caserta"],
+      "keyword_secondarie": [
+        "sito web vs app PMI Campania",
+        "quando fare un'app Napoli",
+        "investimento digitale piccole imprese Caserta"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -270,7 +391,12 @@
       "keyword_principale": "e-commerce artigiani Campania Napoli Caserta",
       "titolo_base": "Vendere online se sei un artigiano o un piccolo produttore in Campania: la guida concreta",
       "categoria": "E-commerce",
-      "keyword_secondarie": ["artigiani online Napoli", "prodotti locali e-commerce Caserta", "vendere prodotti campani online", "shop online artigianato Campania"],
+      "keyword_secondarie": [
+        "artigiani online Napoli",
+        "prodotti locali e-commerce Caserta",
+        "vendere prodotti campani online",
+        "shop online artigianato Campania"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -279,7 +405,12 @@
       "keyword_principale": "costo sviluppo app PMI Campania",
       "titolo_base": "Quanto costa davvero fare un'app per la tua impresa (e come non buttare i soldi)",
       "categoria": "App & Digital",
-      "keyword_secondarie": ["prezzo app PMI Napoli", "budget sviluppo app Caserta", "investimento app piccole imprese", "costo app mobile Campania"],
+      "keyword_secondarie": [
+        "prezzo app PMI Napoli",
+        "budget sviluppo app Caserta",
+        "investimento app piccole imprese",
+        "costo app mobile Campania"
+      ],
       "status": "pending",
       "pubblicato": null
     },
@@ -288,7 +419,12 @@
       "keyword_principale": "identità digitale impresa Caserta Napoli",
       "titolo_base": "Prima del sito, prima dell'app, prima dell'e-commerce: costruisci l'identità",
       "categoria": "Brand",
-      "keyword_secondarie": ["identità digitale PMI Campania", "brand prima del sito Napoli", "strategia digitale imprese Caserta", "fondamenta digitali business locale"],
+      "keyword_secondarie": [
+        "identità digitale PMI Campania",
+        "brand prima del sito Napoli",
+        "strategia digitale imprese Caserta",
+        "fondamenta digitali business locale"
+      ],
       "status": "pending",
       "pubblicato": null
     }
