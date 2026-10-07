@@ -124,8 +124,8 @@ export default function FAQ() {
   return (
     <section
       id="faq"
-      className="section-padding"
-      style={{ background: 'var(--bg-surface)', borderTop: '1px solid var(--border)' }}
+      className="section-padding section-light"
+      style={{ borderTop: '1px solid var(--border)' }}
     >
       <div className="container-site">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">

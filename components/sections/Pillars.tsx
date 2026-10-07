@@ -1,5 +1,6 @@
 'use client'
 import { useRef, useState } from 'react'
+import Link from 'next/link'
 import { useInView } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
 
@@ -39,6 +40,29 @@ const pillars = [
     body: 'Sviluppo applicazioni mobile e web per piccole e medie imprese e professionisti. Non template: soluzioni costruite intorno al tuo processo, al tuo cliente, alla tua identità.',
     tags: ['App Mobile', 'Web App', 'Gestionale su misura'],
   },
+  {
+    num: '06',
+    tag: 'Integrazione AI',
+    title: 'L\'AI nei tuoi processi, senza perdere la tua voce',
+    body: "Integro strumenti di intelligenza artificiale nelle PMI italiane. Automazioni, content system, workflow su misura. Non tecnologia generica: AI applicata al tuo business reale, con risultati misurabili.",
+    tags: ['Automazioni AI', 'Content System', 'Workflow su misura'],
+  },
+  {
+    num: '07',
+    tag: 'Chatbot AI',
+    title: 'Un assistente che lavora per te 24 ore su 24',
+    body: 'Costruisco chatbot AI su misura per PMI e professionisti. Rispondono ai clienti in tempo reale, qualificano i lead, gestiscono le domande frequenti e spingono verso l\'acquisto — mentre tu fai altro.',
+    tags: ['Customer Support AI', 'Lead Generation', 'Vendite Automatizzate'],
+    href: '/chatbot-ai',
+  },
+  {
+    num: '08',
+    tag: 'Video Agency',
+    title: 'Reels, TikTok e Shorts che fermano lo scroll',
+    body: 'Produco video brevi per brand e professionisti: Reels Instagram, TikTok, YouTube Shorts. Hook studiati, montaggio veloce, testi che convertono. Contenuti pronti da pubblicare, costruiti per crescere.',
+    tags: ['Reels Instagram', 'TikTok', 'YouTube Shorts'],
+    href: '/short-video',
+  },
 ]
 
 export default function Pillars() {
@@ -49,8 +73,8 @@ export default function Pillars() {
   return (
     <section
       id="servizi"
-      className="section-padding"
-      style={{ background: 'var(--bg-surface)', borderTop: '1px solid var(--border)' }}
+      className="section-padding section-light"
+      style={{ borderTop: '1px solid var(--border)' }}
     >
       <div className="container-site">
         {/* Header */}
@@ -152,7 +176,9 @@ export default function Pillars() {
                   transition: 'color 0.3s ease',
                 }}
               >
-                {p.title}
+                {(p as { href?: string }).href ? (
+                  <Link href={(p as { href?: string }).href!} style={{ textDecoration: 'none', color: 'inherit' }}>{p.title}</Link>
+                ) : p.title}
               </h3>
 
               {/* Body */}
@@ -178,7 +204,7 @@ export default function Pillars() {
                       fontSize: '0.6rem',
                       letterSpacing: '0.1em',
                       color: 'var(--text-muted)',
-                      background: 'rgba(255,255,255,0.04)',
+                      background: 'var(--tag-bg)',
                       padding: '0.2rem 0.5rem',
                       fontFamily: 'var(--font-inter)',
                     }}

@@ -92,9 +92,8 @@ export default function Problem() {
     <section
       ref={sectionRef}
       id="problema"
-      className="section-padding"
+      className="section-padding section-light"
       style={{
-        background:   'var(--bg-surface)',
         borderTop:    '1px solid var(--border)',
         borderBottom: '1px solid var(--border)',
         position:     'relative',
