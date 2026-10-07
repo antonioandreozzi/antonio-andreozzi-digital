@@ -14,10 +14,10 @@ export default function GLBShowcase() {
 
   return (
     <section
+      className="section-dark"
       style={{
-        background:   'var(--bg-void)',
-        borderTop:    '1px solid var(--border)',
-        borderBottom: '1px solid var(--border)',
+        borderTop:    '1px solid rgba(255,255,255,0.11)',
+        borderBottom: '1px solid rgba(255,255,255,0.11)',
         overflow:     'hidden',
         position:     'relative',
       }}

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Monogramma A — su sfondo bianco -->
+  <g transform="translate(0, 8)">
+    <!-- Lettera A stilizzata con linea gold -->
+    <polygon points="28,56 40,20 52,56" fill="none" stroke="#0F0E0C" stroke-width="1.8" stroke-linejoin="round"/>
+    <line x1="33" y1="42" x2="47" y2="42" stroke="#C8913A" stroke-width="1.8"/>
+    <!-- Barra gold sotto A -->
+    <line x1="24" y1="60" x2="56" y2="60" stroke="#C8913A" stroke-width="0.8" opacity="0.5"/>
+  </g>
+
+  <!-- Wordmark — su sfondo bianco -->
+  <text
+    x="72"
+    y="37"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="22"
+    font-weight="300"
+    letter-spacing="1"
+    fill="#0F0E0C"
+  >We Move</text>
+  <text
+    x="72"
+    y="58"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="22"
+    font-weight="400"
+    letter-spacing="2"
+    fill="#C8913A"
+  >MARKETS</text>
+
+  <!-- Linea divisoria verticale -->
+  <line x1="64" y1="18" x2="64" y2="62" stroke="#C8913A" stroke-width="0.6" opacity="0.4"/>
+</svg>

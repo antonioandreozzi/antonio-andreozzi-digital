@@ -73,8 +73,8 @@ export default function Pillars() {
   return (
     <section
       id="servizi"
-      className="section-padding section-light"
-      style={{ borderTop: '1px solid var(--border)' }}
+      className="section-padding"
+      style={{ background: 'var(--bg-void)', borderTop: '1px solid var(--border)' }}
     >
       <div className="container-site">
         {/* Header */}

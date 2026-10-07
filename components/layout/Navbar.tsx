@@ -28,9 +28,9 @@ export default function Navbar() {
     <header
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
       style={{
-        background: scrolled ? 'rgba(9, 9, 11, 0.88)' : 'transparent',
+        background: scrolled ? 'rgba(255, 252, 248, 0.92)' : 'transparent',
         backdropFilter: scrolled ? 'blur(14px)' : 'none',
-        borderBottom: scrolled ? '1px solid var(--border)' : '1px solid transparent',
+        borderBottom: scrolled ? '1px solid rgba(0,0,0,0.09)' : '1px solid transparent',
       }}
     >
       <div className="container-site">
@@ -40,11 +40,12 @@ export default function Navbar() {
             href="/"
             style={{
               textDecoration: 'none',
-              color: 'var(--text-primary)',
+              color: scrolled ? '#0F0E0C' : '#FFFFFF',
               fontFamily: 'var(--font-cormorant)',
               fontSize: 'clamp(1rem, 1.6vw, 1.2rem)',
               fontWeight: 300,
               letterSpacing: '0.04em',
+              transition: 'color 0.3s ease',
             }}
           >
             We Move
@@ -64,7 +65,7 @@ export default function Navbar() {
                     textTransform: 'uppercase',
                     fontFamily: 'var(--font-inter)',
                     fontWeight: 500,
-                    color: isActive(l.href) ? 'var(--accent)' : 'var(--text-muted)',
+                    color: isActive(l.href) ? 'var(--accent)' : scrolled ? '#4E4840' : 'rgba(237,232,223,0.85)',
                     transition: 'color 0.2s ease',
                     borderBottom: isActive(l.href) ? '1px solid var(--accent)' : '1px solid transparent',
                     paddingBottom: '2px',

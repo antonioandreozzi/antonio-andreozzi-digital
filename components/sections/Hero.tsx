@@ -68,8 +68,8 @@ export default function Hero() {
     <section
       ref={sectionRef}
       id="home"
-      className="relative min-h-screen flex items-center overflow-hidden"
-      style={{ background: 'var(--bg-void)' }}
+      className="section-dark relative min-h-screen flex items-center overflow-hidden"
+      style={{ background: '#0F0F13' }}
     >
       {/* 3D sphere — sfondo con parallax */}
       <div
@@ -86,13 +86,13 @@ export default function Hero() {
         className="absolute inset-0 pointer-events-none"
         aria-hidden="true"
         style={{
-          background: 'radial-gradient(ellipse at 65% 50%, transparent 15%, var(--bg-void) 65%)',
+          background: 'radial-gradient(ellipse at 65% 50%, transparent 15%, #0F0F13 65%)',
         }}
       />
       {/* Fade bottom */}
       <div
         className="absolute bottom-0 left-0 right-0 pointer-events-none"
-        style={{ height: '200px', background: 'linear-gradient(to top, var(--bg-void), transparent)' }}
+        style={{ height: '200px', background: 'linear-gradient(to top, #0F0F13, transparent)' }}
         aria-hidden="true"
       />
 

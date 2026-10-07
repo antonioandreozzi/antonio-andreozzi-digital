@@ -71,7 +71,8 @@ export default function ScrollExperience() {
   return (
     <section
       ref={containerRef}
-      style={{ height: '300vh', position: 'relative', background: 'var(--bg-void)' }}
+      className="section-dark"
+      style={{ height: '300vh', position: 'relative', background: '#0F0F13' }}
     >
       {/* Sticky viewport */}
       <div
