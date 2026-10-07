@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --bg-void:      #09090B;
-  --bg-surface:   #111115;
-  --bg-card:      #17171C;
+  --bg-void:      #0F0F13;
+  --bg-surface:   #17171E;
+  --bg-card:      #1E1E28;
   --text-primary: #FFFFFF;
-  --text-muted:   #C8C0B8;
+  --text-muted:   #D4CCC4;
   --accent:       #C8913A;
   --accent-light: #E5B86A;
   --accent-dark:  #8A6320;
-  --border:       rgba(255, 255, 255, 0.07);
-  --glow:         rgba(200, 145, 58, 0.25);
+  --border:       rgba(255, 255, 255, 0.11);
+  --glow:         rgba(200, 145, 58, 0.40);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -79,7 +79,7 @@ body {
 
 .border-glow {
   border: 1px solid var(--border);
-  box-shadow: 0 0 30px rgba(200, 145, 58, 0.05), inset 0 1px 0 rgba(255,255,255,0.04);
+  box-shadow: 0 0 30px rgba(200, 145, 58, 0.12), inset 0 1px 0 rgba(255,255,255,0.07);
 }
 
 .cta-primary {
@@ -173,7 +173,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(9, 9, 11, 0.82);
+  background: rgba(9, 9, 11, 0.52);
   pointer-events: none;
   z-index: -1;
 }
@@ -225,7 +225,7 @@ body::after {
   content: '';
   position: fixed;
   inset: 0;
-  background: radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,0.55) 100%);
+  background: radial-gradient(ellipse at center, transparent 60%, rgba(0,0,0,0.30) 100%);
   pointer-events: none;
   z-index: 1;
 }
