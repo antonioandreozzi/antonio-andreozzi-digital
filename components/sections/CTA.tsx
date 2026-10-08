@@ -13,7 +13,7 @@ export default function CTA() {
       className="section-padding"
       style={{
         background: 'transparent',
-        borderTop: '1px solid rgba(167,139,250,0.12)',
+        borderTop: '1px solid rgba(200,241,53,0.10)',
       }}
     >
       <div className="container-site">
@@ -57,13 +57,7 @@ export default function CTA() {
           >
             Inizia dalla
             <br />
-            <em style={{
-              background: 'linear-gradient(135deg, #A78BFA, #F472B6)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-              fontStyle: 'italic',
-            }}>Diagnosi.</em>
+            <em style={{ color: '#C8F135', fontStyle: 'italic' }}>Diagnosi.</em>
           </h2>
 
           {/* Subtext */}

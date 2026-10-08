@@ -32,10 +32,10 @@ export default function Navbar() {
         backdropFilter: scrolled ? 'blur(24px) saturate(1.5)' : 'none',
         WebkitBackdropFilter: scrolled ? 'blur(24px) saturate(1.5)' : 'none',
         borderBottom: scrolled
-          ? '1px solid rgba(167,139,250,0.15)'
+          ? '1px solid rgba(200,241,53,0.12)'
           : '1px solid transparent',
         boxShadow: scrolled
-          ? '0 0 40px rgba(124,58,237,0.10), 0 1px 0 rgba(255,255,255,0.05)'
+          ? '0 0 40px rgba(200,241,53,0.06), 0 1px 0 rgba(255,255,255,0.04)'
           : 'none',
       }}
     >
@@ -138,11 +138,11 @@ export default function Navbar() {
             href="/lavora-con-me"
             onClick={() => setOpen(false)}
             style={{
-              color:           '#7C6CF5',
+              color:           '#C8F135',
               fontSize:        '1rem',
               fontWeight:      600,
               textDecoration:  'none',
-              border:          '1px solid #7C6CF5',
+              border:          '1px solid #C8F135',
               padding:         '0.8rem 2rem',
               marginTop:       '1rem',
             }}

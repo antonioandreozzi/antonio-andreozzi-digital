@@ -1,6 +1,6 @@
 'use client'
 import dynamic from 'next/dynamic'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ArrowDown } from 'lucide-react'
@@ -9,17 +9,51 @@ import SplitHeadline from '@/components/shared/SplitHeadline'
 gsap.registerPlugin(ScrollTrigger)
 const BrandSphere = dynamic(() => import('../3d/BrandSphere'), { ssr: false })
 
+const ROTATOR_PHRASES = [
+  'Brand che durano.',
+  'Identità autentiche.',
+  'Sistemi che scalano.',
+  'Voci riconoscibili.',
+  'Posizionamento netto.',
+]
+
 export default function Hero() {
-  const kickerRef  = useRef<HTMLSpanElement>(null)
-  const subRef     = useRef<HTMLParagraphElement>(null)
-  const ctaRef     = useRef<HTMLDivElement>(null)
-  const arrowRef   = useRef<HTMLDivElement>(null)
-  const sphereRef  = useRef<HTMLDivElement>(null)
-  const sectionRef = useRef<HTMLElement>(null)
+  const kickerRef   = useRef<HTMLSpanElement>(null)
+  const subRef      = useRef<HTMLParagraphElement>(null)
+  const ctaRef      = useRef<HTMLDivElement>(null)
+  const arrowRef    = useRef<HTMLDivElement>(null)
+  const sphereRef   = useRef<HTMLDivElement>(null)
+  const sectionRef  = useRef<HTMLElement>(null)
+  const rotatorRef  = useRef<HTMLSpanElement>(null)
+  const [phraseIdx, setPhraseIdx] = useState(0)
+
+  // Text rotator
+  useEffect(() => {
+    const el = rotatorRef.current
+    if (!el) return
+
+    const interval = setInterval(() => {
+      // Out
+      gsap.to(el, {
+        yPercent: -110,
+        opacity: 0,
+        duration: 0.45,
+        ease: 'power3.in',
+        onComplete: () => {
+          setPhraseIdx(i => (i + 1) % ROTATOR_PHRASES.length)
+          gsap.fromTo(el,
+            { yPercent: 110, opacity: 0 },
+            { yPercent: 0, opacity: 1, duration: 0.55, ease: 'power3.out' }
+          )
+        },
+      })
+    }, 3200)
+
+    return () => clearInterval(interval)
+  }, [])
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Parallax sulla sfera — si muove più lentamente del contenuto
       if (window.innerWidth >= 768) {
         gsap.to(sphereRef.current, {
           yPercent: -30,
@@ -34,32 +68,10 @@ export default function Hero() {
       }
 
       gsap.timeline({ delay: 0.15 })
-        // Kicker entra per primo
-        .from(kickerRef.current, {
-          opacity: 0,
-          y: 16,
-          duration: 0.7,
-          ease: 'power2.out',
-        })
-        // Sottotitolo — dopo il titolo (il titolo anima da solo tramite SplitHeadline)
-        .from(subRef.current, {
-          opacity: 0,
-          y: 20,
-          duration: 0.75,
-          ease: 'power2.out',
-        }, '+=0.3')
-        // CTA
-        .from(ctaRef.current, {
-          opacity: 0,
-          y: 16,
-          duration: 0.6,
-          ease: 'power2.out',
-        }, '-=0.4')
-        // Freccia scroll
-        .from(arrowRef.current, {
-          opacity: 0,
-          duration: 0.5,
-        }, '-=0.2')
+        .from(kickerRef.current, { opacity: 0, y: 16, duration: 0.7, ease: 'power2.out' })
+        .from(subRef.current,   { opacity: 0, y: 20, duration: 0.75, ease: 'power2.out' }, '+=0.3')
+        .from(ctaRef.current,   { opacity: 0, y: 16, duration: 0.6,  ease: 'power2.out' }, '-=0.4')
+        .from(arrowRef.current, { opacity: 0, duration: 0.5 }, '-=0.2')
     })
     return () => ctx.revert()
   }, [])
@@ -71,28 +83,28 @@ export default function Hero() {
       className="section-dark relative min-h-screen flex items-center overflow-hidden"
       style={{ background: 'transparent' }}
     >
-      {/* 3D sphere — sfondo con parallax */}
+      {/* 3D sphere */}
       <div
         ref={sphereRef}
         className="absolute inset-0 pointer-events-none"
-        style={{ opacity: 0.75, willChange: 'transform' }}
+        style={{ opacity: 0.70, willChange: 'transform' }}
         aria-hidden="true"
       >
         <BrandSphere />
       </div>
 
-      {/* Maschera radiale — testo leggibile */}
+      {/* Maschera radiale */}
       <div
         className="absolute inset-0 pointer-events-none"
         aria-hidden="true"
         style={{
-          background: 'radial-gradient(ellipse at 65% 50%, transparent 20%, rgba(7,7,15,0.70) 65%)',
+          background: 'radial-gradient(ellipse at 65% 50%, transparent 20%, rgba(9,8,14,0.75) 65%)',
         }}
       />
       {/* Fade bottom */}
       <div
         className="absolute bottom-0 left-0 right-0 pointer-events-none"
-        style={{ height: '220px', background: 'linear-gradient(to top, #07070F, transparent)' }}
+        style={{ height: '220px', background: 'linear-gradient(to top, #09080E, transparent)' }}
         aria-hidden="true"
       />
 
@@ -106,54 +118,71 @@ export default function Hero() {
             className="inline-flex items-center gap-3 mb-8"
             style={{ fontFamily: 'var(--font-inter)', opacity: 0 }}
           >
+            <span style={{ display: 'block', width: '32px', height: '1px', background: 'var(--volt)' }} />
             <span style={{
-              display: 'block',
-              width: '32px',
-              height: '1px',
-              background: 'linear-gradient(90deg, #7C3AED, #D946EF)',
-            }} />
-            <span style={{
-              fontSize:      '0.63rem',
+              fontSize: '0.63rem',
               letterSpacing: '0.22em',
               textTransform: 'uppercase',
-              background:    'linear-gradient(135deg, #A78BFA, #F472B6)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-              fontWeight:    600,
+              color: 'var(--volt)',
+              fontWeight: 600,
             }}>
               Brand Strategy · Marketing · Caserta
             </span>
           </span>
 
-          {/* Headline animata parola per parola */}
+          {/* Headline animata */}
           <SplitHeadline
             tag="h1"
             text="Il Tuo Brand Vale Quanto Riesci a Farlo Capire."
             accentWords={['Quanto Riesci']}
             delay={0.5}
             style={{
-              fontSize:     'clamp(2.8rem, 7vw, 6rem)',
-              lineHeight:   1.04,
-              fontWeight:   300,
-              color:        'var(--text-primary)',
-              letterSpacing:'-0.01em',
-              marginBottom: '2rem',
+              fontSize:      'clamp(2.8rem, 7vw, 6rem)',
+              lineHeight:    1.04,
+              fontWeight:    300,
+              color:         'var(--paper)',
+              letterSpacing: '-0.01em',
+              marginBottom:  '1.4rem',
             }}
           />
+
+          {/* Text rotator — stile francescosaviano */}
+          <div
+            style={{
+              overflow: 'hidden',
+              height: 'clamp(2.2rem, 4vw, 3.2rem)',
+              marginBottom: '2.2rem',
+            }}
+          >
+            <span
+              ref={rotatorRef}
+              style={{
+                display: 'block',
+                fontFamily: 'var(--font-cormorant)',
+                fontStyle: 'italic',
+                fontWeight: 300,
+                fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)',
+                lineHeight: 1.15,
+                color: 'var(--volt)',
+                letterSpacing: '-0.01em',
+              }}
+            >
+              {ROTATOR_PHRASES[phraseIdx]}
+            </span>
+          </div>
 
           {/* Sottotitolo */}
           <p
             ref={subRef}
             style={{
-              fontSize:      'clamp(1rem, 1.5vw, 1.2rem)',
-              lineHeight:    1.75,
-              color:         'var(--text-muted)',
-              maxWidth:      '520px',
-              fontFamily:    'var(--font-inter)',
-              fontWeight:    300,
-              marginBottom:  '3rem',
-              opacity:       0,
+              fontSize:     'clamp(0.95rem, 1.4vw, 1.1rem)',
+              lineHeight:   1.75,
+              color:        'var(--dim)',
+              maxWidth:     '500px',
+              fontFamily:   'var(--font-inter)',
+              fontWeight:   300,
+              marginBottom: '3rem',
+              opacity:      0,
             }}
           >
             Costruiamo brand, sistemi e identità per imprenditori italiani,
@@ -180,7 +209,7 @@ export default function Hero() {
       <div
         ref={arrowRef}
         className="absolute bottom-10 left-1/2 -translate-x-1/2 scroll-bounce"
-        style={{ color: 'var(--text-muted)', opacity: 0 }}
+        style={{ color: 'var(--dim)', opacity: 0 }}
         aria-hidden="true"
       >
         <ArrowDown size={18} />

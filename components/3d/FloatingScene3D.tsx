@@ -51,7 +51,7 @@ function FloatingText({ text, position, speed, rotSpeed, scrollRef, isMobile }: 
     const ctx = canvas.getContext('2d')!
     ctx.fillStyle   = 'transparent'
     ctx.clearRect(0, 0, canvas.width, canvas.height)
-    ctx.fillStyle   = '#A78BFA'
+    ctx.fillStyle   = '#C8F135'
     ctx.font        = `${isMobile ? 60 : 80}px "Georgia", serif`
     ctx.textAlign   = 'center'
     ctx.textBaseline = 'middle'
@@ -178,7 +178,7 @@ function Scene({ isMobile }: { isMobile: boolean }) {
           (r(2) - 0.5) * 5,
           -(i * 3 + 2),
         ] as [number, number, number],
-        color:   r(3) > 0.5 ? '#7C3AED' : '#D946EF',
+        color:   r(3) > 0.5 ? '#C8F135' : '#A8D420',
         opacity: 0.2 + r(4) * 0.25,
         speed:   0.6 + r(5) * 0.5,
         rotX:    (r(6) - 0.5) * 0.8,
@@ -192,7 +192,7 @@ function Scene({ isMobile }: { isMobile: boolean }) {
   return (
     <>
       {/* Luce ambientale sottile */}
-      <ambientLight intensity={0.25} color="#7C3AED" />
+      <ambientLight intensity={0.20} color="#C8F135" />
 
       {objects.map((obj, i) =>
         obj.type === 'text' ? (

@@ -5,16 +5,14 @@
     </style>
   </defs>
 
-  <!-- Monogramma A — su sfondo bianco -->
+  <!-- Monogramma A — su sfondo chiaro -->
   <g transform="translate(0, 8)">
-    <!-- Lettera A stilizzata con linea gold -->
-    <polygon points="28,56 40,20 52,56" fill="none" stroke="#0F0E0C" stroke-width="1.8" stroke-linejoin="round"/>
-    <line x1="33" y1="42" x2="47" y2="42" stroke="#A78BFA" stroke-width="1.8"/>
-    <!-- Barra gold sotto A -->
-    <line x1="24" y1="60" x2="56" y2="60" stroke="#A78BFA" stroke-width="0.8" opacity="0.5"/>
+    <polygon points="28,56 40,20 52,56" fill="none" stroke="#09080E" stroke-width="1.8" stroke-linejoin="round"/>
+    <line x1="33" y1="42" x2="47" y2="42" stroke="#A8D420" stroke-width="1.8"/>
+    <line x1="24" y1="60" x2="56" y2="60" stroke="#A8D420" stroke-width="0.8" opacity="0.5"/>
   </g>
 
-  <!-- Wordmark — su sfondo bianco -->
+  <!-- Wordmark — su sfondo chiaro -->
   <text
     x="72"
     y="37"
@@ -22,7 +20,7 @@
     font-size="22"
     font-weight="300"
     letter-spacing="1"
-    fill="#0F0E0C"
+    fill="#09080E"
   >We Move</text>
   <text
     x="72"
@@ -31,9 +29,8 @@
     font-size="22"
     font-weight="400"
     letter-spacing="2"
-    fill="#A78BFA"
+    fill="#A8D420"
   >MARKETS</text>
 
-  <!-- Linea divisoria verticale -->
-  <line x1="64" y1="18" x2="64" y2="62" stroke="#A78BFA" stroke-width="0.6" opacity="0.4"/>
+  <line x1="64" y1="18" x2="64" y2="62" stroke="#A8D420" stroke-width="0.6" opacity="0.4"/>
 </svg>

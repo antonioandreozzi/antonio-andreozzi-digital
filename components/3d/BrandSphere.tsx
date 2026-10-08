@@ -31,12 +31,12 @@ function GlowSphere({ isMobile }: { isMobile: boolean }) {
         <mesh>
           <sphereGeometry args={[1.5, 128, 128]} />
           <MeshDistortMaterial
-            color="#7C3AED"
-            metalness={0.90}
-            roughness={0.06}
-            distort={0.28}
-            speed={1.8}
-            envMapIntensity={3.0}
+            color="#2A2030"
+            metalness={0.95}
+            roughness={0.04}
+            distort={0.22}
+            speed={1.5}
+            envMapIntensity={4.0}
           />
         </mesh>
       </Float>
@@ -44,7 +44,7 @@ function GlowSphere({ isMobile }: { isMobile: boolean }) {
       {/* Wireframe esterno — profondità */}
       <mesh>
         <icosahedronGeometry args={[2.2, 2]} />
-        <meshBasicMaterial color="#D946EF" wireframe transparent opacity={0.08} />
+        <meshBasicMaterial color="#C8F135" wireframe transparent opacity={0.06} />
       </mesh>
     </group>
   )
@@ -54,9 +54,9 @@ function Scene({ isMobile }: { isMobile: boolean }) {
   return (
     <>
       <ambientLight intensity={0.2} />
-      <pointLight position={[5, 5, 5]}   intensity={6}   color="#D946EF" />
-      <pointLight position={[-5, -3, -3]} intensity={4}   color="#7C3AED" />
-      <pointLight position={[0, 4, 3]}    intensity={3}   color="#06B6D4" />
+      <pointLight position={[5, 5, 5]}   intensity={5}   color="#C8F135" />
+      <pointLight position={[-5, -3, -3]} intensity={3}   color="#A8D420" />
+      <pointLight position={[0, 4, 3]}    intensity={2}   color="#EDE8DF" />
 
       <GlowSphere isMobile={isMobile} />
 
@@ -65,7 +65,7 @@ function Scene({ isMobile }: { isMobile: boolean }) {
         scale={7}
         size={isMobile ? 1.2 : 2.2}
         speed={0.25}
-        color="#22D3EE"
+        color="#C8F135"
         opacity={0.6}
       />
 

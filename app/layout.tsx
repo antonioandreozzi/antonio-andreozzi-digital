@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
-import { Cormorant_Garamond, Inter } from "next/font/google";
+﻿import type { Metadata } from "next";
+import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
 import ClientProviders from "@/components/shared/ClientProviders";
 
-const cormorant = Cormorant_Garamond({
-  weight: ["300", "400", "600", "700"],
+const fraunces = Fraunces({
+  weight: ["300", "400", "700"],
   style: ["normal", "italic"],
   variable: "--font-cormorant",
   subsets: ["latin"],
@@ -154,7 +154,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="it" data-scroll-behavior="smooth" className={`${cormorant.variable} ${inter.variable}`}>
+    <html lang="it" data-scroll-behavior="smooth" className={`${fraunces.variable} ${inter.variable}`}>
       <head>
         <meta name="google-site-verification" content="_TnnRNmnHEDKepLRvbaCN1BeVVZHjTx1uTZvR6kyUZI" />
         {/* Google Analytics 4 */}
@@ -190,3 +190,4 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":35973540}};`,
     </html>
   );
 }
+

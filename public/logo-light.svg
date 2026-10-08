@@ -3,9 +3,9 @@
 
   <!-- Monogramma A -->
   <g transform="translate(0, 8)">
-    <polygon points="28,56 40,20 52,56" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linejoin="round"/>
-    <line x1="33" y1="42" x2="47" y2="42" stroke="#A78BFA" stroke-width="1.8"/>
-    <line x1="24" y1="60" x2="56" y2="60" stroke="#A78BFA" stroke-width="0.8" opacity="0.5"/>
+    <polygon points="28,56 40,20 52,56" fill="none" stroke="#EDE8DF" stroke-width="1.8" stroke-linejoin="round"/>
+    <line x1="33" y1="42" x2="47" y2="42" stroke="#C8F135" stroke-width="1.8"/>
+    <line x1="24" y1="60" x2="56" y2="60" stroke="#C8F135" stroke-width="0.8" opacity="0.5"/>
   </g>
 
   <!-- Wordmark -->
@@ -16,7 +16,7 @@
     font-size="22"
     font-weight="300"
     letter-spacing="1"
-    fill="#FFFFFF"
+    fill="#EDE8DF"
   >We Move</text>
   <text
     x="72"
@@ -25,8 +25,8 @@
     font-size="22"
     font-weight="400"
     letter-spacing="2"
-    fill="#A78BFA"
+    fill="#C8F135"
   >MARKETS</text>
 
-  <line x1="64" y1="18" x2="64" y2="62" stroke="#A78BFA" stroke-width="0.6" opacity="0.4"/>
+  <line x1="64" y1="18" x2="64" y2="62" stroke="#C8F135" stroke-width="0.6" opacity="0.4"/>
 </svg>
