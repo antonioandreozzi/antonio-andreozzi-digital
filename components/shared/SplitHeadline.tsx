@@ -7,13 +7,13 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(SplitText, ScrollTrigger)
 
 interface SplitHeadlineProps {
-  text:        string
-  accentWords?: string[]          // parole da colorare in oro
-  tag?:        'h1' | 'h2' | 'h3'
-  className?:  string
-  style?:      React.CSSProperties
-  delay?:      number             // delay iniziale in secondi
-  scrollTrigger?: boolean         // anima on scroll invece che subito
+  text:         string
+  accentWords?: string[]
+  tag?:         'h1' | 'h2' | 'h3'
+  className?:   string
+  style?:       React.CSSProperties
+  delay?:       number
+  scrollTrigger?: boolean
 }
 
 export default function SplitHeadline({
@@ -31,19 +31,19 @@ export default function SplitHeadline({
     const el = ref.current
     if (!el) return
 
-    // Applica colore accent alle parole specifiche prima di splittare
+    // Italic serif per le accent words — stesso bianco, diversa texture
     const highlighted = accentWords.reduce((str, word) => {
       const regex = new RegExp(`(${word})`, 'gi')
-      return str.replace(regex, `<em class="split-accent" style="color:#C8F135;font-style:italic;">$1</em>`)
+      return str.replace(
+        regex,
+        `<em style="font-style:italic;font-family:var(--font-cormorant),Georgia,serif;font-weight:300;">$1</em>`
+      )
     }, text)
     el.innerHTML = highlighted
 
-    const split = new SplitText(el, {
-      type: 'words,lines',
-      linesClass: 'split-line',
-    })
+    const split = new SplitText(el, { type: 'lines', linesClass: 'split-line' })
 
-    // Wrap ogni linea in un contenitore overflow-hidden (maschera)
+    // Ogni linea: wrapper overflow-hidden = la maschera
     split.lines.forEach((line: Element) => {
       const wrapper = document.createElement('div')
       wrapper.style.overflow = 'hidden'
@@ -53,42 +53,43 @@ export default function SplitHeadline({
     })
 
     const animProps = {
-      y:        '110%',
+      y:        '105%',
       opacity:  0,
-      duration: 0.85,
-      ease:     'power3.out',
-      stagger:  0.06,
+      duration: 1.0,
+      ease:     'power4.out',
+      stagger:  0.08,
       delay,
     }
 
     let tween: gsap.core.Tween
 
     if (scrollTrigger) {
-      tween = gsap.from(split.words, {
-        ...animProps,
+      gsap.set(split.lines, { y: '105%', opacity: 0 })
+      tween = gsap.to(split.lines, {
+        y: '0%',
+        opacity: 1,
+        duration: 1.0,
+        ease: 'power4.out',
+        stagger: 0.08,
         scrollTrigger: {
           trigger: el,
-          start:   'top 85%',
-          once:    true,
+          start: 'top 88%',
+          once:  true,
         },
       })
     } else {
-      tween = gsap.from(split.words, animProps)
+      tween = gsap.from(split.lines, animProps)
     }
 
     return () => {
-      tween.kill()
+      tween?.kill()
       split.revert()
     }
   }, [text, delay, scrollTrigger]) // eslint-disable-line
 
-  // Render come div con data-tag per accessibilità
-  const role = tag === 'h1' ? undefined : undefined
-
   return (
     <div
       ref={ref}
-      role={role}
       className={`font-display ${className}`}
       style={{ ...style }}
     />

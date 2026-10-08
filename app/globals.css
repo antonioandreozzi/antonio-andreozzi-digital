@@ -1,78 +1,57 @@
 @import "tailwindcss";
 
 /* ═══════════════════════════════════════════════════════
-   NOIR VOLT — palette ispirata a francescosaviano.digital
+   NERO + BIANCO PURO
 
-   ink   #09080E  — quasi-nero caldo (sfondo)
-   paper #EDE8DF  — crema calda (testo) — NON bianco puro
-   volt  #C8F135  — chartreuse elettrico (accent unico)
-
-   Stessa logica di Francesco Saviano:
-   - UN colore accent fortissimo e leggibilissimo
-   - Testo crema su nero: visibilità perfetta
-   - Font display serif + sans pulito
+   Sfondo: #0A0A0A — nero quasi assoluto
+   Testo:  #FFFFFF — bianco puro
+   Accent: #FFFFFF — il contrasto È il bianco su nero
+   Serif italic Fraunces = l'unico "colore" visivo
    ════════════════════════════════════════════════════════ */
 
 :root {
-  /* Base ink */
-  --ink:        #09080E;
-  --ink-2:      #13111C;
-  --ink-3:      #1C1926;
-  --ink-4:      #24213100;
-
-  /* Paper (warm cream — NOT pure white) */
-  --paper:      #EDE8DF;
-  --paper-2:    #CFC9BE;
+  /* Backgrounds */
+  --ink:      #0A0A0A;
+  --ink-2:    #111111;
+  --ink-3:    #1A1A1A;
+  --ink-4:    #222222;
 
   /* Text */
-  --text-primary:  #EDE8DF;
-  --text-muted:    #8A8596;
-  --text-subtle:   #5E5A6A;
-  --dim:           #8A8596;
-  --mute:          #6A6378;
+  --paper:    #FFFFFF;
+  --dim:      #707070;
+  --mute:     #4A4A4A;
 
-  /* THE accent: electric chartreuse volt */
-  --volt:       #C8F135;
-  --volt-2:     #B8E020;
-  --volt-dim:   rgba(200, 241, 53, 0.55);
-  --volt-glow:  rgba(200, 241, 53, 0.18);
-  --volt-bg:    rgba(200, 241, 53, 0.08);
+  /* Accent = bianco (la purezza È l'accento) */
+  --accent:       #FFFFFF;
+  --accent-light: #FFFFFF;
+  --accent-dark:  #E0E0E0;
 
   /* Lines / borders */
-  --line:         rgba(237, 232, 223, 0.10);
-  --line-2:       rgba(237, 232, 223, 0.16);
-  --line-glass:   rgba(237, 232, 223, 0.08);
+  --line:         rgba(255, 255, 255, 0.10);
+  --line-2:       rgba(255, 255, 255, 0.18);
 
   /* Glass */
-  --glass:        linear-gradient(155deg, rgba(237,232,223,0.06), rgba(237,232,223,0.02));
-  --glass-hover:  linear-gradient(155deg, rgba(237,232,223,0.10), rgba(237,232,223,0.04));
-  --shadow-glass: inset 0 1px 0 rgba(255,255,255,0.08), 0 30px 60px -30px rgba(0,0,0,0.70);
+  --glass:        linear-gradient(155deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+  --glass-hover:  linear-gradient(155deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+  --shadow-glass: inset 0 1px 0 rgba(255,255,255,0.08), 0 30px 60px -30px rgba(0,0,0,0.90);
 
-  /* Aliases per retrocompatibilità */
-  --bg-void:      #09080E;
-  --bg-surface:   #13111C;
-  --bg-card:      #1C1926;
-  --border:       rgba(237, 232, 223, 0.10);
-  --accent:       #C8F135;
-  --accent-light: #DCF96A;
-  --accent-dark:  #A8D420;
-  --glow:         rgba(200, 241, 53, 0.18);
-  --tag-bg:       rgba(200, 241, 53, 0.08);
-  --text-muted:   #8A8596;
+  /* Aliases retrocompatibilità */
+  --bg-void:    #0A0A0A;
+  --bg-surface: #111111;
+  --bg-card:    #1A1A1A;
+  --border:     rgba(255, 255, 255, 0.10);
+  --tag-bg:     rgba(255, 255, 255, 0.06);
+  --glow:       rgba(255, 255, 255, 0.08);
+  --text-primary: #FFFFFF;
+  --text-muted:   #707070;
 
-  /* Easing — identico a francescosaviano */
-  --ease:          cubic-bezier(.22, 1, .36, 1);
-  --ease-expo:     cubic-bezier(.16, 1, .3, 1);
-  --t-fast:        .25s;
-  --t-base:        .45s;
-  --t-slow:        .8s;
-  --t-enter:       1.2s;
-}
-
-/* Section dark */
-.section-dark {
-  background: transparent !important;
-  color: var(--paper);
+  /* Easing (identico francescosaviano) */
+  --ease:      cubic-bezier(.22, 1, .36, 1);
+  --ease-expo: cubic-bezier(.16, 1, .3, 1);
+  --t-fast:    .25s;
+  --t-base:    .45s;
+  --t-slow:    .8s;
+  --t-enter:   1.2s;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -89,25 +68,24 @@ body {
   line-height: 1.6;
 }
 
-/* Font display = Fraunces (variable serif) */
+/* Font display = Fraunces */
 .font-display {
   font-family: var(--font-cormorant), Georgia, serif;
 }
 
 /* ── Scrollbar ─────────────────────────────────────── */
-::-webkit-scrollbar       { width: 2px; }
+::-webkit-scrollbar       { width: 1px; }
 ::-webkit-scrollbar-track { background: var(--ink); }
-::-webkit-scrollbar-thumb { background: var(--volt); border-radius: 999px; }
-::-webkit-scrollbar-thumb:hover { background: var(--volt-2); }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.25); }
 
 /* ── Selezione ──────────────────────────────────────── */
-::selection { background: var(--volt); color: var(--ink); }
+::selection { background: #FFFFFF; color: #0A0A0A; }
 
 /* ── Focus ──────────────────────────────────────────── */
 *:focus-visible {
-  outline: 2px solid var(--volt);
+  outline: 1px solid rgba(255,255,255,0.5);
   outline-offset: 4px;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 /* ── Skip link ─────────────────────────────────────── */
@@ -115,8 +93,8 @@ body {
   position: absolute;
   top: -100%;
   left: 1rem;
-  background: var(--volt);
-  color: var(--ink);
+  background: #FFFFFF;
+  color: #0A0A0A;
   padding: 0.5rem 1.25rem;
   z-index: 99999;
   font-size: 0.75rem;
@@ -128,15 +106,15 @@ body {
 }
 .skip-link:focus { top: 1rem; }
 
-/* ── Grain texture (sottile, elegante) ─────────────── */
+/* ── Grain sottilissimo ─────────────────────────────── */
 body::before {
   content: '';
   position: fixed;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.80' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.030'/%3E%3C/svg%3E");
   pointer-events: none;
   z-index: 3;
-  opacity: 0.40;
+  opacity: 0.35;
   mix-blend-mode: overlay;
 }
 
@@ -152,30 +130,13 @@ body::before {
   -webkit-backdrop-filter: blur(20px);
   box-shadow: var(--shadow-glass);
 }
-.glass:hover {
-  background: var(--glass-hover);
-  border-color: var(--line-2);
-}
 
-/* Volt text (accent color) */
-.text-volt {
-  color: var(--volt);
-}
-
-/* Volt gradient text (leggero shimmer) */
-.text-gradient {
-  background: linear-gradient(135deg, var(--volt) 0%, var(--volt-2) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* Italic serif accent (come le frasi in ember su FS) */
+/* Italic serif accent — IL vero accent nel B&W */
 .italic-accent {
   font-family: var(--font-cormorant), Georgia, serif;
   font-style: italic;
-  font-weight: 400;
-  color: var(--volt);
+  font-weight: 300;
+  color: var(--paper);
 }
 
 /* Eyebrow label */
@@ -183,11 +144,11 @@ body::before {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   letter-spacing: 0.20em;
   text-transform: uppercase;
   font-family: var(--font-inter), sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--dim);
 }
 .eyebrow::before {
@@ -195,52 +156,42 @@ body::before {
   display: block;
   width: 28px;
   height: 1px;
-  background: var(--volt);
+  background: rgba(255,255,255,0.35);
   flex-shrink: 0;
-  opacity: 0.7;
-}
-
-/* Border glow */
-.border-glow {
-  border: 1px solid var(--line);
-  box-shadow: 0 0 0 1px rgba(200, 241, 53, 0.08), inset 0 1px 0 rgba(255,255,255,0.05);
 }
 
 /* Card hover */
 .card-hover {
-  background: var(--glass);
+  background: transparent;
   border: 1px solid var(--line);
   transition: background var(--t-base) var(--ease),
-              border-color var(--t-base) var(--ease),
-              transform var(--t-base) var(--ease);
+              border-color var(--t-base) var(--ease);
 }
 .card-hover:hover {
-  background: var(--glass-hover);
-  border-color: rgba(200, 241, 53, 0.22);
-  transform: translateY(-4px);
-  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  background: var(--glass);
+  border-color: var(--line-2);
 }
 
-/* ── CTA primary — volt su nero ────────────────────── */
+/* ── CTA primary — bianco su nero ──────────────────── */
 .cta-primary {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.85rem 2rem;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
+  padding: 0.85rem 2.2rem;
+  font-size: 0.70rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   font-family: var(--font-inter), sans-serif;
   text-decoration: none;
-  background: var(--volt);
-  color: var(--ink);
-  transition: all var(--t-base) var(--ease);
-  box-shadow: 0 0 30px var(--volt-glow);
+  background: #FFFFFF;
+  color: #0A0A0A;
+  transition: background var(--t-base) var(--ease),
+              color var(--t-base) var(--ease),
+              transform var(--t-base) var(--ease);
 }
 .cta-primary:hover {
-  background: var(--paper);
-  box-shadow: 0 0 50px var(--volt-glow), 0 0 80px rgba(200, 241, 53, 0.12);
+  background: rgba(255,255,255,0.85);
   transform: translateY(-2px);
 }
 
@@ -249,22 +200,22 @@ body::before {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.85rem 2rem;
-  font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.14em;
+  padding: 0.85rem 2.2rem;
+  font-size: 0.70rem;
+  font-weight: 400;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   font-family: var(--font-inter), sans-serif;
   text-decoration: none;
   color: var(--dim);
   border: 1px solid var(--line);
   background: transparent;
-  transition: all var(--t-base) var(--ease);
+  transition: color var(--t-base) var(--ease),
+              border-color var(--t-base) var(--ease);
 }
 .cta-ghost:hover {
   color: var(--paper);
-  border-color: rgba(200, 241, 53, 0.35);
-  background: rgba(200, 241, 53, 0.05);
+  border-color: var(--line-2);
 }
 
 /* ── Animated underline ─────────────────────────────── */
@@ -275,27 +226,42 @@ body::before {
 .animated-line::after {
   content: '';
   position: absolute;
-  bottom: -3px;
+  bottom: -2px;
   left: 0;
   width: 0;
   height: 1px;
-  background: var(--volt);
+  background: rgba(255,255,255,0.5);
   transition: width var(--t-base) var(--ease);
 }
 .animated-line:hover::after { width: 100%; }
 
 /* ── Layout ─────────────────────────────────────────── */
 .section-padding {
-  padding-top: clamp(96px, 13vw, 180px);
+  padding-top:    clamp(96px, 13vw, 180px);
   padding-bottom: clamp(96px, 13vw, 180px);
 }
+.section-dark { background: transparent !important; color: var(--paper); }
 
 .container-site {
   max-width: 1440px;
-  margin-left: auto;
+  margin-left:  auto;
   margin-right: auto;
-  padding-left: clamp(20px, 4.5vw, 64px);
+  padding-left:  clamp(20px, 4.5vw, 64px);
   padding-right: clamp(20px, 4.5vw, 64px);
+}
+
+/* ── Clip-path line reveal (titoli) ─────────────────── */
+.line-mask {
+  overflow: hidden;
+  display: block;
+}
+.line-inner {
+  display: block;
+  transform: translateY(100%);
+  opacity: 0;
+}
+.line-inner.revealed {
+  animation: line-slide-up var(--t-enter) var(--ease) forwards;
 }
 
 /* ── Keyframes ──────────────────────────────────────── */
@@ -319,14 +285,9 @@ body::before {
   from { transform: translateX(-50%); }
   to   { transform: translateX(0); }
 }
-@keyframes orb-pulse {
-  0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.80; }
-  33%       { transform: scale(1.10) translate(3%, -4%); opacity: 1; }
-  66%       { transform: scale(0.92) translate(-2%, 3%); opacity: 0.65; }
-}
-@keyframes orb-drift {
-  0%, 100% { transform: scale(1) translate(0, 0); }
-  50%       { transform: scale(1.15) translate(5%, -5%); }
+@keyframes line-slide-up {
+  from { transform: translateY(105%); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
 }
 @keyframes rotator-in {
   from { transform: translateY(110%); opacity: 0; }
@@ -336,21 +297,14 @@ body::before {
   from { transform: translateY(0);     opacity: 1; }
   to   { transform: translateY(-110%); opacity: 0; }
 }
-@keyframes counter-up {
+@keyframes fade-up {
   from { transform: translateY(20px); opacity: 0; }
   to   { transform: translateY(0);    opacity: 1; }
 }
-@keyframes line-reveal {
-  from { clip-path: inset(0 0 100% 0); transform: translateY(12px); }
-  to   { clip-path: inset(0 0 0% 0);   transform: translateY(0); }
-}
 
-.float          { animation: float 8s ease-in-out infinite; }
-.pulse-soft     { animation: pulse-soft 4s ease-in-out infinite; }
-.scroll-bounce  { animation: scroll-bounce 2s ease-in-out infinite; }
-
-/* ── Scene 3D ───────────────────────────────────────── */
-.scene-3d section { position: relative; isolation: isolate; }
+.float         { animation: float 8s ease-in-out infinite; }
+.pulse-soft    { animation: pulse-soft 4s ease-in-out infinite; }
+.scroll-bounce { animation: scroll-bounce 2s ease-in-out infinite; }
 
 /* ── Cursore ────────────────────────────────────────── */
 @media (hover: hover) and (pointer: fine) {
@@ -375,14 +329,14 @@ body::before {
   line-height: 1.75;
   color: var(--dim);
 }
-.article-prose p          { margin-bottom: 1.4rem; }
-.article-prose strong     { color: var(--paper); font-weight: 500; }
-.article-prose em         { color: var(--volt); font-style: italic; }
-.article-prose a          { color: var(--volt); text-decoration-color: var(--volt-2); }
-.article-prose a:hover    { opacity: 0.8; }
+.article-prose p       { margin-bottom: 1.4rem; }
+.article-prose strong  { color: var(--paper); font-weight: 500; }
+.article-prose em      { color: var(--paper); font-style: italic; font-family: var(--font-cormorant); }
+.article-prose a       { color: var(--paper); text-decoration-color: rgba(255,255,255,0.3); }
 .article-prose h2 {
   font-family: var(--font-cormorant);
-  font-weight: 400;
+  font-weight: 300;
+  font-style: italic;
   font-size: clamp(1.5rem, 2.6vw, 2.2rem);
   line-height: 1.15;
   color: var(--paper);
@@ -391,7 +345,7 @@ body::before {
 }
 .article-prose h3 {
   font-family: var(--font-cormorant);
-  font-weight: 400;
+  font-weight: 300;
   font-size: clamp(1.2rem, 1.8vw, 1.6rem);
   line-height: 1.25;
   color: var(--paper);
@@ -408,5 +362,4 @@ body::before {
 }
 .article-prose ul      { list-style: none; padding-left: 0; }
 .article-prose ul li   { position: relative; padding-left: 1.6rem; }
-.article-prose ul li::before { content: '→'; position: absolute; left: 0; color: var(--volt); }
-.article-prose ol li::marker { color: var(--volt); font-weight: 600; }
+.article-prose ul li::before { content: '—'; position: absolute; left: 0; color: var(--dim); }
