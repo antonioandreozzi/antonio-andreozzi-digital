@@ -17,10 +17,10 @@ const WORDS = [
 
 // Forme geometriche simbolo di "sistema/struttura"
 const SHAPES = [
-  { geo: 'icosahedron', args: [0.4, 1],  color: '#C8913A', opacity: 0.35 },
-  { geo: 'octahedron',  args: [0.3, 0],  color: '#E5B86A', opacity: 0.25 },
-  { geo: 'tetrahedron', args: [0.35, 0], color: '#C8913A', opacity: 0.30 },
-  { geo: 'icosahedron', args: [0.25, 0], color: '#E5B86A', opacity: 0.20 },
+  { geo: 'icosahedron', args: [0.4, 1],  color: '#7C6CF5', opacity: 0.35 },
+  { geo: 'octahedron',  args: [0.3, 0],  color: '#9D8FFF', opacity: 0.25 },
+  { geo: 'tetrahedron', args: [0.35, 0], color: '#7C6CF5', opacity: 0.30 },
+  { geo: 'icosahedron', args: [0.25, 0], color: '#9D8FFF', opacity: 0.20 },
 ]
 
 // Genera posizioni casuali ma stabili (seed deterministico)
@@ -51,7 +51,7 @@ function FloatingText({ text, position, speed, rotSpeed, scrollRef, isMobile }: 
     const ctx = canvas.getContext('2d')!
     ctx.fillStyle   = 'transparent'
     ctx.clearRect(0, 0, canvas.width, canvas.height)
-    ctx.fillStyle   = '#C8913A'
+    ctx.fillStyle   = '#9D8FFF'
     ctx.font        = `${isMobile ? 60 : 80}px "Georgia", serif`
     ctx.textAlign   = 'center'
     ctx.textBaseline = 'middle'
@@ -178,7 +178,7 @@ function Scene({ isMobile }: { isMobile: boolean }) {
           (r(2) - 0.5) * 5,
           -(i * 3 + 2),
         ] as [number, number, number],
-        color:   r(3) > 0.5 ? '#C8913A' : '#E5B86A',
+        color:   r(3) > 0.5 ? '#7C6CF5' : '#9D8FFF',
         opacity: 0.2 + r(4) * 0.25,
         speed:   0.6 + r(5) * 0.5,
         rotX:    (r(6) - 0.5) * 0.8,
@@ -192,7 +192,7 @@ function Scene({ isMobile }: { isMobile: boolean }) {
   return (
     <>
       {/* Luce ambientale sottile */}
-      <ambientLight intensity={0.3} color="#C8913A" />
+      <ambientLight intensity={0.3} color="#7C6CF5" />
 
       {objects.map((obj, i) =>
         obj.type === 'text' ? (
