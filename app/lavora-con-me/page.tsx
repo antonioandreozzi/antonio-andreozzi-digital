@@ -389,6 +389,28 @@ export default function LavoraConMe() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-px" style={{ border: '1px solid var(--border)', background: 'var(--border)' }}>
 
+              {/* Integrazione AI */}
+              <div className="card-hover" style={{ padding: 'clamp(2rem, 4vw, 3rem)', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+                <div className="flex items-center justify-between">
+                  <span style={{ fontSize: '0.65rem', letterSpacing: '0.2em', color: 'var(--accent)', fontFamily: 'var(--font-inter)', fontWeight: 500 }}>INTEGRAZIONE AI</span>
+                  <span style={{ fontSize: '0.6rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--text-muted)', border: '1px solid var(--border)', padding: '0.3rem 0.7rem', fontFamily: 'var(--font-inter)' }}>Aziende Italiane · Su misura</span>
+                </div>
+                <h3 className="font-display" style={{ fontSize: 'clamp(1.2rem, 2vw, 1.8rem)', fontWeight: 400, lineHeight: 1.2, color: 'var(--text-primary)', fontStyle: 'italic' }}>
+                  L&apos;AI nei tuoi processi, senza perdere la tua voce.
+                </h3>
+                <p style={{ fontSize: '0.88rem', lineHeight: 1.8, color: 'var(--text-muted)', fontFamily: 'var(--font-inter)', fontWeight: 300, flexGrow: 1 }}>
+                  Integro strumenti di intelligenza artificiale nei processi delle PMI italiane — dalla produzione di contenuti alla gestione clienti, dall&apos;automazione dei flussi interni all&apos;analisi dei dati. Non tecnologia per la tecnologia: AI applicata al tuo business reale, con risultati misurabili.
+                </p>
+                <div className="flex flex-wrap gap-2" style={{ marginBottom: '0.5rem' }}>
+                  {['Automazioni AI', 'Content System', 'Workflow su misura', 'Analisi dati', 'Formazione interna'].map((t) => (
+                    <span key={t} style={{ fontSize: '0.6rem', letterSpacing: '0.1em', color: 'var(--text-muted)', background: 'rgba(255,255,255,0.04)', padding: '0.2rem 0.5rem', fontFamily: 'var(--font-inter)' }}>{t}</span>
+                  ))}
+                </div>
+                <a href="mailto:antonioandreozzidigital@gmail.com" className="cta-ghost" style={{ alignSelf: 'flex-start' }}>
+                  Parliamo del tuo progetto →
+                </a>
+              </div>
+
               {/* E-commerce */}
               <div className="card-hover" style={{ padding: 'clamp(2rem, 4vw, 3rem)', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                 <div className="flex items-center justify-between">

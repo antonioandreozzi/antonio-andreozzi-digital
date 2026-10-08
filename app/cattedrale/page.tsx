@@ -16,7 +16,7 @@ const serviceSchema = {
   '@type': 'Service',
   name: 'Cattedrale — Progetto Brand Annuale',
   description: '12 mesi di accompagnamento continuativo per trasformare identità, strategia, cultura, comunicazione e sistema commerciale. Max 2 clienti/anno.',
-  provider: { '@type': 'Person', name: 'Antonio Andreozzi', url: 'https://www.antonioandreozzidigital.com' },
+  provider: { '@type': 'Person', name: 'Antonio Andreozzi', url: 'https://antonioandreozzidigital.com' },
   offers: { '@type': 'Offer', availability: 'https://schema.org/LimitedAvailability', description: 'Prezzo su misura — contattare per un preventivo personalizzato' },
   areaServed: 'IT',
   serviceType: 'Brand Strategy Consulting',

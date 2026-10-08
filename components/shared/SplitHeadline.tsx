@@ -34,7 +34,7 @@ export default function SplitHeadline({
     // Applica colore accent alle parole specifiche prima di splittare
     const highlighted = accentWords.reduce((str, word) => {
       const regex = new RegExp(`(${word})`, 'gi')
-      return str.replace(regex, `<em class="split-accent" style="color:var(--accent);font-style:italic;">$1</em>`)
+      return str.replace(regex, `<em class="split-accent" style="background:linear-gradient(135deg,#A78BFA,#F472B6,#22D3EE);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-style:italic;">$1</em>`)
     }, text)
     el.innerHTML = highlighted
 

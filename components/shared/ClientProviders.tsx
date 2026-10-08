@@ -4,11 +4,7 @@ import dynamic from 'next/dynamic'
 import CustomCursor  from '@/components/shared/CustomCursor'
 import LoadingScreen from '@/components/shared/LoadingScreen'
 import CinematicInit from '@/components/shared/CinematicInit'
-
-const NoiseBackground = dynamic(
-  () => import('@/components/3d/NoiseBackground'),
-  { ssr: false }
-)
+import GradientOrbs  from '@/components/shared/GradientOrbs'
 
 const FloatingScene3D = dynamic(
   () => import('@/components/3d/FloatingScene3D'),
@@ -53,8 +49,8 @@ export default function ClientProviders() {
   return (
     <>
       <LenisScroll />
-      {/* Sfondo liquido gold/ambra */}
-      <NoiseBackground />
+      {/* Orb atmosferici — la firma visiva di tutto il sito */}
+      <GradientOrbs />
       {/* Oggetti 3D che volano sullo scroll */}
       <FloatingScene3D />
       <LoadingScreen />

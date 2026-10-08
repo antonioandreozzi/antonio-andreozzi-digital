@@ -9,7 +9,7 @@ export default function About() {
   const inView = useInView(ref, { once: true, margin: '-8% 0px' })
 
   return (
-    <section id="chi-sono" className="section-padding" style={{ background: 'var(--bg-void)' }}>
+    <section id="chi-sono" className="section-padding" style={{ background: 'transparent' }}>
       <div className="container-site">
         <div
           ref={ref}

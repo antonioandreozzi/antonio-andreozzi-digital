@@ -1,6 +1,7 @@
 name = "antonio-andreozzi-digital"
 compatibility_date = "2024-09-23"
-assets = { directory = "./out" }
+main = "src/index.ts"
+assets = { directory = "./out", binding = "ASSETS" }
 
 routes = [
   { pattern = "antonioandreozzidigital.com/*", zone_name = "antonioandreozzidigital.com" },

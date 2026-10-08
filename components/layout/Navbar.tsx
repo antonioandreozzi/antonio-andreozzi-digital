@@ -28,9 +28,15 @@ export default function Navbar() {
     <header
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
       style={{
-        background: scrolled ? 'rgba(255, 252, 248, 0.92)' : 'transparent',
-        backdropFilter: scrolled ? 'blur(14px)' : 'none',
-        borderBottom: scrolled ? '1px solid rgba(0,0,0,0.09)' : '1px solid transparent',
+        background: scrolled ? 'rgba(7, 7, 15, 0.75)' : 'transparent',
+        backdropFilter: scrolled ? 'blur(24px) saturate(1.5)' : 'none',
+        WebkitBackdropFilter: scrolled ? 'blur(24px) saturate(1.5)' : 'none',
+        borderBottom: scrolled
+          ? '1px solid rgba(167,139,250,0.15)'
+          : '1px solid transparent',
+        boxShadow: scrolled
+          ? '0 0 40px rgba(124,58,237,0.10), 0 1px 0 rgba(255,255,255,0.05)'
+          : 'none',
       }}
     >
       <div className="container-site">
@@ -40,7 +46,7 @@ export default function Navbar() {
             href="/"
             style={{
               textDecoration: 'none',
-              color: scrolled ? '#0F0E0C' : '#FFFFFF',
+              color: '#F0EFF8',
               fontFamily: 'var(--font-cormorant)',
               fontSize: 'clamp(1rem, 1.6vw, 1.2rem)',
               fontWeight: 300,
@@ -65,7 +71,7 @@ export default function Navbar() {
                     textTransform: 'uppercase',
                     fontFamily: 'var(--font-inter)',
                     fontWeight: 500,
-                    color: isActive(l.href) ? 'var(--accent)' : scrolled ? '#4E4840' : 'rgba(237,232,223,0.85)',
+                    color: isActive(l.href) ? 'var(--accent)' : 'rgba(249,249,255,0.65)',
                     transition: 'color 0.2s ease',
                     borderBottom: isActive(l.href) ? '1px solid var(--accent)' : '1px solid transparent',
                     paddingBottom: '2px',
@@ -132,11 +138,11 @@ export default function Navbar() {
             href="/lavora-con-me"
             onClick={() => setOpen(false)}
             style={{
-              color:           '#C8913A',
+              color:           '#7C6CF5',
               fontSize:        '1rem',
               fontWeight:      600,
               textDecoration:  'none',
-              border:          '1px solid #C8913A',
+              border:          '1px solid #7C6CF5',
               padding:         '0.8rem 2rem',
               marginTop:       '1rem',
             }}

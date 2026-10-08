@@ -16,7 +16,7 @@ const serviceSchema = {
   '@type': 'Service',
   name: 'Diagnosi del Brand',
   description: 'Sessione intensiva 1:1 di 3 ore per analizzare il posizionamento del brand e ricevere un piano scritto di priorità.',
-  provider: { '@type': 'Person', name: 'Antonio Andreozzi', url: 'https://www.antonioandreozzidigital.com' },
+  provider: { '@type': 'Person', name: 'Antonio Andreozzi', url: 'https://antonioandreozzidigital.com' },
   offers: { '@type': 'Offer', price: '497', priceCurrency: 'EUR', availability: 'https://schema.org/LimitedAvailability' },
   areaServed: 'IT',
   serviceType: 'Brand Strategy Consulting',

@@ -219,6 +219,26 @@ Dopo aver creato il file, aggiorna `.claude/topics.json`:
 
 ---
 
+## FASE 8b — Aggiorna la Lista Blog
+
+Leggi il file `C:\Users\SDB\Desktop\antonio-andreozzi-digital\app\blog\page.tsx`.
+
+Trova l'array `const posts = [...]` e aggiungi in cima (primo elemento) il nuovo articolo:
+
+```ts
+{
+  date: '[DATA OGGI in formato "GG Mese AAAA" in italiano, es. "28 Agosto 2026"]',
+  tag: '[CATEGORIA del topic, es. "Brand", "AI", "E-commerce"]',
+  title: '[TITOLO SEO dell articolo]',
+  excerpt: '[META DESCRIPTION dell articolo, max 160 caratteri]',
+  slug: '[slug-articolo]',
+},
+```
+
+Aggiungi il nuovo oggetto come PRIMO elemento dell'array, prima degli esistenti. Non rimuovere quelli esistenti.
+
+---
+
 ## FASE 9 — Report Finale
 
 Mostra all'utente:

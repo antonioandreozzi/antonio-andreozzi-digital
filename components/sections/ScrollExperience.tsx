@@ -72,7 +72,7 @@ export default function ScrollExperience() {
     <section
       ref={containerRef}
       className="section-dark"
-      style={{ height: '300vh', position: 'relative', background: '#0F0F13' }}
+      style={{ height: '300vh', position: 'relative', background: 'transparent' }}
     >
       {/* Sticky viewport */}
       <div
@@ -82,7 +82,7 @@ export default function ScrollExperience() {
           height: '100vh',
           overflow: 'hidden',
           display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
+          gridTemplateColumns: 'minmax(0, 55%) minmax(0, 45%)',
           alignItems: 'center',
         }}
       >
@@ -96,8 +96,8 @@ export default function ScrollExperience() {
                 position:  'absolute',
                 top:       '50%',
                 transform: 'translateY(-50%)',
-                left:      'clamp(32px, 8vw, 120px)',
-                right:     'clamp(24px, 4vw, 60px)',
+                left:      'clamp(32px, 5vw, 80px)',
+                right:     'clamp(16px, 3vw, 48px)',
               }}
             >
               {/* Eyebrow */}
@@ -111,15 +111,14 @@ export default function ScrollExperience() {
               <h2
                 className="font-display"
                 style={{
-                  fontSize:   'clamp(2rem, 3.8vw, 3.4rem)',
+                  fontSize:   'clamp(1.6rem, 2.8vw, 3rem)',
                   fontWeight: 300,
-                  lineHeight: 1.12,
+                  lineHeight: 1.18,
                   color:      'var(--text-primary)',
                   marginBottom: '0.4rem',
                 }}
               >
-                {p.headline}
-                <br />
+                {p.headline}{' '}
                 <em style={{ color: 'var(--accent)', fontStyle: 'italic' }}>{p.em}</em>
               </h2>
 

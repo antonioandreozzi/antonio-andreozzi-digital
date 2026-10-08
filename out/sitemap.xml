@@ -1,52 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.antonioandreozzidigital.com/</loc>
+    <loc>https://antonioandreozzidigital.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.antonioandreozzidigital.com/chi-sono/</loc>
+    <loc>https://antonioandreozzidigital.com/chi-sono/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.antonioandreozzidigital.com/lavora-con-me/</loc>
+    <loc>https://antonioandreozzidigital.com/lavora-con-me/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.antonioandreozzidigital.com/diagnosi/</loc>
+    <loc>https://antonioandreozzidigital.com/diagnosi/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.antonioandreozzidigital.com/progetto/</loc>
+    <loc>https://antonioandreozzidigital.com/progetto/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.antonioandreozzidigital.com/sistema/</loc>
+    <loc>https://antonioandreozzidigital.com/sistema/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.antonioandreozzidigital.com/cattedrale/</loc>
+    <loc>https://antonioandreozzidigital.com/cattedrale/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.antonioandreozzidigital.com/blog/</loc>
+    <loc>https://antonioandreozzidigital.com/short-video/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://antonioandreozzidigital.com/chatbot-ai/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://antonioandreozzidigital.com/blog/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.antonioandreozzidigital.com/video/</loc>
+    <loc>https://antonioandreozzidigital.com/blog/consulente-brand-caserta-napoli/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://antonioandreozzidigital.com/blog/personal-brand-napoli-imprenditori/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://antonioandreozzidigital.com/video/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.antonioandreozzidigital.com/risorse/</loc>
+    <loc>https://antonioandreozzidigital.com/risorse/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

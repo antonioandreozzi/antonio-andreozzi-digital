@@ -35,12 +35,12 @@ function AnimatedKnot() {
       <mesh ref={meshRef}>
         <torusKnotGeometry args={[1.1, 0.34, 200, 32, 2, 3]} />
         <MeshDistortMaterial
-          color="#C8913A"
+          color="#7C3AED"
           metalness={0.97}
           roughness={0.02}
-          distort={0.10}
+          distort={0.15}
           speed={1.6}
-          envMapIntensity={4}
+          envMapIntensity={5}
         />
       </mesh>
     </Float>
@@ -51,12 +51,12 @@ function Scene() {
   return (
     <>
       <ambientLight intensity={0.10} />
-      <pointLight position={[6, 6, 6]}   intensity={8}  color="#E5B86A" />
-      <pointLight position={[-6, -4, -4]} intensity={4}  color="#C8913A" />
-      <pointLight position={[0, -5, 4]}   intensity={2}  color="#FFFFFF" />
+      <pointLight position={[6, 6, 6]}   intensity={10} color="#D946EF" />
+      <pointLight position={[-6, -4, -4]} intensity={5}  color="#7C3AED" />
+      <pointLight position={[0, 5, 4]}    intensity={4}  color="#06B6D4" />
       <Environment preset="city" />
       <AnimatedKnot />
-      <Sparkles count={160} scale={10} size={1.8} speed={0.18} color="#E5B86A" opacity={0.4} />
+      <Sparkles count={180} scale={10} size={1.8} speed={0.18} color="#22D3EE" opacity={0.5} />
       <EffectComposer frameBufferType={HalfFloatType}>
         <Bloom intensity={2.6} luminanceThreshold={0.12} luminanceSmoothing={0.9} mipmapBlur />
       </EffectComposer>

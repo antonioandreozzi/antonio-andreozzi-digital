@@ -69,13 +69,13 @@ export default function Hero() {
       ref={sectionRef}
       id="home"
       className="section-dark relative min-h-screen flex items-center overflow-hidden"
-      style={{ background: '#0F0F13' }}
+      style={{ background: 'transparent' }}
     >
       {/* 3D sphere — sfondo con parallax */}
       <div
         ref={sphereRef}
         className="absolute inset-0 pointer-events-none"
-        style={{ opacity: 0.58, willChange: 'transform' }}
+        style={{ opacity: 0.75, willChange: 'transform' }}
         aria-hidden="true"
       >
         <BrandSphere />
@@ -86,13 +86,13 @@ export default function Hero() {
         className="absolute inset-0 pointer-events-none"
         aria-hidden="true"
         style={{
-          background: 'radial-gradient(ellipse at 65% 50%, transparent 15%, #0F0F13 65%)',
+          background: 'radial-gradient(ellipse at 65% 50%, transparent 20%, rgba(7,7,15,0.70) 65%)',
         }}
       />
       {/* Fade bottom */}
       <div
         className="absolute bottom-0 left-0 right-0 pointer-events-none"
-        style={{ height: '200px', background: 'linear-gradient(to top, #0F0F13, transparent)' }}
+        style={{ height: '220px', background: 'linear-gradient(to top, #07070F, transparent)' }}
         aria-hidden="true"
       />
 
@@ -106,15 +106,23 @@ export default function Hero() {
             className="inline-flex items-center gap-3 mb-8"
             style={{ fontFamily: 'var(--font-inter)', opacity: 0 }}
           >
-            <span style={{ display: 'block', width: '32px', height: '1px', background: 'var(--accent)' }} />
             <span style={{
-              fontSize:      '0.65rem',
-              letterSpacing: '0.18em',
+              display: 'block',
+              width: '32px',
+              height: '1px',
+              background: 'linear-gradient(90deg, #7C3AED, #D946EF)',
+            }} />
+            <span style={{
+              fontSize:      '0.63rem',
+              letterSpacing: '0.22em',
               textTransform: 'uppercase',
-              color:         'var(--accent)',
-              fontWeight:    500,
+              background:    'linear-gradient(135deg, #A78BFA, #F472B6)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              fontWeight:    600,
             }}>
-              Agenzia Marketing · Caserta
+              Brand Strategy · Marketing · Caserta
             </span>
           </span>
 

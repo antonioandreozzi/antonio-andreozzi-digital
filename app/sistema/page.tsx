@@ -16,7 +16,7 @@ const serviceSchema = {
   '@type': 'Service',
   name: 'Sistema Brand',
   description: 'Brand Architecture completa in 6 mesi: 12 sessioni 1:1, identità, posizionamento, voce, contenuti e sistema commerciale.',
-  provider: { '@type': 'Person', name: 'Antonio Andreozzi', url: 'https://www.antonioandreozzidigital.com' },
+  provider: { '@type': 'Person', name: 'Antonio Andreozzi', url: 'https://antonioandreozzidigital.com' },
   offers: { '@type': 'Offer', price: '9000', priceCurrency: 'EUR', availability: 'https://schema.org/LimitedAvailability' },
   areaServed: 'IT',
   serviceType: 'Brand Strategy Consulting',

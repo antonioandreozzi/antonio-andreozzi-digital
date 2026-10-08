@@ -16,7 +16,7 @@ const serviceSchema = {
   '@type': 'Service',
   name: 'Progetto Brand',
   description: '6 sessioni 1:1 in 8 settimane per costruire posizionamento, tono di voce e sistema editoriale. Consegnato in un manuale operativo completo.',
-  provider: { '@type': 'Person', name: 'Antonio Andreozzi', url: 'https://www.antonioandreozzidigital.com' },
+  provider: { '@type': 'Person', name: 'Antonio Andreozzi', url: 'https://antonioandreozzidigital.com' },
   offers: { '@type': 'Offer', price: '3500', priceCurrency: 'EUR', availability: 'https://schema.org/LimitedAvailability' },
   areaServed: 'IT',
   serviceType: 'Brand Strategy Consulting',

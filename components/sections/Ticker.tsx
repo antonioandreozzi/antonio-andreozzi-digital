@@ -37,10 +37,14 @@ export default function Ticker({
       }}
     >
       <div
+        className="ticker-track"
         style={{
           display:         'flex',
+          flexDirection:   'row',
+          flexWrap:        'nowrap',
           gap:             'clamp(2rem, 4vw, 4rem)',
           whiteSpace:      'nowrap',
+          width:           'max-content',
           animation:       `ticker-${reverse ? 'reverse' : 'forward'} ${speed}s linear infinite`,
           willChange:      'transform',
         }}
@@ -69,22 +73,6 @@ export default function Ticker({
         ))}
       </div>
 
-      <style>{`
-        @keyframes ticker-forward {
-          from { transform: translateX(0); }
-          to   { transform: translateX(-50%); }
-        }
-        @keyframes ticker-reverse {
-          from { transform: translateX(-50%); }
-          to   { transform: translateX(0); }
-        }
-        @media (prefers-reduced-motion: reduce) {
-          [style*="ticker-forward"],
-          [style*="ticker-reverse"] {
-            animation: none !important;
-          }
-        }
-      `}</style>
     </div>
   )
 }
