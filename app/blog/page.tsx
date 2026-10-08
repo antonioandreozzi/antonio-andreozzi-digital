@@ -1,5 +1,4 @@
-import type { Metadata } from 'next'
-import Navbar from '@/components/layout/Navbar'
+﻿import type { Metadata } from 'next'
 import Footer from '@/components/layout/Footer'
 import PageHeader from '@/components/shared/PageHeader'
 
@@ -10,6 +9,13 @@ export const metadata: Metadata = {
 }
 
 const posts: { date: string; tag: string; title: string; excerpt: string; slug: string }[] = [
+  {
+    date: '6 Ottobre 2026',
+    tag: 'Voce',
+    title: 'Il tone of voice non è un documento, è un comportamento',
+    excerpt: 'Il tone of voice aziendale non si definisce in un PDF e si dimentica. È un comportamento coerente che costruisce fiducia nel tempo. Guida per PMI a Caserta e Napoli.',
+    slug: 'tone-of-voice-aziendale-napoli-caserta',
+  },
   {
     date: '1 Ottobre 2026',
     tag: 'AI',
@@ -92,7 +98,6 @@ const posts: { date: string; tag: string; title: string; excerpt: string; slug: 
 export default function Blog() {
   return (
     <>
-      <Navbar />
       <main id="main-content">
         <PageHeader
           kicker="Blog"
