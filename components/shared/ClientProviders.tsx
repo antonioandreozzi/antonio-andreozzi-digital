@@ -1,15 +1,8 @@
 'use client'
 import { useEffect } from 'react'
-import dynamic from 'next/dynamic'
 import CustomCursor  from '@/components/shared/CustomCursor'
 import LoadingScreen from '@/components/shared/LoadingScreen'
 import CinematicInit from '@/components/shared/CinematicInit'
-import GradientOrbs  from '@/components/shared/GradientOrbs'
-
-const FloatingScene3D = dynamic(
-  () => import('@/components/3d/FloatingScene3D'),
-  { ssr: false }
-)
 
 function LenisScroll() {
   useEffect(() => {
@@ -49,10 +42,6 @@ export default function ClientProviders() {
   return (
     <>
       <LenisScroll />
-      {/* Orb atmosferici — la firma visiva di tutto il sito */}
-      <GradientOrbs />
-      {/* Oggetti 3D che volano sullo scroll */}
-      <FloatingScene3D />
       <LoadingScreen />
       <CustomCursor />
       <CinematicInit />
