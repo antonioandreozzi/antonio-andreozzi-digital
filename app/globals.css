@@ -21,10 +21,13 @@
   --dim:      #707070;
   --mute:     #4A4A4A;
 
-  /* Accent = bianco (la purezza È l'accento) */
-  --accent:       #FFFFFF;
-  --accent-light: #FFFFFF;
-  --accent-dark:  #E0E0E0;
+  /* Accent = oro */
+  --gold:         #C9A84C;
+  --gold-dim:     rgba(201,168,76,0.55);
+  --gold-line:    rgba(201,168,76,0.25);
+  --accent:       #C9A84C;
+  --accent-light: #D4B86A;
+  --accent-dark:  #B8933A;
 
   /* Lines / borders */
   --line:         rgba(255, 255, 255, 0.10);
@@ -76,10 +79,10 @@ body {
 /* ── Scrollbar ─────────────────────────────────────── */
 ::-webkit-scrollbar       { width: 1px; }
 ::-webkit-scrollbar-track { background: var(--ink); }
-::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.25); }
+::-webkit-scrollbar-thumb { background: var(--gold-line); }
 
 /* ── Selezione ──────────────────────────────────────── */
-::selection { background: #FFFFFF; color: #0A0A0A; }
+::selection { background: var(--gold); color: #0A0A0A; }
 
 /* ── Focus ──────────────────────────────────────────── */
 *:focus-visible {
@@ -131,12 +134,12 @@ body::before {
   box-shadow: var(--shadow-glass);
 }
 
-/* Italic serif accent — IL vero accent nel B&W */
+/* Italic serif accent — oro su nero */
 .italic-accent {
   font-family: var(--font-cormorant), Georgia, serif;
   font-style: italic;
   font-weight: 300;
-  color: var(--paper);
+  color: var(--gold);
 }
 
 /* Eyebrow label */
@@ -191,7 +194,8 @@ body::before {
               transform var(--t-base) var(--ease);
 }
 .cta-primary:hover {
-  background: rgba(255,255,255,0.85);
+  background: var(--gold);
+  color: #0A0A0A;
   transform: translateY(-2px);
 }
 
@@ -214,8 +218,8 @@ body::before {
               border-color var(--t-base) var(--ease);
 }
 .cta-ghost:hover {
-  color: var(--paper);
-  border-color: var(--line-2);
+  color: var(--gold);
+  border-color: var(--gold-line);
 }
 
 /* ── Animated underline ─────────────────────────────── */

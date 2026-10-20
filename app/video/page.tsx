@@ -1,5 +1,4 @@
-import type { Metadata } from 'next'
-import Navbar from '@/components/layout/Navbar'
+﻿import type { Metadata } from 'next'
 import Footer from '@/components/layout/Footer'
 import PageHeader from '@/components/shared/PageHeader'
 import { Play } from 'lucide-react'
@@ -52,7 +51,6 @@ const videos = [
 export default function Video() {
   return (
     <>
-      <Navbar />
       <main id="main-content">
         <PageHeader
           kicker="Video"

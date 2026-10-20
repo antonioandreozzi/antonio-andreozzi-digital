@@ -1,7 +1,8 @@
-'use client'
+﻿'use client'
 import { useRef } from 'react'
-import { useInView } from 'framer-motion'
+import { useInView, motion } from 'framer-motion'
 import { Mail, ArrowUpRight } from 'lucide-react'
+import MagneticButton from '@/components/shared/MagneticButton'
 
 export default function CTA() {
   const ref = useRef<HTMLDivElement>(null)
@@ -57,7 +58,7 @@ export default function CTA() {
           >
             Inizia dalla
             <br />
-            <em style={{ color: 'rgba(255,255,255,0.55)', fontStyle: 'italic', fontFamily: 'var(--font-cormorant)' }}>Diagnosi.</em>
+            <em style={{ color: '#C9A84C', fontStyle: 'italic', fontFamily: 'var(--font-cormorant)' }}>Diagnosi.</em>
           </h2>
 
           {/* Subtext */}
@@ -78,20 +79,14 @@ export default function CTA() {
 
           {/* CTA buttons */}
           <div className="flex flex-wrap justify-center gap-4">
-            <a
-              href="/lavora-con-me"
-              className="cta-primary"
-            >
+            <MagneticButton href="/lavora-con-me" className="cta-primary">
               <Mail size={14} />
               Scrivimi
-            </a>
-            <a
-              href="/lavora-con-me"
-              className="cta-ghost"
-            >
+            </MagneticButton>
+            <MagneticButton href="/lavora-con-me" className="cta-ghost">
               Scopri i servizi
               <ArrowUpRight size={13} />
-            </a>
+            </MagneticButton>
           </div>
 
           {/* Email visible */}

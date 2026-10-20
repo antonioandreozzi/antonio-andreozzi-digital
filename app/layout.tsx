@@ -2,6 +2,7 @@
 import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
 import ClientProviders from "@/components/shared/ClientProviders";
+import Navbar from "@/components/layout/Navbar";
 
 const fraunces = Fraunces({
   weight: ["300", "400", "700"],
@@ -184,6 +185,7 @@ _iub.csLangConfiguration = {"it":{"cookiePolicyId":35973540}};`,
         <a href="#main-content" className="skip-link">
           Vai al contenuto principale
         </a>
+        <Navbar />
         {children}
         <ClientProviders />
       </body>

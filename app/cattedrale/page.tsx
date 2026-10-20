@@ -1,6 +1,5 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
-import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import PageHeader from '@/components/shared/PageHeader'
 import { Check, X } from 'lucide-react'
@@ -48,7 +47,6 @@ export default function Cattedrale() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
-      <Navbar />
       <main id="main-content">
         <PageHeader
           kicker="Cattedrale · Su misura"

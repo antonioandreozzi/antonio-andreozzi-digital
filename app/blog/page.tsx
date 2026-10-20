@@ -10,6 +10,13 @@ export const metadata: Metadata = {
 
 const posts: { date: string; tag: string; title: string; excerpt: string; slug: string }[] = [
   {
+    date: '20 Ottobre 2026',
+    tag: 'Content Strategy',
+    title: 'La storia di come hai iniziato vende più di qualsiasi promozione',
+    excerpt: 'Le PMI di Caserta e Napoli hanno già le storie giuste. Il problema è che non le raccontano. Guida pratica allo storytelling per imprenditori campani.',
+    slug: 'storytelling-pmi-caserta-napoli-come-raccontare-azienda',
+  },
+  {
     date: '6 Ottobre 2026',
     tag: 'Voce',
     title: 'Il tone of voice non è un documento, è un comportamento',

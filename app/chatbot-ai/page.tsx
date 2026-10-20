@@ -1,8 +1,8 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
-import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import PageHeader from '@/components/shared/PageHeader'
+import RevealBlock from '@/components/shared/RevealBlock'
 import { Check, X } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -66,7 +66,6 @@ export default function ChatbotAI() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
-      <Navbar />
       <main id="main-content">
         <PageHeader
           kicker="Chatbot AI"
@@ -83,7 +82,7 @@ export default function ChatbotAI() {
               <div className="lg:col-span-7">
 
                 {/* Per chi è */}
-                <div style={{ marginBottom: '3rem' }}>
+                <RevealBlock delay={0} y={28} style={{ marginBottom: '3rem' }}>
                   <p style={{ fontSize: '0.65rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--accent)', fontFamily: 'var(--font-inter)', fontWeight: 500, marginBottom: '1.5rem' }}>
                     Per chi è
                   </p>
@@ -93,53 +92,57 @@ export default function ChatbotAI() {
                       'Chi vuole qualificare i lead automaticamente prima di rispondere',
                       'Negozi, studi, agenzie che vogliono supporto clienti H24 senza assumere personale',
                       'Chi ha un e-commerce e vuole aumentare le conversioni con un assistente alla vendita',
-                    ].map((item) => (
-                      <div key={item} style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
+                    ].map((item, i) => (
+                      <RevealBlock key={item} delay={0.05 + i * 0.06} y={16} style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
                         <span style={{ color: 'var(--accent)', flexShrink: 0, marginTop: '0.15rem' }}>→</span>
                         <p style={{ fontSize: '0.92rem', lineHeight: 1.7, color: 'var(--text-muted)', fontFamily: 'var(--font-inter)', fontWeight: 300 }}>{item}</p>
-                      </div>
+                      </RevealBlock>
                     ))}
                   </div>
-                </div>
+                </RevealBlock>
 
                 {/* Include / Non include */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8" style={{ borderTop: '1px solid var(--border)', paddingTop: '2.5rem', marginBottom: '3rem' }}>
-                  <div>
-                    <p style={{ fontSize: '0.65rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--accent)', fontFamily: 'var(--font-inter)', fontWeight: 500, marginBottom: '1.2rem' }}>
-                      Include
-                    </p>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
-                      {includes.map((item) => (
-                        <div key={item} style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start' }}>
-                          <Check size={13} style={{ color: 'var(--accent)', flexShrink: 0, marginTop: '0.2rem' }} />
-                          <p style={{ fontSize: '0.85rem', lineHeight: 1.6, color: 'var(--text-muted)', fontFamily: 'var(--font-inter)', fontWeight: 300 }}>{item}</p>
-                        </div>
-                      ))}
+                <RevealBlock delay={0.1} y={24} style={{ borderTop: '1px solid var(--border)', paddingTop: '2.5rem', marginBottom: '3rem' }}>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <div>
+                      <p style={{ fontSize: '0.65rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--accent)', fontFamily: 'var(--font-inter)', fontWeight: 500, marginBottom: '1.2rem' }}>
+                        Include
+                      </p>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
+                        {includes.map((item) => (
+                          <div key={item} style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start' }}>
+                            <Check size={13} style={{ color: 'var(--accent)', flexShrink: 0, marginTop: '0.2rem' }} />
+                            <p style={{ fontSize: '0.85rem', lineHeight: 1.6, color: 'var(--text-muted)', fontFamily: 'var(--font-inter)', fontWeight: 300 }}>{item}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    <div>
+                      <p style={{ fontSize: '0.65rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--text-muted)', fontFamily: 'var(--font-inter)', fontWeight: 500, marginBottom: '1.2rem' }}>
+                        Non include
+                      </p>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
+                        {excludes.map((item) => (
+                          <div key={item} style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start' }}>
+                            <X size={13} style={{ color: 'var(--text-muted)', flexShrink: 0, marginTop: '0.2rem', opacity: 0.5 }} />
+                            <p style={{ fontSize: '0.85rem', lineHeight: 1.6, color: 'var(--text-muted)', fontFamily: 'var(--font-inter)', fontWeight: 300, opacity: 0.7 }}>{item}</p>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
-                  <div>
-                    <p style={{ fontSize: '0.65rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--text-muted)', fontFamily: 'var(--font-inter)', fontWeight: 500, marginBottom: '1.2rem' }}>
-                      Non include
-                    </p>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
-                      {excludes.map((item) => (
-                        <div key={item} style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start' }}>
-                          <X size={13} style={{ color: 'var(--text-muted)', flexShrink: 0, marginTop: '0.2rem', opacity: 0.5 }} />
-                          <p style={{ fontSize: '0.85rem', lineHeight: 1.6, color: 'var(--text-muted)', fontFamily: 'var(--font-inter)', fontWeight: 300, opacity: 0.7 }}>{item}</p>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
+                </RevealBlock>
 
                 {/* Come funziona */}
                 <div style={{ borderTop: '1px solid var(--border)', paddingTop: '2.5rem' }}>
-                  <p style={{ fontSize: '0.65rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--accent)', fontFamily: 'var(--font-inter)', fontWeight: 500, marginBottom: '2rem' }}>
-                    Come funziona
-                  </p>
+                  <RevealBlock delay={0} y={16}>
+                    <p style={{ fontSize: '0.65rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--accent)', fontFamily: 'var(--font-inter)', fontWeight: 500, marginBottom: '2rem' }}>
+                      Come funziona
+                    </p>
+                  </RevealBlock>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-                    {steps.map((s) => (
-                      <div key={s.n} style={{ display: 'flex', gap: '1.5rem' }}>
+                    {steps.map((s, i) => (
+                      <RevealBlock key={s.n} delay={i * 0.07} y={20} style={{ display: 'flex', gap: '1.5rem' }}>
                         <span style={{ fontSize: '0.6rem', color: 'var(--accent)', fontFamily: 'var(--font-inter)', letterSpacing: '0.12em', paddingTop: '0.2rem', flexShrink: 0 }}>
                           {s.n}
                         </span>
@@ -151,14 +154,14 @@ export default function ChatbotAI() {
                             {s.desc}
                           </p>
                         </div>
-                      </div>
+                      </RevealBlock>
                     ))}
                   </div>
                 </div>
               </div>
 
               {/* Right: sticky CTA */}
-              <div className="lg:col-span-5 lg:sticky lg:top-28 lg:self-start">
+              <RevealBlock delay={0.2} y={24} className="lg:col-span-5 lg:sticky lg:top-28 lg:self-start">
                 <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', padding: 'clamp(1.5rem, 3vw, 2.5rem)' }}>
                   <p style={{ fontSize: '0.65rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--accent)', fontFamily: 'var(--font-inter)', fontWeight: 500, marginBottom: '0.5rem' }}>
                     Chatbot AI
@@ -190,7 +193,7 @@ export default function ChatbotAI() {
                     Scrivi a: antonioandreozzidigital@gmail.com
                   </p>
                 </div>
-              </div>
+              </RevealBlock>
 
             </div>
           </div>
@@ -199,24 +202,26 @@ export default function ChatbotAI() {
         {/* FAQ */}
         <section className="section-padding" style={{ background: 'var(--bg-void)', borderTop: '1px solid var(--border)' }}>
           <div className="container-site max-w-3xl">
-            <p style={{ fontSize: '0.65rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--accent)', fontFamily: 'var(--font-inter)', fontWeight: 500, marginBottom: '3rem' }}>
-              Domande frequenti
-            </p>
+            <RevealBlock delay={0} y={20}>
+              <p style={{ fontSize: '0.65rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--accent)', fontFamily: 'var(--font-inter)', fontWeight: 500, marginBottom: '3rem' }}>
+                Domande frequenti
+              </p>
+            </RevealBlock>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
-              {faqs.map((f) => (
-                <div key={f.q} style={{ borderBottom: '1px solid var(--border)', padding: '1.8rem 0' }}>
+              {faqs.map((f, i) => (
+                <RevealBlock key={f.q} delay={i * 0.07} y={18} style={{ borderBottom: '1px solid var(--border)', padding: '1.8rem 0' }}>
                   <p className="font-display" style={{ fontSize: 'clamp(1rem, 1.5vw, 1.2rem)', fontWeight: 400, color: 'var(--text-primary)', marginBottom: '0.8rem' }}>
                     {f.q}
                   </p>
                   <p style={{ fontSize: '0.9rem', lineHeight: 1.8, color: 'var(--text-muted)', fontFamily: 'var(--font-inter)', fontWeight: 300 }}>
                     {f.a}
                   </p>
-                </div>
+                </RevealBlock>
               ))}
             </div>
-            <div style={{ marginTop: '3rem' }}>
+            <RevealBlock delay={0.1} y={16} style={{ marginTop: '3rem' }}>
               <Link href="/lavora-con-me" className="cta-ghost">← Torna ai servizi</Link>
-            </div>
+            </RevealBlock>
           </div>
         </section>
       </main>

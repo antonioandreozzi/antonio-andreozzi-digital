@@ -1,9 +1,9 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import { ArrowUpRight, Mail, MessageCircle } from 'lucide-react'
+import RevealBlock from '@/components/shared/RevealBlock'
 
 export const metadata: Metadata = {
   title: 'Consulenza Brand e Marketing — Lavora con Antonio Andreozzi',
@@ -53,7 +53,6 @@ const services = [
 export default function LavoraConMe() {
   return (
     <>
-      <Navbar />
       <main id="main-content">
 
         {/* Hero section — consulenza */}
@@ -69,7 +68,7 @@ export default function LavoraConMe() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-center">
 
               {/* Left: copy */}
-              <div className="lg:col-span-7">
+              <RevealBlock delay={0} y={30} className="lg:col-span-7">
                 <div className="flex items-center gap-3 mb-8">
                   <span style={{ display: 'block', width: '24px', height: '1px', background: 'var(--accent)' }} />
                   <span style={{ fontSize: '0.65rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--accent)', fontWeight: 500, fontFamily: 'var(--font-inter)' }}>
@@ -153,10 +152,10 @@ export default function LavoraConMe() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </RevealBlock>
 
               {/* Right: photo */}
-              <div className="lg:col-span-5">
+              <RevealBlock delay={0.15} y={30} className="lg:col-span-5">
                 <div
                   style={{
                     position: 'relative',
@@ -173,7 +172,6 @@ export default function LavoraConMe() {
                     sizes="(max-width: 1024px) 100vw, 40vw"
                     priority
                   />
-                  {/* Subtle gradient overlay bottom */}
                   <div
                     style={{
                       position: 'absolute',
@@ -208,7 +206,7 @@ export default function LavoraConMe() {
                     </div>
                   ))}
                 </div>
-              </div>
+              </RevealBlock>
             </div>
           </div>
         </section>
@@ -225,18 +223,15 @@ export default function LavoraConMe() {
             <div className="grid grid-cols-1 lg:grid-cols-12">
 
               {/* Info */}
-              <div
-                className="lg:col-span-4"
-                style={{
-                  padding:        'clamp(2rem, 5vw, 4rem) 0',
-                  paddingRight:   'clamp(2rem, 4vw, 3rem)',
-                  borderRight:    '1px solid var(--border)',
-                  display:        'flex',
-                  flexDirection:  'column',
-                  justifyContent: 'center',
-                  gap:            '2rem',
-                }}
-              >
+              <RevealBlock delay={0.05} y={20} className="lg:col-span-4" style={{
+                padding:        'clamp(2rem, 5vw, 4rem) 0',
+                paddingRight:   'clamp(2rem, 4vw, 3rem)',
+                borderRight:    '1px solid var(--border)',
+                display:        'flex',
+                flexDirection:  'column',
+                justifyContent: 'center',
+                gap:            '2rem',
+              }}>
                 <div>
                   <p style={{ fontSize:'0.65rem', letterSpacing:'0.18em', textTransform:'uppercase', color:'var(--accent)', fontFamily:'var(--font-inter)', fontWeight:500, marginBottom:'1rem' }}>
                     Dove siamo
@@ -275,7 +270,7 @@ export default function LavoraConMe() {
                 >
                   Apri su Google Maps →
                 </a>
-              </div>
+              </RevealBlock>
 
               {/* Mappa embed */}
               <div
@@ -297,7 +292,6 @@ export default function LavoraConMe() {
                   referrerPolicy="no-referrer-when-downgrade"
                   title="Antonio Andreozzi Digital — Via G. Corrado, 11 Parete CE"
                 />
-                {/* Overlay per blend col tema scuro */}
                 <div
                   aria-hidden="true"
                   style={{
@@ -321,25 +315,24 @@ export default function LavoraConMe() {
           }}
         >
           <div className="container-site">
-            <div className="flex items-center gap-3 mb-12">
-              <span style={{ display: 'block', width: '24px', height: '1px', background: 'var(--accent)' }} />
-              <span style={{ fontSize: '0.65rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--accent)', fontWeight: 500, fontFamily: 'var(--font-inter)' }}>
-                Quattro modi di lavorare insieme · Tutti 1:1
-              </span>
-            </div>
+            <RevealBlock delay={0} y={20}>
+              <div className="flex items-center gap-3 mb-12">
+                <span style={{ display: 'block', width: '24px', height: '1px', background: 'var(--accent)' }} />
+                <span style={{ fontSize: '0.65rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--accent)', fontWeight: 500, fontFamily: 'var(--font-inter)' }}>
+                  Quattro modi di lavorare insieme · Tutti 1:1
+                </span>
+              </div>
+            </RevealBlock>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-px" style={{ border: '1px solid var(--border)', background: 'var(--border)' }}>
-              {services.map((s) => (
-                <div
-                  key={s.code}
-                  className="card-hover"
-                  style={{
-                    padding: 'clamp(2rem, 4vw, 3rem)',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: '1.5rem',
-                  }}
-                >
+              {services.map((s, i) => (
+                <RevealBlock key={s.code} delay={i * 0.08} y={28} style={{
+                  padding: 'clamp(2rem, 4vw, 3rem)',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '1.5rem',
+                  background: 'var(--bg-surface)',
+                }}>
                   <div className="flex items-start justify-between gap-4 flex-wrap">
                     <div>
                       <p style={{ fontSize: '0.65rem', letterSpacing: '0.2em', color: 'var(--accent)', fontFamily: 'var(--font-inter)', fontWeight: 500, marginBottom: '0.4rem' }}>{s.code}</p>
@@ -353,7 +346,7 @@ export default function LavoraConMe() {
                   <Link href={s.href} className="cta-ghost" style={{ alignSelf: 'flex-start', display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}>
                     Scopri di più <ArrowUpRight size={12} />
                   </Link>
-                </div>
+                </RevealBlock>
               ))}
             </div>
           </div>
@@ -369,91 +362,78 @@ export default function LavoraConMe() {
           }}
         >
           <div className="container-site">
-            <div className="flex items-center gap-3 mb-4">
-              <span style={{ display: 'block', width: '24px', height: '1px', background: 'var(--accent)' }} />
-              <span style={{ fontSize: '0.65rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--accent)', fontWeight: 500, fontFamily: 'var(--font-inter)' }}>
-                Soluzioni Digitali
-              </span>
-            </div>
-            <h2
-              className="font-display"
-              style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 300, lineHeight: 1.1, color: 'var(--text-primary)', marginBottom: '1rem' }}
-            >
-              Non solo consulenza.
-              <br />
-              <em style={{ color: 'var(--accent)', fontStyle: 'italic' }}>Costruiamo anche il digitale.</em>
-            </h2>
-            <p style={{ fontSize: '0.95rem', lineHeight: 1.75, color: 'var(--text-muted)', fontFamily: 'var(--font-inter)', fontWeight: 300, maxWidth: '560px', marginBottom: '3rem' }}>
-              Per chi ha bisogno di passare dalla strategia all&apos;esecuzione: e-commerce pronti a vendere e app su misura per il tuo business.
-            </p>
+            <RevealBlock delay={0} y={24}>
+              <div className="flex items-center gap-3 mb-4">
+                <span style={{ display: 'block', width: '24px', height: '1px', background: 'var(--accent)' }} />
+                <span style={{ fontSize: '0.65rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--accent)', fontWeight: 500, fontFamily: 'var(--font-inter)' }}>
+                  Soluzioni Digitali
+                </span>
+              </div>
+              <h2
+                className="font-display"
+                style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)', fontWeight: 300, lineHeight: 1.1, color: 'var(--text-primary)', marginBottom: '1rem' }}
+              >
+                Non solo consulenza.
+                <br />
+                <em style={{ color: 'var(--accent)', fontStyle: 'italic' }}>Costruiamo anche il digitale.</em>
+              </h2>
+              <p style={{ fontSize: '0.95rem', lineHeight: 1.75, color: 'var(--text-muted)', fontFamily: 'var(--font-inter)', fontWeight: 300, maxWidth: '560px', marginBottom: '3rem' }}>
+                Per chi ha bisogno di passare dalla strategia all&apos;esecuzione: e-commerce pronti a vendere e app su misura per il tuo business.
+              </p>
+            </RevealBlock>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-px" style={{ border: '1px solid var(--border)', background: 'var(--border)' }}>
 
-              {/* Integrazione AI */}
-              <div className="card-hover" style={{ padding: 'clamp(2rem, 4vw, 3rem)', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-                <div className="flex items-center justify-between">
-                  <span style={{ fontSize: '0.65rem', letterSpacing: '0.2em', color: 'var(--accent)', fontFamily: 'var(--font-inter)', fontWeight: 500 }}>INTEGRAZIONE AI</span>
-                  <span style={{ fontSize: '0.6rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--text-muted)', border: '1px solid var(--border)', padding: '0.3rem 0.7rem', fontFamily: 'var(--font-inter)' }}>Aziende Italiane · Su misura</span>
-                </div>
-                <h3 className="font-display" style={{ fontSize: 'clamp(1.2rem, 2vw, 1.8rem)', fontWeight: 400, lineHeight: 1.2, color: 'var(--text-primary)', fontStyle: 'italic' }}>
-                  L&apos;AI nei tuoi processi, senza perdere la tua voce.
-                </h3>
-                <p style={{ fontSize: '0.88rem', lineHeight: 1.8, color: 'var(--text-muted)', fontFamily: 'var(--font-inter)', fontWeight: 300, flexGrow: 1 }}>
-                  Integro strumenti di intelligenza artificiale nei processi delle PMI italiane — dalla produzione di contenuti alla gestione clienti, dall&apos;automazione dei flussi interni all&apos;analisi dei dati. Non tecnologia per la tecnologia: AI applicata al tuo business reale, con risultati misurabili.
-                </p>
-                <div className="flex flex-wrap gap-2" style={{ marginBottom: '0.5rem' }}>
-                  {['Automazioni AI', 'Content System', 'Workflow su misura', 'Analisi dati', 'Formazione interna'].map((t) => (
-                    <span key={t} style={{ fontSize: '0.6rem', letterSpacing: '0.1em', color: 'var(--text-muted)', background: 'rgba(255,255,255,0.04)', padding: '0.2rem 0.5rem', fontFamily: 'var(--font-inter)' }}>{t}</span>
-                  ))}
-                </div>
-                <a href="mailto:antonioandreozzidigital@gmail.com" className="cta-ghost" style={{ alignSelf: 'flex-start' }}>
-                  Parliamo del tuo progetto →
-                </a>
-              </div>
-
-              {/* E-commerce */}
-              <div className="card-hover" style={{ padding: 'clamp(2rem, 4vw, 3rem)', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-                <div className="flex items-center justify-between">
-                  <span style={{ fontSize: '0.65rem', letterSpacing: '0.2em', color: 'var(--accent)', fontFamily: 'var(--font-inter)', fontWeight: 500 }}>E-COMMERCE</span>
-                  <span style={{ fontSize: '0.6rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--text-muted)', border: '1px solid var(--border)', padding: '0.3rem 0.7rem', fontFamily: 'var(--font-inter)' }}>Su misura · Chiavi in mano</span>
-                </div>
-                <h3 className="font-display" style={{ fontSize: 'clamp(1.2rem, 2vw, 1.8rem)', fontWeight: 400, lineHeight: 1.2, color: 'var(--text-primary)', fontStyle: 'italic' }}>
-                  Vendere online non è aprire uno shop. È costruire un sistema.
-                </h3>
-                <p style={{ fontSize: '0.88rem', lineHeight: 1.8, color: 'var(--text-muted)', fontFamily: 'var(--font-inter)', fontWeight: 300, flexGrow: 1 }}>
-                  Realizzo e-commerce per PMI, artigiani e liberi professionisti che vogliono vendere online senza dipendere da template generici. Dalla scelta della piattaforma alla messa online: identità visiva, schede prodotto ottimizzate, integrazione pagamenti, SEO locale.
-                </p>
-                <div className="flex flex-wrap gap-2" style={{ marginBottom: '0.5rem' }}>
-                  {['Shopify', 'WooCommerce', 'SEO locale', 'UX & Conversioni', 'Pagamenti integrati'].map((t) => (
-                    <span key={t} style={{ fontSize: '0.6rem', letterSpacing: '0.1em', color: 'var(--text-muted)', background: 'rgba(255,255,255,0.04)', padding: '0.2rem 0.5rem', fontFamily: 'var(--font-inter)' }}>{t}</span>
-                  ))}
-                </div>
-                <a href="mailto:antonioandreozzidigital@gmail.com" className="cta-ghost" style={{ alignSelf: 'flex-start' }}>
-                  Parliamo del tuo progetto →
-                </a>
-              </div>
-
-              {/* App */}
-              <div className="card-hover" style={{ padding: 'clamp(2rem, 4vw, 3rem)', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-                <div className="flex items-center justify-between">
-                  <span style={{ fontSize: '0.65rem', letterSpacing: '0.2em', color: 'var(--accent)', fontFamily: 'var(--font-inter)', fontWeight: 500 }}>APP & WEB APP</span>
-                  <span style={{ fontSize: '0.6rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--text-muted)', border: '1px solid var(--border)', padding: '0.3rem 0.7rem', fontFamily: 'var(--font-inter)' }}>Mobile & Web · Su misura</span>
-                </div>
-                <h3 className="font-display" style={{ fontSize: 'clamp(1.2rem, 2vw, 1.8rem)', fontWeight: 400, lineHeight: 1.2, color: 'var(--text-primary)', fontStyle: 'italic' }}>
-                  Un&apos;app che le persone usano davvero.
-                </h3>
-                <p style={{ fontSize: '0.88rem', lineHeight: 1.8, color: 'var(--text-muted)', fontFamily: 'var(--font-inter)', fontWeight: 300, flexGrow: 1 }}>
-                  Sviluppo applicazioni mobile e web per piccole e medie imprese e professionisti. Non template preconfezionati: soluzioni costruite intorno al tuo processo, al tuo cliente e alla tua identità. Gestionali, prenotazioni, cataloghi, portali clienti.
-                </p>
-                <div className="flex flex-wrap gap-2" style={{ marginBottom: '0.5rem' }}>
-                  {['App Mobile iOS & Android', 'Web App', 'Gestionale su misura', 'Portale clienti', 'Prenotazioni online'].map((t) => (
-                    <span key={t} style={{ fontSize: '0.6rem', letterSpacing: '0.1em', color: 'var(--text-muted)', background: 'rgba(255,255,255,0.04)', padding: '0.2rem 0.5rem', fontFamily: 'var(--font-inter)' }}>{t}</span>
-                  ))}
-                </div>
-                <a href="mailto:antonioandreozzidigital@gmail.com" className="cta-ghost" style={{ alignSelf: 'flex-start' }}>
-                  Parliamo del tuo progetto →
-                </a>
-              </div>
+              {[
+                {
+                  code: 'INTEGRAZIONE AI',
+                  badge: 'Aziende Italiane · Su misura',
+                  title: "L'AI nei tuoi processi, senza perdere la tua voce.",
+                  body: "Integro strumenti di intelligenza artificiale nei processi delle PMI italiane — dalla produzione di contenuti alla gestione clienti, dall'automazione dei flussi interni all'analisi dei dati. Non tecnologia per la tecnologia: AI applicata al tuo business reale, con risultati misurabili.",
+                  tags: ['Automazioni AI', 'Content System', 'Workflow su misura', 'Analisi dati', 'Formazione interna'],
+                },
+                {
+                  code: 'E-COMMERCE',
+                  badge: 'Su misura · Chiavi in mano',
+                  title: 'Vendere online non è aprire uno shop. È costruire un sistema.',
+                  body: "Realizzo e-commerce per PMI, artigiani e liberi professionisti che vogliono vendere online senza dipendere da template generici. Dalla scelta della piattaforma alla messa online: identità visiva, schede prodotto ottimizzate, integrazione pagamenti, SEO locale.",
+                  tags: ['Shopify', 'WooCommerce', 'SEO locale', 'UX & Conversioni', 'Pagamenti integrati'],
+                },
+                {
+                  code: 'APP & WEB APP',
+                  badge: 'Mobile & Web · Su misura',
+                  title: "Un'app che le persone usano davvero.",
+                  body: "Sviluppo applicazioni mobile e web per piccole e medie imprese e professionisti. Non template preconfezionati: soluzioni costruite intorno al tuo processo, al tuo cliente e alla tua identità. Gestionali, prenotazioni, cataloghi, portali clienti.",
+                  tags: ['App Mobile iOS & Android', 'Web App', 'Gestionale su misura', 'Portale clienti', 'Prenotazioni online'],
+                },
+              ].map((item, i) => (
+                <RevealBlock key={item.code} delay={i * 0.08} y={24} style={{
+                  padding: 'clamp(2rem, 4vw, 3rem)',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '1.5rem',
+                  background: 'var(--bg-void)',
+                }}>
+                  <div className="flex items-center justify-between">
+                    <span style={{ fontSize: '0.65rem', letterSpacing: '0.2em', color: 'var(--accent)', fontFamily: 'var(--font-inter)', fontWeight: 500 }}>{item.code}</span>
+                    <span style={{ fontSize: '0.6rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--text-muted)', border: '1px solid var(--border)', padding: '0.3rem 0.7rem', fontFamily: 'var(--font-inter)' }}>{item.badge}</span>
+                  </div>
+                  <h3 className="font-display" style={{ fontSize: 'clamp(1.2rem, 2vw, 1.8rem)', fontWeight: 400, lineHeight: 1.2, color: 'var(--text-primary)', fontStyle: 'italic' }}>
+                    {item.title}
+                  </h3>
+                  <p style={{ fontSize: '0.88rem', lineHeight: 1.8, color: 'var(--text-muted)', fontFamily: 'var(--font-inter)', fontWeight: 300, flexGrow: 1 }}>
+                    {item.body}
+                  </p>
+                  <div className="flex flex-wrap gap-2" style={{ marginBottom: '0.5rem' }}>
+                    {item.tags.map((t) => (
+                      <span key={t} style={{ fontSize: '0.6rem', letterSpacing: '0.1em', color: 'var(--text-muted)', background: 'rgba(255,255,255,0.04)', padding: '0.2rem 0.5rem', fontFamily: 'var(--font-inter)' }}>{t}</span>
+                    ))}
+                  </div>
+                  <a href="mailto:antonioandreozzidigital@gmail.com" className="cta-ghost" style={{ alignSelf: 'flex-start' }}>
+                    Parliamo del tuo progetto →
+                  </a>
+                </RevealBlock>
+              ))}
 
             </div>
           </div>
@@ -469,25 +449,27 @@ export default function LavoraConMe() {
           }}
         >
           <div className="container-site max-w-2xl mx-auto text-center">
-            <h2 className="font-display" style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)', fontWeight: 300, lineHeight: 1.1, color: 'var(--text-primary)', marginBottom: '1.2rem' }}>
-              Non sai da dove
-              <br />
-              <em style={{ color: 'var(--accent)', fontStyle: 'italic' }}>partire?</em>
-            </h2>
-            <p style={{ fontSize: '0.95rem', lineHeight: 1.75, color: 'var(--text-muted)', fontFamily: 'var(--font-inter)', fontWeight: 300, marginBottom: '2.5rem' }}>
-              Scrivi e dimmi dove sei. Il punto di ingresso è la Diagnosi — 3 ore di lavoro insieme per capire esattamente cosa non funziona e da dove partire.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <a href="https://wa.me/393334342510" target="_blank" rel="noopener noreferrer" className="cta-primary">
-                <MessageCircle size={14} />
-                Scrivimi su WhatsApp
-              </a>
-              <a href="mailto:antonioandreozzidigital@gmail.com" className="cta-ghost">
-                <Mail size={14} />
-                Scrivimi
-              </a>
-              <Link href="/diagnosi" className="cta-ghost">Inizia dalla Diagnosi →</Link>
-            </div>
+            <RevealBlock delay={0} y={24}>
+              <h2 className="font-display" style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)', fontWeight: 300, lineHeight: 1.1, color: 'var(--text-primary)', marginBottom: '1.2rem' }}>
+                Non sai da dove
+                <br />
+                <em style={{ color: 'var(--accent)', fontStyle: 'italic' }}>partire?</em>
+              </h2>
+              <p style={{ fontSize: '0.95rem', lineHeight: 1.75, color: 'var(--text-muted)', fontFamily: 'var(--font-inter)', fontWeight: 300, marginBottom: '2.5rem' }}>
+                Scrivi e dimmi dove sei. Il punto di ingresso è la Diagnosi — 3 ore di lavoro insieme per capire esattamente cosa non funziona e da dove partire.
+              </p>
+              <div className="flex flex-wrap justify-center gap-4">
+                <a href="https://wa.me/393334342510" target="_blank" rel="noopener noreferrer" className="cta-primary">
+                  <MessageCircle size={14} />
+                  Scrivimi su WhatsApp
+                </a>
+                <a href="mailto:antonioandreozzidigital@gmail.com" className="cta-ghost">
+                  <Mail size={14} />
+                  Scrivimi
+                </a>
+                <Link href="/diagnosi" className="cta-ghost">Inizia dalla Diagnosi →</Link>
+              </div>
+            </RevealBlock>
           </div>
         </section>
 

@@ -36,7 +36,7 @@ export default function SplitHeadline({
       const regex = new RegExp(`(${word})`, 'gi')
       return str.replace(
         regex,
-        `<em style="font-style:italic;font-family:var(--font-cormorant),Georgia,serif;font-weight:300;">$1</em>`
+        `<em style="font-style:italic;font-family:var(--font-cormorant),Georgia,serif;font-weight:300;color:#C9A84C;">$1</em>`
       )
     }, text)
     el.innerHTML = highlighted

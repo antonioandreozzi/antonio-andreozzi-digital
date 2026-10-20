@@ -1,5 +1,4 @@
-'use client'
-import dynamic from 'next/dynamic'
+﻿'use client'
 import { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -7,7 +6,8 @@ import { ArrowDown } from 'lucide-react'
 import SplitHeadline from '@/components/shared/SplitHeadline'
 
 gsap.registerPlugin(ScrollTrigger)
-const BrandSphere = dynamic(() => import('../3d/BrandSphere'), { ssr: false })
+
+const VIDEOS = ['/hero-v1.mp4', '/hero-v2.mp4', '/hero-v3.mp4', '/hero-v4.mp4', '/hero-v5.mp4']
 
 const ROTATOR_PHRASES = [
   'Brand che durano.',
@@ -22,10 +22,15 @@ export default function Hero() {
   const subRef      = useRef<HTMLParagraphElement>(null)
   const ctaRef      = useRef<HTMLDivElement>(null)
   const arrowRef    = useRef<HTMLDivElement>(null)
-  const sphereRef   = useRef<HTMLDivElement>(null)
   const sectionRef  = useRef<HTMLElement>(null)
   const rotatorRef  = useRef<HTMLSpanElement>(null)
   const [phraseIdx, setPhraseIdx] = useState(0)
+  const [videoSrc, setVideoSrc] = useState('/hero-v1.mp4')
+
+  // Scegli video casuale lato client (evita hydration mismatch)
+  useEffect(() => {
+    setVideoSrc(VIDEOS[Math.floor(Math.random() * VIDEOS.length)])
+  }, [])
 
   // Text rotator GSAP
   useEffect(() => {
@@ -51,19 +56,6 @@ export default function Hero() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      if (window.innerWidth >= 768) {
-        gsap.to(sphereRef.current, {
-          yPercent: -25,
-          ease: 'none',
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: 'top top',
-            end: 'bottom top',
-            scrub: true,
-          },
-        })
-      }
-
       gsap.timeline({ delay: 0.1 })
         .from(kickerRef.current, { opacity: 0, y: 12, duration: 0.65, ease: 'power3.out' })
         .from(subRef.current,   { opacity: 0, y: 16, duration: 0.70, ease: 'power3.out' }, '+=0.25')
@@ -80,24 +72,37 @@ export default function Hero() {
       className="section-dark relative min-h-screen flex items-center overflow-hidden"
       style={{ background: 'transparent' }}
     >
-      {/* 3D sphere — sfondo monocromatico */}
-      <div
-        ref={sphereRef}
-        className="absolute inset-0 pointer-events-none"
-        style={{ opacity: 0.55, willChange: 'transform' }}
-        aria-hidden="true"
-      >
-        <BrandSphere />
-      </div>
-
-      {/* Maschera radiale — testo leggibile */}
-      <div
-        className="absolute inset-0 pointer-events-none"
+      {/* Video loop in background */}
+      <video
+        key={videoSrc}
+        autoPlay
+        muted
+        loop
+        playsInline
         aria-hidden="true"
         style={{
-          background: 'radial-gradient(ellipse at 65% 50%, transparent 15%, rgba(10,10,10,0.80) 60%)',
+          position:   'absolute',
+          inset:      0,
+          width:      '100%',
+          height:     '100%',
+          objectFit:  'cover',
+          pointerEvents: 'none',
+        }}
+      >
+        <source src={videoSrc} type="video/mp4" />
+      </video>
+
+      {/* Overlay scuro — testo sempre leggibile */}
+      <div
+        aria-hidden="true"
+        style={{
+          position: 'absolute',
+          inset:    0,
+          background: 'rgba(8,8,10,0.68)',
+          pointerEvents: 'none',
         }}
       />
+
       {/* Fade bottom */}
       <div
         className="absolute bottom-0 left-0 right-0 pointer-events-none"
@@ -154,7 +159,7 @@ export default function Hero() {
                 fontWeight: 300,
                 fontSize:   'clamp(1.7rem, 3.2vw, 2.6rem)',
                 lineHeight: 1.15,
-                color:      'rgba(255,255,255,0.55)',
+                color: '#C9A84C',
                 letterSpacing: '-0.01em',
               }}
             >

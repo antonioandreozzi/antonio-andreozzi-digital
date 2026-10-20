@@ -1,5 +1,4 @@
-import type { Metadata } from 'next'
-import Navbar from '@/components/layout/Navbar'
+﻿import type { Metadata } from 'next'
 import Footer from '@/components/layout/Footer'
 import PageHeader from '@/components/shared/PageHeader'
 import NewsletterForm from '@/components/shared/NewsletterForm'
@@ -28,7 +27,6 @@ const risorsePreviste = [
 export default function Risorse() {
   return (
     <>
-      <Navbar />
       <main id="main-content">
         <PageHeader
           kicker="Risorse Gratuite"

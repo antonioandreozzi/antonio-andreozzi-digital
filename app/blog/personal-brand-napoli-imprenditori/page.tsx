@@ -1,5 +1,4 @@
-import type { Metadata } from 'next'
-import Navbar from '@/components/layout/Navbar'
+﻿import type { Metadata } from 'next'
 import Footer from '@/components/layout/Footer'
 
 export const metadata: Metadata = {
@@ -11,7 +10,6 @@ export const metadata: Metadata = {
 export default function ArticoloBlog() {
   return (
     <>
-      <Navbar />
       <main id="main-content">
         <section
           style={{

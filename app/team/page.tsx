@@ -1,6 +1,5 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Image from 'next/image'
-import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import PageHeader from '@/components/shared/PageHeader'
 
@@ -61,7 +60,6 @@ const team = [
 export default function TeamPage() {
   return (
     <>
-      <Navbar />
       <main id="main-content">
 
         <PageHeader

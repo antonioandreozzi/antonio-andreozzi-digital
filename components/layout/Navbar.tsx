@@ -26,9 +26,10 @@ export default function Navbar() {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
+      className="fixed top-0 left-0 right-0 transition-all duration-500"
       style={{
-        background: scrolled ? 'rgba(7, 7, 15, 0.75)' : 'transparent',
+        zIndex: 9999,
+        background: scrolled ? 'rgba(7, 7, 15, 0.88)' : 'transparent',
         backdropFilter: scrolled ? 'blur(24px) saturate(1.5)' : 'none',
         WebkitBackdropFilter: scrolled ? 'blur(24px) saturate(1.5)' : 'none',
         borderBottom: scrolled
@@ -41,21 +42,16 @@ export default function Navbar() {
     >
       <div className="container-site">
         <nav className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
+          {/* Logo mark */}
           <a
             href="/"
-            style={{
-              textDecoration: 'none',
-              color: '#F0EFF8',
-              fontFamily: 'var(--font-cormorant)',
-              fontSize: 'clamp(1rem, 1.6vw, 1.2rem)',
-              fontWeight: 300,
-              letterSpacing: '0.04em',
-              transition: 'color 0.3s ease',
-            }}
+            style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}
+            aria-label="Home"
           >
-            We Move
-            <span style={{ color: 'var(--accent)' }}> Markets</span>
+            <svg width="36" height="36" viewBox="0 0 100 100" style={{ display: 'block', flexShrink: 0 }}>
+              <rect width="100" height="100" fill="#0a0a0a"/>
+              <polyline points="15,76 50,28 85,76" fill="none" stroke="white" strokeWidth="13" strokeLinecap="square" strokeLinejoin="miter"/>
+            </svg>
           </a>
 
           {/* Desktop nav */}
