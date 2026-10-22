@@ -10,6 +10,13 @@ export const metadata: Metadata = {
 
 const posts: { date: string; tag: string; title: string; excerpt: string; slug: string }[] = [
   {
+    date: '22 Ottobre 2026',
+    tag: 'Content Strategy',
+    title: 'Ho smesso di pubblicare ogni giorno. I risultati sono migliorati.',
+    excerpt: 'Pubblicare tanto non è la risposta. I dati del 2026 dimostrano che chi costruisce un brand duraturo pubblica meno — e con più intenzione. Il filtro che uso prima di ogni contenuto.',
+    slug: 'cosa-pubblicare-social-qualita-vs-quantita-napoli-caserta',
+  },
+  {
     date: '20 Ottobre 2026',
     tag: 'Content Strategy',
     title: 'La storia di come hai iniziato vende più di qualsiasi promozione',
