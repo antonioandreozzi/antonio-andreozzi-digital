@@ -2,14 +2,20 @@
 
 > Ricerca settimanale di competitive intelligence per Antonio Andreozzi (brand, AI per PMI, chatbot, short video, personal brand, posizionamento — Caserta/Napoli).
 > **Regola di metodo:** sono riportati solo i numeri presenti nelle fonti linkate. Dove una metrica (views, follower, crescita) non è pubblicata dalla fonte, è indicato **"non verificabile"**. Non ho accesso ad analytics di piattaforma (Instagram, TikTok, LinkedIn): la classifica di "più performanti questa settimana" si basa quindi su recenza, rilevanza e segnali pubblici di diffusione, non su dati di views settimanali.
-> Primo report: non esisteva una versione precedente in `reports/`, quindi questa è la baseline.
+> Baseline creata il 2026-10-29; questa versione è un **aggiornamento dello stesso giorno** (run di verifica manuale).
+
+### Aggiornamenti rispetto alla versione precedente
+- **Correzione voucher AI:** il voucher AI per PMI annunciato da Urso (19–20/10) è ora indicato come misura della **legge di bilancio 2027**, ancora **senza importi, requisiti né date** ([DiariodelWeb, 25/10/2026](https://diariodelweb.it/economia/urso-incentivi-ia-cloud-manovra-pmi/)). Le cifre "credito fino al 40% / voucher 5.000 €" dell'articolo Advicy restano non confermate da fonti ufficiali.
+- **Nuovo — misura già attiva:** **Voucher Cloud & Cybersecurity (Mimit)**, 150 M€, contributo fino al 50% con massimo 20.000 €; **invio domande dal 10/11/2026 ore 12:00**, chiusura 20/01/2027 ([DiariodelWeb](https://diariodelweb.it/economia/urso-incentivi-ia-cloud-manovra-pmi/)). È il contenuto "soldi" più concreto e urgente della settimana.
+- **Nuovo — proposta "Investo Digitale"** (AIIP, Confcommercio, Confartigianato, Confprofessioni e altri): buono medio stimato ~6.200 €, ~578.496 beneficiari stimati; solo proposta, non approvata ([Tinexta Innovation Hub, 28/10/2026](https://www.tinextainnovationhub.com/blog/manovra-2027-voucher-intelligenza-artificiale-pmi/)).
+- **Nuovo angolo sul D.Lgs. 179/2026:** il decreto non prevede percorsi di alfabetizzazione AI dedicati alle imprese; l'unico obbligo per i datori è informazione/formazione dei lavoratori (art. 42) ([Agenda Digitale, 12/10/2026](https://www.agendadigitale.eu/cultura-digitale/competenze-digitali/alfabetizzazione-ia-il-decreto-italiano-lascia-scoperte-le-imprese/)) → spazio per offrire formazione AI alle PMI.
 
 ---
 
 ## TL;DR — 5 azioni per questa settimana
 
 1. **Cavalcare il D.Lgs. 179/2026 (in vigore dal 23/10/2026):** contenuto "Cosa cambia per la tua PMI se usi l'AI" — finestra di notizia aperta adesso, pochi creator locali ne parlano.
-2. **Anticipare il "Decreto imprese" di ottobre (voucher consulenza AI fino a 5.000 €, credito d'imposta fino al 40% — da verificare nel testo definitivo):** contenuto "Come prepararsi ai voucher AI prima di dicembre".
+2. **Voucher Cloud & Cybersecurity, domande dal 10 novembre (fino a 20.000 €, 50%):** contenuto "Come ottenere il voucher prima che finiscano i fondi" — misura reale e con scadenza. Il voucher AI della manovra 2027 è solo annunciato: parlarne come "in arrivo", senza cifre.
 3. **Formato LinkedIn da privilegiare: caroselli/documenti** (engagement più alto per formato secondo Socialinsider, vedi §3).
 4. **Tema "agenti AI al posto dei chatbot"** è il frame dominante a livello internazionale e italiano (Gaito, AI Week 2026): riposizionare l'offerta chatbot come "assistente/agente AI WhatsApp per PMI".
 5. **SEO locale:** i competitor di Caserta presidiano "chatbot intelligenza artificiale Caserta" e "AI web agency Caserta"; nessuno dei due presidia bene **Napoli** + **personal brand** + **short video** → spazio libero.
@@ -21,7 +27,7 @@
 | # | Contenuto | Fonte | Data | Metriche | Perché funziona |
 |---|---|---|---|---|---|
 | 1 | **D.Lgs. 179/2026 intelligenza artificiale: obblighi PMI** | [garganoadv.com](https://garganoadv.com/dlgs-179-2026-intelligenza-artificiale-pmi-lavoro/) | Decreto in vigore dal 23/10/2026 (GU 8/10/2026) | Views non verificabili | Notizia normativa fresca + angolo "obblighi per la PMI" (paura/urgenza). Dato chiave: nessuna decisione su assunzioni/licenziamenti/valutazioni basata *solo* su sistemi automatici; l'AI va considerata nel DVR. Sanzioni fino a 35 M€ / 7% fatturato (per le PMI si applica il minore). |
-| 2 | **Decreto imprese di ottobre: cosa cambia per le PMI che investono in AI** | [advicy.it](https://www.advicy.it/decreto-imprese-di-ottobre-cosa-cambia-per-le-pmi-che-investono-in-ai/) | Ottobre 2026 (decreto atteso a fine ottobre) | Views non verificabili | Angolo "soldi": credito d'imposta fino al 40% su software+formazione, voucher consulenza fino a 5.000 €, prenotazioni voucher a dicembre 2026. ⚠️ Testo definitivo non ancora verificato: citare come "annunciato". |
+| 2 | **Urso annuncia incentivi per IA e cloud nella manovra 2027: cosa cambia per le PMI** | [diariodelweb.it](https://diariodelweb.it/economia/urso-incentivi-ia-cloud-manovra-pmi/) (vedi anche [Tinexta](https://www.tinextainnovationhub.com/blog/manovra-2027-voucher-intelligenza-artificiale-pmi/), [advicy](https://www.advicy.it/decreto-imprese-di-ottobre-cosa-cambia-per-le-pmi-che-investono-in-ai/)) | 25/10/2026 | Views non verificabili | Angolo "soldi" + distinzione chiara tra annunci (voucher AI manovra 2027, senza importi) e misure reali (Voucher Cloud & Cybersecurity, domande dal 10/11/2026). ⚠️ Le cifre Advicy (40% / 5.000 €) non sono confermate. |
 | 3 | **PMI italiane e AI, i dati 2026 dell'Osservatorio Polimi** | [ai4business.it](https://www.ai4business.it/intelligenza-artificiale/pmi-piu-spesa-digitale-ma-poca-visione-sullai-il-nodo-resta-competitivo/) | 21/05/2026 (ancora la fonte dati più citata) | Views non verificabili | Dato shock riutilizzabile: **il 76% delle PMI non ha investito in AI e non prevede di farlo**; solo il **7%** ha formazione strutturata sull'AI. Perfetto come hook ("3 PMI su 4…"). |
 | 4 | **"Stai usando l'AI come nel 2025" — Raffaele Gaito, AI Week 2026** | [YouTube / Cultura Digitale](https://www.youtube.com/watch?v=kXMwP00FanE) | 29/05/2026 | Views non verificabili (pagina non accessibile al crawler) | Hook "stai sbagliando" + passaggio da AI conversazionale ad **agenti** (Claude Code, Codex). Frase-quotabile: "Non dobbiamo puntare a fare di più, dobbiamo puntare a fare meglio." |
 | 5 | **Bandi Intelligenza Artificiale 2026: finanziamenti AI PMI** | [incentivimpresa.it](https://www.incentivimpresa.it/bandi-intelligenza-artificiale-2026/) (+ [mappa incentivi, voucher 50%](https://www.incentivimpresa.it/investimenti-ai-incentivi-mappa-opportunita-pmi-2026/)) | 2026 | Views non verificabili | Contenuto "utility" evergreen ad alto intento di ricerca: l'imprenditore cerca *come farsi pagare* l'adozione AI. |
@@ -63,7 +69,8 @@ Menzione: **Marco Montemagno** continua a produrre short su AI (es. [Allucinazio
 ## 4) Trend emergenti da coprire prima degli altri
 
 1. **Compliance AI per PMI (D.Lgs. 179/2026 + AI Act art. 50 in vigore dal 2/8/2026).** Nessun creator locale campano trovato che ne parli in chiave pratica. Format: carosello "5 cose che la tua PMI deve sapere da oggi" + Reel 45". Fonti: [garganoadv](https://garganoadv.com/dlgs-179-2026-intelligenza-artificiale-pmi-lavoro/), [Acalytica](https://acalytica.com/state-of-agentic-marketing-2026/). ⚠️ Non è consulenza legale: rimanda a consulente del lavoro.
-2. **Voucher/credito d'imposta AI (decreto imprese, prenotazioni attese a dicembre 2026).** Chi arriva primo con una guida "come prepararsi" cattura lead caldi. Fonte: [advicy](https://www.advicy.it/decreto-imprese-di-ottobre-cosa-cambia-per-le-pmi-che-investono-in-ai/). Verificare in GU prima di pubblicare cifre.
+2. **Incentivi digitali: Voucher Cloud & Cybersecurity (domande 10/11/2026–20/01/2027) e voucher AI annunciato per la manovra 2027.** Chi arriva primo con una guida pratica cattura lead caldi. Fonti: [DiariodelWeb](https://diariodelweb.it/economia/urso-incentivi-ia-cloud-manovra-pmi/), [Tinexta](https://www.tinextainnovationhub.com/blog/manovra-2027-voucher-intelligenza-artificiale-pmi/). Sul voucher AI non pubblicare cifre finché non c'è il testo di legge.
+7. **Formazione/alfabetizzazione AI per le PMI:** il D.Lgs. 179/2026 lascia scoperte le imprese ([Agenda Digitale](https://www.agendadigitale.eu/cultura-digitale/competenze-digitali/alfabetizzazione-ia-il-decreto-italiano-lascia-scoperte-le-imprese/)), mentre solo il 7% delle PMI ha formazione AI strutturata (Polimi) → offerta "workshop AI per il tuo team" a Caserta/Napoli.
 3. **Da chatbot ad "agenti AI".** Il linguaggio sta cambiando: i competitor locali già usano "agenti AI" ([Brain Computing](https://www.braincomputing.com/chatbot-intelligenza-artificiale-caserta/), [Libellula Web](https://libellulaweb.com/ai-web-agency-caserta)). Nota: [Buzzabout](https://buzzabout.ai/trends/ai-marketing-agents) segnala il tema "AI marketing agents" come **"Cooling"** a livello globale (ricerche Google −20% in 4 settimane, 26/7–29/8) → coprirlo con taglio pratico/ROI, non hype.
 4. **GEO / visibilità nelle risposte AI per attività locali.** Con AI Mode a >1 mld utenti e CTR molto basso ([cCoreVentures](https://ccoreventures.com/blog/google-ai-mode-small-business)), il messaggio "il tuo brand deve essere citato dall'AI, non solo su Google" è nuovo per le PMI del Sud. Consiglio operativo condiviso: coerenza di orari, prezzi, recensioni su Google Business Profile e directory ([mean.ceo, ott. 2026](https://blog.mean.ceo/generative-engine-optimization-news-october-2026/)).
 5. **Misurare il ROI dell'AI.** Solo il 6,5% lo fa con metriche definite e il 65,1% non lo misura o non sa ([Acalytica/Basis](https://acalytica.com/state-of-agentic-marketing-2026/)). Angolo differenziante: "Ti installo il chatbot **e** ti mostro quanto ti fa guadagnare".
@@ -88,7 +95,8 @@ Menzione: **Marco Montemagno** continua a produrre short su AI (es. [Allucinazio
 - `consulente intelligenza artificiale PMI Campania`
 - `agenti AI per aziende Napoli` (SERP occupata da player nazionali: Innowise, Opsio, G2)
 - `short video per aziende Caserta` / `video Reels per attività locali Napoli`
-- `voucher intelligenza artificiale PMI Campania` (trend #2)
+- `voucher intelligenza artificiale PMI Campania` / `voucher cloud cybersecurity PMI Caserta` (trend #2)
+- `formazione intelligenza artificiale aziende Napoli` (trend #7)
 - `AI Act / D.Lgs. 179/2026 PMI Caserta` (trend #1, informativa)
 
 ---
@@ -98,6 +106,9 @@ Menzione: **Marco Montemagno** continua a produrre short su AI (es. [Allucinazio
 - [AI4Business — PMI italiane e AI, dati Osservatorio Polimi 2026](https://www.ai4business.it/intelligenza-artificiale/pmi-piu-spesa-digitale-ma-poca-visione-sullai-il-nodo-resta-competitivo/)
 - [Advicy — Decreto imprese di ottobre e AI](https://www.advicy.it/decreto-imprese-di-ottobre-cosa-cambia-per-le-pmi-che-investono-in-ai/)
 - [Gargano ADV — D.Lgs. 179/2026 obblighi PMI](https://garganoadv.com/dlgs-179-2026-intelligenza-artificiale-pmi-lavoro/)
+- [DiariodelWeb — Urso, incentivi IA e cloud manovra 2027](https://diariodelweb.it/economia/urso-incentivi-ia-cloud-manovra-pmi/)
+- [Tinexta Innovation Hub — Voucher AI manovra 2027](https://www.tinextainnovationhub.com/blog/manovra-2027-voucher-intelligenza-artificiale-pmi/)
+- [Agenda Digitale — Alfabetizzazione IA, il decreto lascia scoperte le imprese](https://www.agendadigitale.eu/cultura-digitale/competenze-digitali/alfabetizzazione-ia-il-decreto-italiano-lascia-scoperte-le-imprese/)
 - [Incentivimpresa — Bandi AI 2026](https://www.incentivimpresa.it/bandi-intelligenza-artificiale-2026/) · [Mappa incentivi AI](https://www.incentivimpresa.it/investimenti-ai-incentivi-mappa-opportunita-pmi-2026/)
 - [Fortune Italia — Top 25 Content Creator 2026](https://www.fortuneita.com/top-25-content-creator-2026/)
 - [Heepsy — AI Instagram influencers Italy](https://www.heepsy.com/top-instagram/artificial-intelligence/italy) · [HiveInfluence — AI TikTok Italy](https://hiveinfluence.io/top-influencers/tiktok/artificial-intelligence/italy)
