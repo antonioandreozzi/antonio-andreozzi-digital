@@ -10,6 +10,13 @@ export const metadata: Metadata = {
 
 const posts: { date: string; tag: string; title: string; excerpt: string; slug: string }[] = [
   {
+    date: '28 Ottobre 2026',
+    tag: 'Brand',
+    title: 'Come progettare un\'identità verbale — e perché serve davvero',
+    excerpt: 'Il logo dura un decennio. Le parole che la tua azienda usa durano per sempre. Dizionario di brand, parole-firma, parole-veleno, tono di voce, sintassi: guida completa all\'identità verbale.',
+    slug: 'identita-verbale-brand-come-progettarla',
+  },
+  {
     date: '22 Ottobre 2026',
     tag: 'Content Strategy',
     title: 'Ho smesso di pubblicare ogni giorno. I risultati sono migliorati.',
