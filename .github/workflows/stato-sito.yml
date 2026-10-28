@@ -1,0 +1,42 @@
+name: Stato del sito
+
+# Ogni lunedì controlla antonioandreozzidigital.com e aggiorna reports/stato-sito.md,
+# che il CEO Agent (07:15 ora di Roma) usa come fonte di verità sullo stato del sito.
+# Cron in UTC: 04:50 UTC = 05:50 d'inverno / 06:50 d'estate, sempre prima del CEO Agent.
+on:
+  schedule:
+    - cron: '50 4 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stato-sito
+  cancel-in-progress: false
+
+jobs:
+  stato-sito:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Controlla il sito
+        run: node scripts/stato-sito.mjs
+
+      - name: Commit e push del report
+        run: |
+          git config user.name 'Stato Sito Bot'
+          git config user.email 'stato-sito@antonioandreozzidigital.com'
+          git add reports/stato-sito.md
+          git commit -m "Stato del sito - $(TZ=Europe/Rome date +%Y-%m-%d)"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep 10
+          done
+          exit 1
