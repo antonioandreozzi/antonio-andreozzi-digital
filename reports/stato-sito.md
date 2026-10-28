@@ -1,6 +1,6 @@
 # Stato del sito — antonioandreozzidigital.com
 
-Generato il: 2026-10-28T23:11:11.259Z (giovedì 29 ottobre 2026 alle ore 00:11, ora di Roma)
+Generato il: 2026-10-28T23:18:16.573Z (giovedì 29 ottobre 2026 alle ore 00:18, ora di Roma)
 Fonte: GitHub Action `stato-sito.yml` (rete esterna, non l'ambiente cloud degli agenti)
 
 ## Esito
@@ -12,14 +12,14 @@ Fonte: GitHub Action `stato-sito.yml` (rete esterna, non l'ambiente cloud degli 
 
 | Pagina | Codice | Tempo | Esito |
 |---|---|---|---|
-| `/` | 200 | 321 ms | ✅ OK |
-| `/blog/` | 200 | 263 ms | ✅ OK |
-| `/risorse/` | 200 | 233 ms | ✅ OK |
-| `/diagnosi/` | 200 | 68 ms | ✅ OK |
-| `/lavora-con-me/` | 200 | 129 ms | ✅ OK |
-| `/sitemap.xml` | 200 | 120 ms | ✅ OK |
+| `/` | 200 | 330 ms | ✅ OK |
+| `/blog/` | 200 | 306 ms | ✅ OK |
+| `/risorse/` | 200 | 275 ms | ✅ OK |
+| `/diagnosi/` | 200 | 222 ms | ✅ OK |
+| `/lavora-con-me/` | 200 | 236 ms | ✅ OK |
+| `/sitemap.xml` | 200 | 131 ms | ✅ OK |
 
 ## Sitemap
 
-URL nella sitemap: **14** — controllate tutte, non OK: **0**.
+URL nella sitemap: **27** — controllate tutte, non OK: **0**.
 
