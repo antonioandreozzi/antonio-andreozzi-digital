@@ -10,6 +10,13 @@ export const metadata: Metadata = {
 
 const posts: { date: string; tag: string; title: string; excerpt: string; slug: string }[] = [
   {
+    date: '30 Ottobre 2026',
+    tag: 'Posizionamento',
+    title: 'Black Friday per piccole imprese: perché lo sconto è una scelta di posizionamento',
+    excerpt: 'Ogni sconto è una frase che il tuo brand pronuncia davanti a tutti. Tre posture e quattro domande per decidere il tuo Black Friday senza svendere quello che hai costruito.',
+    slug: 'black-friday-piccole-imprese-caserta-napoli',
+  },
+  {
     date: '28 Ottobre 2026',
     tag: 'Brand',
     title: 'Come progettare un\'identità verbale — e perché serve davvero',
