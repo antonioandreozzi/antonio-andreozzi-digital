@@ -38,4 +38,4 @@ Incollali in `reports/dati-settimana.md` (non esiste ancora) o rispondi alla run
 
 ## Una domanda per Antonio
 
-Usi ancora Brevo per la newsletter? Il form su `/risorse` nel codice invia ancora gli iscritti a Brevo.
+Nessuna domanda aperta. Form newsletter su `/risorse`: per decisione di Antonio resta com'è per ora; probabile residuo di una prova iniziale, non più usato.
