@@ -10,6 +10,13 @@ export const metadata: Metadata = {
 
 const posts: { date: string; tag: string; title: string; excerpt: string; slug: string }[] = [
   {
+    date: '2 Novembre 2026',
+    tag: 'E-commerce',
+    title: 'Il tuo e-commerce non vende. Forse il sito non c\'entra.',
+    excerpt: 'Rifare il sito è la soluzione più ovvia e spesso la più costosa. Come distinguere un problema tecnico da un problema di brand, prima di spendere altri soldi.',
+    slug: 'ecommerce-non-vende-brand-caserta-napoli',
+  },
+  {
     date: '30 Ottobre 2026',
     tag: 'Posizionamento',
     title: 'Black Friday per piccole imprese: perché lo sconto è una scelta di posizionamento',

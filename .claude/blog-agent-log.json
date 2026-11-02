@@ -8,5 +8,15 @@
     "pillar": "Posizionamento (angolo affine: articoli-1000 #132 Psicologia del prezzo)",
     "emozione": "Calma",
     "hook_pattern": "A. Verità scomoda italiana"
+  },
+  {
+    "date": "2026-11-02",
+    "slug": "ecommerce-non-vende-brand-caserta-napoli",
+    "source": "pool",
+    "pool_file": "topics",
+    "topic_id": 27,
+    "pillar": "E-commerce",
+    "emozione": "Riconoscimento",
+    "hook_pattern": "G. Scena cinematografica"
   }
 ]
