@@ -10,6 +10,13 @@ export const metadata: Metadata = {
 
 const posts: { date: string; tag: string; title: string; excerpt: string; slug: string }[] = [
   {
+    date: '6 Novembre 2026',
+    tag: 'AI',
+    title: 'Farsi citare da ChatGPT: quando il cliente chiede all\'AI, cosa sa dire di te?',
+    excerpt: 'Farsi citare dalle risposte dell\'AI è già un prodotto in vendita, ma nessun trucco tecnico può descrivere al posto tuo un\'impresa che non ha scelto chi è. Cosa dicono i dati, cosa resta incerto e il sistema da costruire comunque.',
+    slug: 'farsi-citare-chatgpt-ai-mode-brand-caserta-napoli',
+  },
+  {
     date: '2 Novembre 2026',
     tag: 'E-commerce',
     title: 'Il tuo e-commerce non vende. Forse il sito non c\'entra.',
