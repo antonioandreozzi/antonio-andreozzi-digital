@@ -10,6 +10,13 @@ export const metadata: Metadata = {
 
 const posts: { date: string; tag: string; title: string; excerpt: string; slug: string }[] = [
   {
+    date: '9 Novembre 2026',
+    tag: 'Posizionamento',
+    title: 'Diagnosi di brand: prima di decidere il budget del 2027, scopri cosa ti sta fermando',
+    excerpt: 'Prima di firmare un altro preventivo, conviene sapere cosa stai curando. Cinque domande per capire se il blocco della tua impresa sta nel posizionamento, nel messaggio, nell\'offerta o nel sistema.',
+    slug: 'diagnosi-brand-pmi-caserta-napoli',
+  },
+  {
     date: '6 Novembre 2026',
     tag: 'AI',
     title: 'Farsi citare da ChatGPT: quando il cliente chiede all\'AI, cosa sa dire di te?',

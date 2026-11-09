@@ -28,5 +28,15 @@
     "pillar": "AI (angolo affine: articoli-1000 #122 bias dell'autorità; content strategy report: farsi trovare da ChatGPT)",
     "emozione": "Sicurezza",
     "hook_pattern": "I. Curiosità domestica"
+  },
+  {
+    "date": "2026-11-09",
+    "slug": "diagnosi-brand-pmi-caserta-napoli",
+    "source": "pool",
+    "pool_file": "topics",
+    "topic_id": 19,
+    "pillar": "Posizionamento",
+    "emozione": "Riconoscimento",
+    "hook_pattern": "C. Targeting condizionale"
   }
 ]
