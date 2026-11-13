@@ -10,6 +10,13 @@ export const metadata: Metadata = {
 
 const posts: { date: string; tag: string; title: string; excerpt: string; slug: string }[] = [
   {
+    date: '13 Novembre 2026',
+    tag: 'Brand',
+    title: 'Regali aziendali di Natale: quello che regali dice chi sei',
+    excerpt: 'Un panettone con il logo non è un regalo, è una ricevuta. Quattro domande per scegliere regali e auguri di Natale coerenti con il tuo brand, e trasformare un gesto di fine anno in un sistema.',
+    slug: 'regali-aziendali-natale-brand-caserta-napoli',
+  },
+  {
     date: '9 Novembre 2026',
     tag: 'Posizionamento',
     title: 'Diagnosi di brand: prima di decidere il budget del 2027, scopri cosa ti sta fermando',
