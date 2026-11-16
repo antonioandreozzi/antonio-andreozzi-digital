@@ -1,31 +1,33 @@
-# Briefing settimanale — 2026-11-09
+# Briefing settimanale — 2026-11-16
 
 ## Le 3 cose più importanti questa settimana
 
-1. **Oggi: una storia o un Reel sul Voucher Cloud & Cybersecurity, solo informativo.** Le domande aprono domani, 10/11, alle 12:00. L'importo è confermato da [Invitalia](https://www.invitalia.it/incentivi-e-strumenti/voucher-cloud-e-cybersecurity): 50% fino a 20.000 €. Di' chiaramente che non sei fornitore. Se il carosello del 02/11 è già uscito, basta un richiamo.
-   - **Niente guida sul blog:** il Competitor Agent la propone, ma hai già deciso solo social e newsletter.
-   - **Da non scrivere senza controllare il decreto del 4/8:** spesa minima 4.000 €, "spese valide solo dopo la domanda", AI ammessa. Invitalia non li cita, e la bozza di newsletter (invio entro l'11/11) contiene la regola sulle spese.
-2. **Oggi, prima di mezzogiorno: metti l'articolo chatbot WhatsApp in testa a `.claude/topics.json`.** È la terza settimana che resta fuori: la coda non ha nessun topic su chatbot o short video, e il blog agent è uscito l'ultimo lunedì verso le 12.
-   - Titolo: *Chatbot WhatsApp per PMI a Napoli e Caserta: cosa deve fare, quanto può costare e quando non ti serve*.
-   - Decisione mia sulla keyword: principale `costi chatbot WhatsApp`, più la variante `chatbot WhatsApp per ristoranti Napoli`. Quella generica su Napoli ora è coperta da Libellula Web. Volumi non verificati.
-3. **Entro mercoledì 11/11: leggi il listino Meta per l'Italia e confrontalo con i tuoi preventivi.** Dal 01/10 i messaggi di servizio WhatsApp risultano a pagamento (fonte: un vendor; tariffa italiana non trovata). `/chatbot-ai` offre quell'integrazione: se il costo non è previsto, lo paghi tu o lo scopre il cliente. Senza listino, niente cifre in euro nell'articolo. Per il paragrafo "dire che è un'AI" resta da leggere l'art. 50 su EUR-Lex o sentire un legale.
+1. **Oggi: metti il chatbot WhatsApp in testa a `.claude/topics.json`.** È la **quarta settimana** che salta: in `topics.json` non c'è ancora nessuna voce chatbot o short video, e il blog agent ha pubblicato diagnosi (09/11) e regali di Natale (13/11). Il prossimo run è giovedì 19/11.
+   - Titolo: *Chatbot WhatsApp per ristoranti, studi e negozi a Napoli e Caserta: quali conversazioni automatizzare e quali no*.
+   - Decisione mia: angolo "il chatbot è la prima voce del tuo brand", **nessuna cifra in euro** (vedi punto 2). Keyword principale `chatbot WhatsApp Napoli` con varianti ristoranti / studi medici Caserta. Volumi non verificati.
+2. **Entro martedì 17/11: leggi il listino Meta WhatsApp per l'Italia.** Le fonti ora si contraddicono: Money.it dice che i rincari del 01/10 valgono solo per l'India, SendSeven (vendor, aggiornato al 14/11) dice che oltre 1.000 risposte di servizio al mese si pagano. Inoltre il **Meta Business Agent** (a pagamento, ~4-5 centesimi a messaggio secondo SendSeven) è un concorrente diretto del tuo `/chatbot-ai`.
+   - Se la newsletter o il carosello del 09/11 dicevano "da ottobre ogni risposta può costarti", pubblica una correzione.
+   - Dopo il listino, aggiorna i preventivi aperti.
+3. **Entro mercoledì 18/11: due contenuti social, già pronti nei report.**
+   - Reel Black Friday (27/11, mancano 11 giorni), dall'articolo del 30/10.
+   - Carosello "Voucher Cloud: chi ci guadagna davvero": per avere 20.000 € servono 40.000 € di spesa, l'AI non è tra le voci ammesse, sportello in ordine di arrivo fino al 20/01/2027 ([Money.it](https://www.money.it/voucher-cloud-cybersecurity-2026-domande-aperte-come-funziona)). Prima controlla su [Invitalia](https://www.invitalia.it/incentivi-e-strumenti/voucher-cloud-e-cybersecurity) che sia ancora aperto. Di' che non sei fornitore.
+   - **Da non fare:** contenuti sul voucher AI come misura esistente. Non è nel DDL di bilancio, è solo un annuncio.
 
 ## Stato del sito
 
-✅ **Nessun errore nell'ultimo controllo, ma è di 7 giorni fa.** Fonte: `reports/stato-sito.md`, generato il 02/11 alle 13:53 (ora di Roma).
-- Pagine chiave tutte 200, la più lenta `/` con 369 ms. Sitemap: 29 URL, 0 in errore.
-- ⏳ Il controllo di oggi non risulta ancora partito alle 07:20. La settimana scorsa l'esecuzione programmata è partita con 8 ore di ritardo, quindi può arrivare nel pomeriggio. Se stasera manca, lancialo a mano da [Actions](https://github.com/antonioandreozzi/antonio-andreozzi-digital/actions).
-- **Correggo il briefing del 02/11:** avevo scritto che non era partita. Era solo in ritardo.
-- L'articolo su ChatGPT e AI Mode (06/11) è uscito dopo il controllo: non ancora verificato.
+✅ **Nessun errore nell'ultimo controllo, ma è di 7 giorni fa.** Fonte: `reports/stato-sito.md`, generato il 09/11 alle 14:25 (ora di Roma).
+- Pagine chiave tutte 200, la più lenta `/blog/` con 345 ms. Sitemap: 31 URL, 0 in errore.
+- ⏳ Il controllo di oggi non risulta ancora alle 07:16. La settimana scorsa è arrivato alle 14:25 (in ritardo rispetto alle 05:50): se stasera manca, lancialo a mano da [Actions](https://github.com/antonioandreozzi/antonio-andreozzi-digital/actions).
+- L'articolo sui regali di Natale (13/11) è uscito dopo il controllo: non ancora verificato.
 - Il curl da questo ambiente dà 000 (rete bloccata): normale, non è un problema del sito.
 
 ## Dal Content Strategy Agent
 
-Entro l'11/11 post "voucher AI fuori dalla bozza della manovra" ([Key4biz](https://www.key4biz.it/manovra-ai-convitato-di-pietra-spariti-i-voucher-pmi-fondo-per-la-robotica-e-lai-fisica/592601/)): nessun importo, e prima controlla se ci sono emendamenti. Il suo report legge ancora il competitor del 02/11, perché gira prima.
+Newsletter entro giovedì 19/11: "Tre cose da sapere prima di attivare un chatbot (e una correzione)". La parte sui costi WhatsApp va scritta solo dopo il listino Meta.
 
 ## Dal Competitor Research Agent
 
-Minaccia: **Libellula Web** presidia tutta la Campania, Caserta inclusa, con chatbot WhatsApp e GEO; a Napoli è arrivata anche **Piquattro Digital**. Opportunità: il **personal brand per imprenditori a Napoli e Caserta**, che nessuna pagina competitor letta copre (ricerca non geolocalizzata, volumi non verificati).
+Opportunità: **"Businesses in ChatGPT"** (beta OpenAI del 10/11, la "scheda Google" dentro ChatGPT) rende concreto il GEO per attività locali, e su Caserta nessun competitor ne parla. Prima verifica se è disponibile in Italia. Minaccia: il chatbot WhatsApp "fatto da Meta" (vedi punto 2).
 
 ## Dati che non riesco a vedere
 
@@ -36,4 +38,4 @@ Incollali in `reports/dati-settimana.md` (non esiste ancora) o rispondi alla run
 
 ## Una domanda per Antonio
 
-Nei preventivi chatbot già inviati o aperti, chi paga i messaggi WhatsApp a Meta: tu o il cliente?
+L'articolo chatbot salta da quattro settimane: preferisci che il blog agent scelga sempre il topic indicato nel briefing CEO, invece di decidere da `topics.json`?
