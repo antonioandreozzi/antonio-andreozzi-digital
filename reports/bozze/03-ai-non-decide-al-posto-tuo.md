@@ -23,7 +23,7 @@ Sui contenuti la scena è sempre la stessa. Si apre ChatGPT, si scrive "fammi un
 
 ## Gli utenti se ne accorgono (e i numeri lo mostrano)
 
-Ann Handley, una delle autrici americane più seguite su scrittura e marketing, ha dedicato una newsletter ad agosto alla "AI slop": i contenuti fatti con l'AI che si riconoscono al primo sguardo. La sua tesi è semplice e mi trova d'accordo: una parte della scrittura non va mai delegata, quella in cui decidi cosa pensi.
+Ann Handley, autrice americana che da anni scrive di scrittura e marketing, ha dedicato una newsletter ad agosto alla "AI slop": i contenuti fatti con l'AI che si riconoscono al primo sguardo. La sua tesi è semplice e mi trova d'accordo: una parte della scrittura non va mai delegata, quella in cui decidi cosa pensi.
 
 Ci sono anche dei numeri, da prendere con cautela. Un'analisi di Originality.ai su 3.368 post LinkedIn di 99 profili, riportata da StrategyEye, ha trovato che nel marketing e nel branding i post segnalati come scritti con l'AI hanno ricevuto in media 207 interazioni, quelli scritti da persone 771. Il campione è piccolo, il riconoscimento automatico dell'AI non è affidabile al cento per cento, e nei post di leadership il risultato si inverte. Ma la direzione è chiara: la gente risponde a chi sente una persona dall'altra parte.
 

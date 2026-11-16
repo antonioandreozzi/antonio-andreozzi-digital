@@ -15,7 +15,7 @@ Quasi sempre è la risposta sbagliata.
 
 ## Il cliente non ti confronta con chi pensi tu
 
-April Dunford è probabilmente la persona che nel mondo ha scritto di più sul posizionamento. Lavora con aziende tecnologiche americane, lontanissime da una bottega di Caserta. Eppure una sua frase vale anche qui: conta solo il punto di vista del cliente su quali sono le alternative.
+April Dunford ha scritto Obviously Awesome, uno dei libri sul posizionamento che sento citare più spesso. Lavora con aziende tecnologiche americane, lontanissime da una bottega di Caserta. Eppure una sua frase vale anche qui: conta solo il punto di vista del cliente su quali sono le alternative.
 
 Non quello che pensi tu. Non quello che c'è scritto nell'analisi della concorrenza che ti ha fatto un'agenzia. Quello che passa per la testa del cliente nel momento in cui decide.
 
