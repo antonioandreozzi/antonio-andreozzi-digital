@@ -11,6 +11,13 @@ export const metadata: Metadata = {
 const posts: { date: string; tag: string; title: string; excerpt: string; slug: string }[] = [
   {
     date: '16 Novembre 2026',
+    tag: 'AI',
+    title: 'Chatbot WhatsApp per ristoranti, studi e negozi a Napoli e Caserta: quali conversazioni automatizzare e quali no',
+    excerpt: 'Un chatbot non è un risponditore automatico più sveglio: è la prima voce del tuo brand che molti clienti sentono. Quali conversazioni affidargli, quali lasciare sempre a una persona e cosa chiedere al fornitore prima di firmare.',
+    slug: 'chatbot-whatsapp-ristoranti-studi-negozi-napoli-caserta',
+  },
+  {
+    date: '16 Novembre 2026',
     tag: 'Voce',
     title: 'Copywriting per PMI: come scrivere testi che vendono senza sembrare un venditore',
     excerpt: 'I testi della maggior parte delle PMI non sono scritti male: sono scritti come quelli di tutti. Perché le formule persuasive non bastano e da quali materiali partire per parole che vendono togliendo dubbi, non aggiungendo pressione.',
