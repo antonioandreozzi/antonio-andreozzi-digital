@@ -10,6 +10,13 @@ export const metadata: Metadata = {
 
 const posts: { date: string; tag: string; title: string; excerpt: string; slug: string }[] = [
   {
+    date: '16 Novembre 2026',
+    tag: 'Voce',
+    title: 'Copywriting per PMI: come scrivere testi che vendono senza sembrare un venditore',
+    excerpt: 'I testi della maggior parte delle PMI non sono scritti male: sono scritti come quelli di tutti. Perché le formule persuasive non bastano e da quali materiali partire per parole che vendono togliendo dubbi, non aggiungendo pressione.',
+    slug: 'copywriting-pmi-caserta-napoli-testi-che-vendono',
+  },
+  {
     date: '13 Novembre 2026',
     tag: 'Brand',
     title: 'Regali aziendali di Natale: quello che regali dice chi sei',
