@@ -5,7 +5,7 @@
 ## Come funziona (due volte a settimana, martedì e venerdì)
 
 1. **I semi.** Antonio scrive le sue storie vere in `.claude/storie-personali.json`, oppure le detta in chat e l'agente le aggiunge lì. Un seme è un episodio: cosa è successo, quando e dove, chi c'era, i numeri veri, la lezione, cosa non dire.
-2. **La bozza.** La routine "Storia personale Antonio" prende il primo seme con `"used": false` e scrive un pacchetto in tre formati, seguendo lo schema in `reports/creator-articles-report.md` (sezione "Post e reel"):
+2. **La bozza.** La routine "Storia personale Antonio" prende il primo seme con `"used": false`. Il **martedì** preferisce le storie di tipo `umano` (vita, senso, paure, abitudini, famiglia, libri), il **venerdì** quelle di tipo `lavoro`; se non ce ne sono di quel tipo prende la prima libera. Per il titolo usa le formule e i 40 titoli di `reports/mappa-contenuti-big.md`, e scrive un pacchetto in tre formati, seguendo lo schema in `reports/creator-articles-report.md` (sezione "Post e reel"):
    - articolo per il blog (900–1.300 parole);
    - post LinkedIn/Facebook (150–300 parole);
    - script di un reel da 30–60 secondi.
