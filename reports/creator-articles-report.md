@@ -1,6 +1,6 @@
-# Creator Articles Report — 2026-11-16
+# Creator Report — articoli, post e reel dei big — 2026-11-17
 
-> Che cosa scrivono i grandi nomi italiani e americani/inglesi su business, marketing, brand, personal brand e AI (articoli, newsletter, saggi), come lo scrivono, e cosa ne può prendere Antonio per i suoi articoli personali. Prima edizione: copre evergreen e pezzi recenti. Dalla prossima settimana è una sezione fissa del Content Strategy Report.
+> Che cosa pubblicano i grandi nomi italiani e americani/inglesi su business, marketing, brand, personal brand e AI: articoli, newsletter e saggi (16/11), poi post e reel (aggiunti il 17/11, sezione "Post e reel"). Come raccontano le loro storie personali e cosa può prenderne Antonio. Copre evergreen e pezzi recenti. Dal 23/11 è anche una sezione fissa del Content Strategy Report.
 >
 > **Metodo:** [A] = pagina aperta e letta. [S] = titolo visto solo nei risultati di ricerca o in un archivio. Le metriche sono quelle dichiarate dai creator stessi sul loro sito, viste il 16/11/2026, salvo dove indicato: non sono verificate da terzi. Le citazioni sono brevi e prese solo da pagine aperte.
 >
@@ -101,6 +101,55 @@ Meno utili adesso: **Giulio Xhaët** (ultimo pezzo trovato del 2020, tema "conta
 | 10 | Non ti serve una nicchia, ti serve un'opinione | Koe | Personal brand |
 
 Le bozze 1–3 sono in `reports/bozze/`. **Nessuna è pronta da pubblicare**: hanno segnaposto `[TUA STORIA: …]` dove serve un episodio vero di Antonio. Non ho inventato episodi, clienti o numeri.
+
+---
+
+## Post e reel: come raccontano le storie personali (aggiunto il 17/11/2026)
+
+> **Limite importante:** Instagram, TikTok e LinkedIn non si aprono da qui e anche le pagine YouTube Shorts sono bloccate. **Nessun numero di views di singoli reel è verificato.** I numeri sotto vengono da strumenti di terzi (OutlierKit, CreatorDB, vidIQ, Favikon), con la data dello snapshot. Le storie personali vengono da siti dei creator, interviste e stampa.
+
+### Italia
+
+| Creator | Dati (fonte, data) | Storie personali che raccontano | Come le trasformano in contenuto |
+|---|---|---|---|
+| **Dario Vignali** | Follower non verificabili (unica fonte trovata inaffidabile). n. 20 tra i business influencer italiani per [Favikon](https://www.favikon.com/blog/top-business-influencers-italy) (20/04/2026). | La nascita della Yoga Academy con la compagna Denise, partendo da circa 2.500 €; gli errori raccontati in euro (circa 40.000 € in un'app, circa 50.000 € su un festival). Fonte: [riassunto AI di un suo video](https://videohighlight.com/v/ITMdxkj_SRk), quindi da prendere con cautela. Newsletter scritta "in auto" al rientro da un evento ([Substack](https://dariovignali.substack.com/p/e-davvero-finita)). | Errore con cifra esatta → regola in una frase. Schema "da zero a X" → metodo in step. Ambientazioni reali (l'auto, il rientro dall'evento). |
+| **Andrea Bottoni** | Dichiara circa 10.000 follower Instagram in 6 mesi con 10 post ([Substack, 16/02/2026](https://andreabottoni.substack.com/p/come-costruire-un-personal-brand)). | Inizio nel 2013 da studente di matematica con Vignali; il fallimento di un e-commerce lanciato "senza conoscere costi e tasse", con 5–6 mesi persi; mesi a lavorare da solo, senza parlare con nessuno ([intervista 2019](https://businessdacasa.com/andrea-bottoni-intervista-affiliate-marketer-docente-marketers/)). | **Pochi contenuti molto curati:** 1 video YouTube a settimana pensato come lead magnet. Se un contenuto non è all'altezza, salta la settimana. Racconto sobrio. |
+| **Marcello Ascani** | YouTube 1,08M iscritti, 210,7M views ([vidIQ](https://vidiq.com/youtube-stats/channel/UCS5PaGnSnFUnrjSc80XRnqw), 17/11/2026). Video più visto: "Dentro FERRARI" 2,44M. | Gli inizi su YouTube a fine 2012 con disegni e animazioni; i guadagni da creator dichiarati, lordo contro netto ([money.it](https://www.money.it/a-28-anni-vende-le-quote-della-sua-azienda-e-diventa-milionario)); la terapia nel 2022 e la domanda "morire ricco e solo?" ([Scrolling Infinito](https://scrollinginfinito.substack.com/p/marcello-ascani-ho-smontato-il-suo)). | "Ti porto con me nella mia vita e ti faccio vedere quello che imparo" (via ItaliaOggi). Testa i format su TikTok e Instagram prima di portarli su YouTube. |
+| **Marco Montemagno** | YouTube 887K, Instagram 684K, TikTok 450K, LinkedIn 375K ([Favikon](https://www.favikon.com/blog/who-is-marco-montemagno), pagina senza data). | Blogosfere, gli anni in TV, Startup School, 4books, il teatro ([Forbes, 30/04/2025](https://forbes.it/2025/04/30/gli-inizi-la-rivoluzione-ia-e-la-nuova-avventura-a-teatro-marco-montemagno-si-racconta-a-forbes)). L'aneddoto fa da credenziale, non da confessione. | Video quotidiano, talking head, jump cut, accordo di chitarra finale come firma ([videoreflex](http://www.videoreflex.org/marco-montemagno/)). Attenzione: un reel del 2021 con un titolo-tesi polarizzante è stato rimosso dopo le polemiche ([Open](https://www.open.online/2021/10/08/montemagno-sessismo-commento-chiudi-le-gambe-fa-freddo/)). |
+| **Mik Cosentino** | "Over 400,000 followers across platforms" ([Favikon](https://www.favikon.com/blog/top-business-influencers-italy), 20/04/2026). | La storia d'origine con una scena precisa: dopo un incidente nel 2015, gli spiccioli chiesti ai passanti alla stazione di Firenze per pagarsi il treno, e la promessa che ne nasce ([la sua pagina](https://mikcosentino.com/chi-sono/la-mia-storia/)). Il passato da nuotatore: due fonti lo raccontano in modo diverso. | Lo schema classico ferita → promessa → metodo → corso. |
+| **Skande** | Post LinkedIn non leggibili (solo titoli in ricerca). | Titoli visti: "Oggi festeggiamo 30anni di amicizia e 10 di società", "Non sono molto portato a farmi selfie…". | Metafora o frase in maiuscolo → aneddoto → morale. |
+
+### USA e Regno Unito
+
+| Creator | Dati (fonte, data) | Storie personali | Formato e framework |
+|---|---|---|---|
+| **Alex Hormozi** | YouTube 4,5M iscritti, 73% delle views dagli Shorts ([OutlierKit](https://outlierkit.com/channel/alexhormozi), 09/10/2026). | Le palestre a 26 anni, i rimborsi, i soci, la moglie Leila come socia, il dormire in palestra ([My First Million](https://rosetta.to/u/myfirstmillionpod/from-broke-at-26-to-100-million-net-worth-by-31-alex-hormozi-interview)). | **Hook → Retain → Reward** (da *$100M Leads*, via [riassunto](https://margin-notes-site.pages.dev/p/framework/content-unit-hook-retain-reward.html)). Le storie sono uno dei tre modi per "trattenere", insieme a liste e passi. Titoli "If + situazione + promessa". |
+| **Dan Martell** | YouTube 3,1M, 46% delle views dagli Shorts ([OutlierKit](https://outlierkit.com/channel/danmartell), 15/10/2026). Short più visto: "Give me 58 sec..i'll DELETE your fear of rejection", 12,0M. | Affido, un incidente a 17 anni con un'auto rubata, la comunità di recupero dove torna ogni anno ([la sua storia](https://www.danmartell.com/entrepreneur-life-story/)). | Hook con durata dichiarata e promessa di togliere una paura. |
+| **Steven Bartlett** | Instagram 5,26M, TikTok 5,5M ([CreatorDB](https://creatordb.app/creatorstats/steven/), 02/10/2026). | Botswana, Plymouth, difficoltà economiche, università lasciata dopo una lezione ([The Week](https://theweek.com/people/955944/steven-bartlett-profile)). | Clip dal podcast pensate come storie complete; titoli testati con piccoli budget di ads ([analisi](https://growingviral.beehiiv.com/p/grace-andrews-the-marketer-behind-steven-bartlett)). |
+| **Justin Welsh** | Post del 21/02/2022: 4,77M impressioni e 1.444 commenti (dichiarato da lui, [fonte](https://justinwelsh.me/essays/the-anatomy-of-a-viral-linkedin-post)). | Licenziato tre volte entro i 28 anni, i debiti, il bus per il colloquio a New York, il burnout da VP Sales ([founder story](https://justinwelsh.me/essays/build-a-better-founder-story)). | **Storia del fondatore in 7 passi:** ostacolo, lotte interiori, lotte esterne, svolta, scintilla, guida, risultato. Stessa storia in versione lunga, media e di una riga. Le prime righe stanno nei circa 210 caratteri prima del "vedi altro". |
+| **Jun Yuh** | Instagram 5,32M, TikTok 2,4M ([CreatorDB](https://creatordb.app/creatorstats/jun_yuh/), 02/10/2026). | Ingegneria biomedica, la nonna con la demenza, famiglia di immigrati ([Substack](https://junyuh.substack.com/p/clearest-beginnings)). | **Pain → pursuit → payoff** (la trasformazione può essere piccola). Un riferimento temporale nell'apertura. Ripetere spesso la propria storia d'origine. Fonte: riassunto AI di un podcast, quindi da prendere con cautela. |
+| **Gary Vaynerchuk** | Account principale non verificabile. | Emigrazione dalla Bielorussia, il negozio di vini di famiglia, mille episodi di Wine Library TV ([biografia](https://garyvaynerchuk.com/biography/)). | **Piramide rovesciata:** un contenuto lungo diventa decine di contenuti brevi ([sua guida](https://garyvaynerchuk.com/THE-GARYVEE-CONTENT-STRATEGY-HOW-TO-GROW-AND-DISTRIBUTE-YOUR-BRANDS-SOCIAL-MEDIA-CONTENT/)). |
+| **Jasmin Alić** | Follower dichiarati senza data. | Piccola città in Bosnia, i primi lavori a 8 $/ora, LinkedIn mollato due volte prima di funzionare ([Kleo](https://kleo.so/blog/jasmin-alic)). | Post ogni giorno per oltre 900 giorni; la ripetizione come metodo. |
+| **Codie Sanchez** | Instagram 3,40M ([CreatorDB](https://creatordb.app/creatorstats/codiesanchez/), 30/09/2026). | Gli anni da giornalista al confine con il Messico, poi il passaggio alla finanza. | Format "ho provato X, ecco i numeri" (i distributori automatici: 2,1M views secondo OutlierKit). |
+
+### Cosa fanno tutti (e come lo fa Antonio)
+
+1. **Una storia d'origine, raccontata per anni** in tre lunghezze: articolo, post, frase. Antonio deve sceglierne una e scriverla una volta per bene.
+2. **Scena precisa:** un luogo, una cifra, una persona, un momento. Il resto è contorno.
+3. **Ferita → lezione → metodo.** La storia serve a trattenere chi guarda (Hormozi), poi arriva la regola pratica.
+4. **Errori con numeri esatti** sono più credibili dei successi (Vignali, Bottoni, Welsh).
+5. **Una storia, tre formati** (piramide rovesciata): un articolo, un post LinkedIn/Facebook, un reel da 30–60 secondi.
+6. **Da evitare per il pubblico di Antonio:** il lusso, i milioni, il "get rich", le storie crude raccontate per colpire. Funziona la vulnerabilità adulta (Ascani) con numeri piccoli e veri.
+
+### Lo schema per i contenuti personali di Antonio
+
+| Formato | Struttura | Lunghezza |
+|---|---|---|
+| **Articolo blog** | Scena (luogo, momento) → cosa è successo → cosa ho sbagliato o capito → l'idea con un nome → 3 punti pratici per chi legge → domanda finale | 900–1.300 parole |
+| **Post LinkedIn/Facebook** | 2–3 righe d'apertura che stanno prima del "vedi altro" → la scena → la svolta → la lezione in una riga → domanda | 150–300 parole |
+| **Reel / Short** | Hook di 3 secondi (tempo o scena) → la scena in 2 frasi → la svolta → la lezione → domanda per i commenti | 30–60 secondi |
+
+Il sistema che lo mette in pratica due volte a settimana è descritto in `reports/bozze/README.md`.
 
 ---
 

@@ -1,0 +1,15 @@
+{
+  "istruzioni": "Semi delle storie personali di Antonio. Li scrive solo Antonio (o li detta in chat). Un seme = un episodio vero. Gli agenti non inventano mai dettagli: usano solo quello che c'è qui. 'used' passa a true solo dopo l'ok di Antonio sul pacchetto pubblicato.",
+  "campi": {
+    "id": "numero progressivo",
+    "titolo": "nome breve dell'episodio, per riconoscerlo",
+    "racconto": "cosa è successo, con parole tue, anche disordinate",
+    "quando_dove": "anno o periodo, luogo (se vuoi che si dica)",
+    "persone": "chi c'era, e se si può nominare",
+    "numeri": "cifre vere da usare (euro, mesi, clienti...), se vuoi che si dicano",
+    "lezione": "cosa hai capito, in una frase",
+    "cosa_non_dire": "dettagli da tenere fuori",
+    "used": false
+  },
+  "storie": []
+}
