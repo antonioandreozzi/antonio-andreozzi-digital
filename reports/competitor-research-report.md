@@ -31,6 +31,34 @@
 
 ---
 
+## Titoli della settimana
+
+> Solo titoli: script, post e articoli li scrive Antonio. Ogni titolo usa una formula dei big (`reports/mappa-contenuti-big.md`) senza copiarne le parole. Views e date degli esempi: vidIQ e Rosetta, dalla mappa del 17/11 [A]. Dove c'è [N] va un numero vero.
+
+**Umani: vita, senso, scelte**
+
+| # | Titolo | Formato | Formula e modello | Cosa ti serve |
+|---|---|---|---|---|
+| 1 | Le cose che ho capito sul lavoro (e ci ho messo [N] anni) | Video o reel | Lezioni + "ci ho messo N anni". Bottoni, "Queste lezioni hanno stravolto la mia vita (e ci ho messo 35 anni a capirle)", 23/09/2026, 8.972 views | 5–7 lezioni vere e da quanti anni lavori |
+| 2 | Mi sentivo indietro: cosa mi ha fatto ripartire | Reel e articolo | Confessione + "come ho…". Bottoni, "Mi sentivo perso: come ho ritrovato un senso nella mia vita.", 17/09/2026, 13.327 views | Un periodo vero in cui ti sei sentito indietro |
+| 3 | Se lavori da solo e ti senti stanco, leggi questo | Post | "Se ti senti X". Hormozi, "If you're ambitious but inconsistent, please watch this", 12/12/2025, 1,3M views | Cosa fai tu nei giorni in cui non ce la fai |
+| 4 | Cosa avrei voluto sapere a 20 anni sul lavoro | Video o carosello | Consigli per età. Montemagno, "36 cose che avrei voluto sapere a 25 anni", 18/01/2026, 290,84K views | Cosa ti diresti a 20 anni |
+| 5 | [N] lezioni del mio 2026 | Video, da girare a dicembre | Bilancio dell'anno. Hormozi, "26 Harsh Lessons I Learned in 2025", 21/12/2025, 464,9K views | Errori, scelte e clienti del tuo anno |
+| 6 | Restare al Sud quando tutti partono: perché l'ho fatto | Reel e articolo | Cambiare vita / scelta controcorrente. Vignali, "La mia (nuova) vita in Trentino Alto Adige.", 06/08/2026, 7.809 views | Perché sei rimasto a Parete/Caserta. Si lega al dato I-Com sul divario Nord-Sud (§1, n. 1) |
+
+**Lavoro: brand, AI, PMI (legati alle notizie della settimana)**
+
+| # | Titolo | Formato | Formula e notizia | Cosa ti serve |
+|---|---|---|---|---|
+| 7 | Il Sud e l'AI: il divario cresce. Da dove partirei io | Reel | Dato + "io farei così" (Vignali, "Creare un personal Brand entro il 2027? Io farei così.", 03/09/2026, 32.189 views). Notizia: I-Com (§1, n. 1) | Verificare lo studio I-Com |
+| 8 | 20.000 € di voucher: la domanda da farsi prima di chiederli | Carosello o post | "Quello che nessuno ti dice". Notizia: voucher Cloud (§1, n. 3) | Niente: dati già verificati |
+| 9 | Voucher AI per le PMI: cosa c'è davvero (oggi) | Post | Correzione di una notizia. Notizia: §1, n. 4 | Ricontrollare la manovra il giorno prima di pubblicare |
+| 10 | Ho chiesto a ChatGPT chi consiglierebbe a Caserta per [tuo settore]: ecco cosa ha risposto | Reel | Esperimento dichiarato (famiglia 12). Notizia: Businesses in ChatGPT (§3, n. 1) | Fare davvero la prova e registrare lo schermo |
+| 11 | Quanto costa davvero far rispondere l'AI ai clienti su WhatsApp | Video o articolo | Domanda + risposta concreta. Notizia: prezzi Meta (§3, n. 2) | Tariffa italiana dal listino Meta |
+| 12 | Il chatbot non è un software: è la prima voce del tuo brand | Post | Ribaltamento ("non è X, è Y"). Notizia: Meta Business Agent (§3, n. 2) | Il tuo punto di vista |
+
+---
+
 ## 1) I 5 contenuti più rilevanti in Italia questa settimana
 
 Nessuna di queste fonti pubblica views o condivisioni: **performance non verificabile** per tutte e cinque.
