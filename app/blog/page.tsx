@@ -10,6 +10,13 @@ export const metadata: Metadata = {
 
 const posts: { date: string; tag: string; title: string; excerpt: string; slug: string }[] = [
   {
+    date: '20 Novembre 2026',
+    tag: 'Content Strategy',
+    title: 'Piano editoriale mensile: come pianificare un mese di contenuti in 3 ore, senza diventare schiavo del calendario',
+    excerpt: 'Quasi tutti i calendari editoriali muoiono alla seconda settimana perché partono dai post invece che dalle fondamenta. Un sistema in tre ore per costruire il piano del mese, pensato per PMI e professionisti di Napoli e Caserta.',
+    slug: 'piano-editoriale-mensile-pmi-napoli-caserta',
+  },
+  {
     date: '16 Novembre 2026',
     tag: 'AI',
     title: 'Chatbot WhatsApp per ristoranti, studi e negozi a Napoli e Caserta: quali conversazioni automatizzare e quali no',

@@ -68,5 +68,15 @@
     "pillar": "AI (piano blog del content strategy agent: chatbot WhatsApp, angolo conversazioni e voce del brand)",
     "emozione": "Sicurezza",
     "hook_pattern": "G. Scena cinematografica"
+  },
+  {
+    "date": "2026-11-20",
+    "slug": "piano-editoriale-mensile-pmi-napoli-caserta",
+    "source": "pool",
+    "pool_file": "topics",
+    "topic_id": 22,
+    "pillar": "Content Strategy (angolo affine: articoli-1000 #726 calendario editoriale semplice, coerente, sostenibile)",
+    "emozione": "Sicurezza",
+    "hook_pattern": "D. Architettura e sistema"
   }
 ]
