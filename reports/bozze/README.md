@@ -26,3 +26,4 @@
 ## Bozze presenti
 
 - `01-vero-concorrente.md`, `02-dieci-cose-pmi-sud.md`, `03-ai-non-decide-al-posto-tuo.md` (16/11/2026): articoli d'opinione con segnaposto `[TUA STORIA: …]`. Non sono pubblicati e restano in attesa delle storie di Antonio e del suo ok.
+- `storia-in-attesa.md` (23/11/2026): due script reel dai semi 3 e 4 (confronto con gli altri; migliore di ieri). In attesa dell'ok di Antonio.
