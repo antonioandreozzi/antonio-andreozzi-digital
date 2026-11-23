@@ -26,6 +26,19 @@
       "lezione": "Fermarsi fa parte del lavoro: lo stallo è servito a capire cosa non volevo più fare.",
       "cosa_non_dire": "Settore, dettagli e cifre del primo progetto; il luogo.",
       "used": true
+    },
+    {
+      "id": 2,
+      "tipo": "umano",
+      "titolo_mappa": "",
+      "titolo": "Le frasi di casa: soldi e posto fisso",
+      "racconto": "Da bambino sentivo in casa, da mia madre, due frasi: 'I soldi non crescono sugli alberi' e 'Trovati un posto fisso'. La prima mi ha dato il senso del sacrificio. La seconda è tornata fuori dopo i fallimenti dei miei progetti, come se avesse ragione lei.",
+      "quando_dove": "Infanzia, in casa. Il ritorno della frase: dopo i fallimenti dei progetti.",
+      "persone": "Mia madre: nominarla poco, una volta sola, poi 'in casa'.",
+      "numeri": "nessuno",
+      "lezione": "Alcune frasi di casa mi sono servite (il sacrificio); altre vanno riconosciute perché decidono al posto tuo nei momenti di rischio.",
+      "cosa_non_dire": "Dettagli su mia madre oltre una menzione.",
+      "used": true
     }
   ]
 }

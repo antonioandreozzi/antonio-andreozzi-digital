@@ -12,6 +12,13 @@ const posts: { date: string; tag: string; title: string; excerpt: string; slug: 
   {
     date: '23 Novembre 2026',
     tag: 'Brand',
+    title: 'Le frasi che sentivo da bambino e che decidono ancora come lavoro',
+    excerpt: '«I soldi non crescono sugli alberi» e «Trovati un posto fisso»: due frasi di casa che hanno accompagnato le mie scelte di lavoro. Come riconoscere i copioni dell\'infanzia e decidere quali tenere.',
+    slug: 'frasi-infanzia-soldi-lavoro-imprenditore',
+  },
+  {
+    date: '23 Novembre 2026',
+    tag: 'Brand',
     title: 'Il periodo in cui non sapevo più cosa stavo facendo',
     excerpt: 'Dopo il mio primo progetto fallito, per qualche mese la mattina restavo a letto a rimandare. Cosa mi ha fatto ripartire, e perché oggi penso che fermarsi faccia parte del lavoro.',
     slug: 'sentirsi-perso-nel-lavoro-imprenditore',
