@@ -10,6 +10,13 @@ export const metadata: Metadata = {
 
 const posts: { date: string; tag: string; title: string; excerpt: string; slug: string }[] = [
   {
+    date: '23 Novembre 2026',
+    tag: 'Content Strategy',
+    title: 'Short video per aziende a Caserta e Napoli: come iniziare col telefono, partendo dalle domande che i clienti fanno sempre',
+    excerpt: 'Il primo video di una PMI non è un balletto né una produzione da troupe: è la risposta alla domanda che senti dieci volte al giorno. Un metodo semplice per iniziare con gli short video a Caserta e Napoli, trattandoli come un pezzo del brand e non come un trend.',
+    slug: 'short-video-aziende-caserta-napoli',
+  },
+  {
     date: '20 Novembre 2026',
     tag: 'Content Strategy',
     title: 'Piano editoriale mensile: come pianificare un mese di contenuti in 3 ore, senza diventare schiavo del calendario',

@@ -78,5 +78,15 @@
     "pillar": "Content Strategy (angolo affine: articoli-1000 #726 calendario editoriale semplice, coerente, sostenibile)",
     "emozione": "Sicurezza",
     "hook_pattern": "D. Architettura e sistema"
+  },
+  {
+    "date": "2026-11-23",
+    "slug": "short-video-aziende-caserta-napoli",
+    "source": "market",
+    "pool_file": null,
+    "topic_id": null,
+    "pillar": "Content Strategy (piano blog del content strategy agent 23/11: short video per aziende, unico servizio senza articoli)",
+    "emozione": "Calma",
+    "hook_pattern": "C. Targeting condizionale"
   }
 ]
