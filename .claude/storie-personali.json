@@ -39,6 +39,34 @@
       "lezione": "Alcune frasi di casa mi sono servite (il sacrificio); altre vanno riconosciute perché decidono al posto tuo nei momenti di rischio.",
       "cosa_non_dire": "Dettagli su mia madre oltre una menzione.",
       "used": true
+    },
+    {
+      "id": 1,
+      "tipo": "umano",
+      "titolo_mappa": "5",
+      "titolo": "Mi sentivo indietro perché mi confrontavo con gli altri",
+      "racconto": "Mi sono sentito perso o indietro quando confrontavo la mia vita con quella degli altri. Sono ripartito concentrandomi sul mettere un mattoncino un giorno alla volta, anno dopo anno, e con un profondo lavoro su me stesso attraverso la lettura dei grandi filosofi e psicologi.",
+      "quando_dove": "non specificato",
+      "persone": "nessuna",
+      "numeri": "nessuno",
+      "lezione": "Il confronto con gli altri ti fa sentire indietro; un mattoncino al giorno, anno dopo anno, ti rimette in cammino.",
+      "cosa_non_dire": "Non inventare anni, età, luoghi né episodi. Non attribuire ad Antonio la lettura di autori o libri precisi finché non li indica lui: le idee di filosofi e psicologi si possono citare come riflessione generale, non come 'ho letto X'.",
+      "note_agente": "Dettato da Antonio in chat il 23/11/2026. Ha chiesto di arricchire la parte su filosofi e psicologi: va fatto come riflessione, senza inventare le sue letture.",
+      "used": false
+    },
+    {
+      "id": 2,
+      "tipo": "umano",
+      "titolo_mappa": "10",
+      "titolo": "Non ho una giornata tipo: cerco di essere migliore di ieri",
+      "racconto": "Non esiste una mia giornata vera. Di solito cerco di essere migliore del giorno prima.",
+      "quando_dove": "non specificato",
+      "persone": "nessuna",
+      "numeri": "nessuno",
+      "lezione": "Non serve una routine perfetta: serve fare un passo in più rispetto a ieri.",
+      "cosa_non_dire": "Non inventare orari, sveglie, abitudini o gesti quotidiani: Antonio dice che una giornata tipo non ce l'ha.",
+      "note_agente": "Dettato da Antonio in chat il 23/11/2026. Seme breve: si presta a un reel frase-tesi o a un post, meno a un articolo lungo.",
+      "used": false
     }
   ]
 }
