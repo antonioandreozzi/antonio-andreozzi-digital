@@ -13,5 +13,19 @@
     "cosa_non_dire": "dettagli da tenere fuori",
     "used": false
   },
-  "storie": []
+  "storie": [
+    {
+      "id": 1,
+      "tipo": "lavoro",
+      "titolo_mappa": "4",
+      "titolo": "Il periodo dopo il primo fallimento",
+      "racconto": "Dopo la chiusura del primo progetto mi sono sentito perso nel lavoro. La mattina rimandavo e restavo a letto. Mi ha fatto ripartire Seneca: l'idea del tempo e di cosa ne fai (De brevitate vitae).",
+      "quando_dove": "Subito dopo il primo progetto fallito, per qualche mese. Luogo da non dire.",
+      "persone": "nessuna",
+      "numeri": "nessuno",
+      "lezione": "Fermarsi fa parte del lavoro: lo stallo è servito a capire cosa non volevo più fare.",
+      "cosa_non_dire": "Settore, dettagli e cifre del primo progetto; il luogo.",
+      "used": true
+    }
+  ]
 }
