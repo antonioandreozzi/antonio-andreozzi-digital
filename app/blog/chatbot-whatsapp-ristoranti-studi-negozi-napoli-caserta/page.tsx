@@ -109,7 +109,7 @@ export default function ArticoloBlog() {
 
             <h2>Le domande da fare al fornitore prima di firmare</h2>
             <p>
-              Non ti do cifre: i prezzi cambiano, e le regole di Meta sono cambiate più di una volta negli ultimi due anni. Dal luglio 2025 Meta fattura i messaggi uno per uno invece che per conversazione, e secondo la documentazione ufficiale da ottobre 2026 anche i messaggi di servizio sono a pagamento oltre una soglia mensile gratuita. Ogni preventivo va quindi letto alla luce del listino Meta in vigore il giorno in cui lo ricevi. Più delle cifre, conta sapere cosa chiedere.
+              Non ti do cifre: i prezzi cambiano, e le regole di Meta sono cambiate più di una volta negli ultimi due anni. Dal luglio 2025 Meta fattura i messaggi uno per uno invece che per conversazione, e secondo la documentazione ufficiale da ottobre 2026 anche i messaggi di servizio sono a pagamento, a messaggio. Ogni preventivo va quindi letto alla luce del listino Meta in vigore il giorno in cui lo ricevi. Più delle cifre, conta sapere cosa chiedere.
             </p>
             <ul>
               <li><strong>Costi per messaggio.</strong> Il canone del fornitore include i costi di Meta o sono a parte? Come cambia la spesa se i messaggi raddoppiano a dicembre?</li>
