@@ -10,6 +10,13 @@ export const metadata: Metadata = {
 
 const posts: { date: string; tag: string; title: string; excerpt: string; slug: string }[] = [
   {
+    date: '27 Novembre 2026',
+    tag: 'App & Digital',
+    title: 'Sito web o app: cosa serve davvero alla tua impresa (e la domanda da farti prima di spendere un euro)',
+    excerpt: 'Sito e app non sono due gradini della stessa scala: il primo serve a farsi trovare, il secondo a farsi usare da chi ti conosce già. Tre condizioni per capire se un\'app ha senso, la via di mezzo della web app e tre scenari tra Caserta e Napoli.',
+    slug: 'sito-web-o-app-pmi-caserta-napoli',
+  },
+  {
     date: '23 Novembre 2026',
     tag: 'Brand',
     title: 'Le frasi che sentivo da bambino e che decidono ancora come lavoro',

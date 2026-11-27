@@ -108,5 +108,15 @@
     "pillar": "Brand (storia personale: formula 'frasi dell'infanzia' dal report competitor; seme storie-personali id 2)",
     "emozione": "Riconoscimento",
     "hook_pattern": "I. Curiosità domestica"
+  },
+  {
+    "date": "2026-11-27",
+    "slug": "sito-web-o-app-pmi-caserta-napoli",
+    "source": "pool",
+    "pool_file": "topics",
+    "topic_id": 29,
+    "pillar": "App & Digital (prima voce della categoria sul blog)",
+    "emozione": "Sicurezza",
+    "hook_pattern": "B. Open loop strategico"
   }
 ]
